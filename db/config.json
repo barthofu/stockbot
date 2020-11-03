@@ -1,0 +1,82 @@
+{
+
+    "token": "",
+
+    "description": "",
+
+    "prefix": "s!",
+    
+    "language": "fr",
+    
+    "ownerID": "260908777446965248",
+
+    "dev": [
+        "260908777446965248"
+    ],
+
+    "colors": {
+        "default": ""
+    },
+
+    "evalName": "stock",
+
+    "startingConsoleDetailed": false,
+
+    "activities": [
+        {
+            "text": "discord.js v12",
+            "type": "PLAYING"
+        },
+        {
+            "text": "some knowledge",
+            "type": "STREAMING"
+        }
+    ],
+    
+    "categories": [
+        {
+            "name": "anime",
+            "fancyName": "Animes",
+            "emote": "⛩",
+            "genres": false
+        },
+        {
+            "name": "manga",
+            "fancyName": "Manga",
+            "emote": "📚",
+            "genres": false
+        },
+        {
+            "name": "série",
+            "fancyName": "Séries",
+            "emote": "🎞",
+            "genres": false
+        },
+        {
+            "name": "film",
+            "fancyName": "Films",
+            "emote": "📺",
+            "genres":  ["Animation Japonaise", "Action/Aventure", "Science-Fiction", "Marvel", "Fantasy", "Dessins Animés", "Dramatique", "Autres"]
+        },
+        {
+            "name": "musique",
+            "fancyName": "Musiques",
+            "emote": "🎵",
+            "genres": ["OST", "Rock", "Rap FR", "Rap US", "Autres"]
+        },
+        {
+            "name": "jeux",
+            "fancyName": "Jeux",
+            "emote": "🎮",
+            "genres": false
+        },
+        {
+            "name": "NSFW",
+            "fancyName": "NSFW",
+            "emote": "🔞",
+            "genres": false
+        }
+    ]
+
+
+}

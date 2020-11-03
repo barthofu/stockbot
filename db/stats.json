@@ -1,0 +1,257 @@
+{
+  "actual": {
+    "commands": {
+      "total": 147,
+      "details": {
+        "stockage": 137,
+        "profile": 9,
+        "help": 1
+      }
+    }
+  },
+  "daily": [
+    {
+      "date": "10-10-2020",
+      "guilds": 3,
+      "users": 98,
+      "activeUsers": 0,
+      "commands": {
+        "total": 1,
+        "details": {
+          "stockage": 1
+        }
+      }
+    },
+    {
+      "date": "10-10-2020",
+      "guilds": 3,
+      "users": 98,
+      "activeUsers": 1,
+      "commands": {
+        "total": 34,
+        "details": {
+          "stockage": 34
+        }
+      }
+    },
+    {
+      "date": "10-10-2020",
+      "guilds": 3,
+      "users": 98,
+      "activeUsers": 1,
+      "commands": {
+        "total": 34,
+        "details": {
+          "stockage": 34
+        }
+      }
+    },
+    {
+      "date": "10-10-2020",
+      "guilds": 3,
+      "users": 98,
+      "activeUsers": 1,
+      "commands": {
+        "total": 34,
+        "details": {
+          "stockage": 34
+        }
+      }
+    },
+    {
+      "date": "10-10-2020",
+      "guilds": 3,
+      "users": 98,
+      "activeUsers": 1,
+      "commands": {
+        "total": 34,
+        "details": {
+          "stockage": 34
+        }
+      }
+    },
+    {
+      "date": "10-10-2020",
+      "guilds": 3,
+      "users": 98,
+      "activeUsers": 1,
+      "commands": {
+        "total": 34,
+        "details": {
+          "stockage": 34
+        }
+      }
+    },
+    {
+      "date": "10-10-2020",
+      "guilds": 3,
+      "users": 98,
+      "activeUsers": 1,
+      "commands": {
+        "total": 34,
+        "details": {
+          "stockage": 34
+        }
+      }
+    },
+    {
+      "date": "11-10-2020",
+      "guilds": 3,
+      "users": 98,
+      "activeUsers": 1,
+      "commands": {
+        "total": 34,
+        "details": {
+          "stockage": 34
+        }
+      }
+    },
+    {
+      "date": "13-10-2020",
+      "guilds": 3,
+      "users": 97,
+      "activeUsers": 2,
+      "commands": {
+        "total": 63,
+        "details": {
+          "stockage": 63
+        }
+      }
+    },
+    {
+      "date": "13-10-2020",
+      "guilds": 3,
+      "users": 97,
+      "activeUsers": 2,
+      "commands": {
+        "total": 80,
+        "details": {
+          "stockage": 80
+        }
+      }
+    },
+    {
+      "date": "13-10-2020",
+      "guilds": 3,
+      "users": 97,
+      "activeUsers": 2,
+      "commands": {
+        "total": 80,
+        "details": {
+          "stockage": 80
+        }
+      }
+    },
+    {
+      "date": "13-10-2020",
+      "guilds": 3,
+      "users": 97,
+      "activeUsers": 2,
+      "commands": {
+        "total": 80,
+        "details": {
+          "stockage": 80
+        }
+      }
+    },
+    {
+      "date": "13-10-2020",
+      "guilds": 3,
+      "users": 97,
+      "activeUsers": 2,
+      "commands": {
+        "total": 80,
+        "details": {
+          "stockage": 80
+        }
+      }
+    },
+    {
+      "date": "13-10-2020",
+      "guilds": 3,
+      "users": 97,
+      "activeUsers": 2,
+      "commands": {
+        "total": 80,
+        "details": {
+          "stockage": 80
+        }
+      }
+    },
+    {
+      "date": "13-10-2020",
+      "guilds": 3,
+      "users": 97,
+      "activeUsers": 2,
+      "commands": {
+        "total": 80,
+        "details": {
+          "stockage": 80
+        }
+      }
+    },
+    {
+      "date": "14-10-2020",
+      "guilds": 3,
+      "users": 97,
+      "activeUsers": 2,
+      "commands": {
+        "total": 80,
+        "details": {
+          "stockage": 80
+        }
+      }
+    },
+    {
+      "date": "22-10-2020",
+      "guilds": 3,
+      "users": 96,
+      "activeUsers": 2,
+      "commands": {
+        "total": 80,
+        "details": {
+          "stockage": 80
+        }
+      }
+    },
+    {
+      "date": "23-10-2020",
+      "guilds": 3,
+      "users": 96,
+      "activeUsers": 2,
+      "commands": {
+        "total": 80,
+        "details": {
+          "stockage": 80
+        }
+      }
+    },
+    {
+      "date": "02-11-2020",
+      "guilds": 3,
+      "users": 1,
+      "activeUsers": 2,
+      "commands": {
+        "total": 136,
+        "details": {
+          "stockage": 135,
+          "profile": 1
+        }
+      }
+    },
+    {
+      "date": "03-11-2020",
+      "guilds": 3,
+      "users": 1,
+      "activeUsers": 2,
+      "commands": {
+        "total": 147,
+        "details": {
+          "stockage": 137,
+          "profile": 9,
+          "help": 1
+        }
+      }
+    }
+  ]
+}

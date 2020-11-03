@@ -1,0 +1,40 @@
+{
+  "name": "stockbot",
+  "version": "1.0.0",
+  "description": "Bot Discord français de référençage de liens de téléchargement de contenu multimédia (anime/manga/films/séries/etc)",
+  "main": "index.js",
+  "dependencies": {
+    "dateformat": "^3.0.3",
+    "discord.js": "^12.3.1",
+    "fs": "0.0.1-security",
+    "fuse.js": "^6.4.1",
+    "lodash": "^4.17.20",
+    "lowdb": "^1.0.0",
+    "mal-scraper": "^2.11.2",
+    "mongodb-uri": "^0.9.7",
+    "mongoose": "^5.10.9"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barthofu/StockBot-discord.git"
+  },
+  "keywords": [
+    "StockBot",
+    "Bot",
+    "Discord",
+    "V12",
+    "discord",
+    "JS",
+    "anime",
+    "manga"
+  ],
+  "author": "Bartholomé Gili",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/barthofu/StockBot-discord/issues"
+  },
+  "homepage": "https://github.com/barthofu/StockBot-discord#readme"
+}

@@ -1,0 +1,13 @@
+{
+  "guilds": {
+    "559497139257081862": {
+      "id": "559497139257081862",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreNotifs": []
+    }
+  },
+  "deleted": {}
+}
