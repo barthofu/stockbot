@@ -1,5 +1,6 @@
 const CommandPattern = require("../../models/Command.js");
-const channelReg = /^<#(\d+)>$/
+const channelReg = /<#(\d+)>/
+const roleReg = /<@&(\d+)>/
 
 const commandParams = {
     
@@ -32,8 +33,9 @@ module.exports = class extends CommandPattern {
         await m.react('#⃣')
         await m.react('📢')
         await m.react('📂')
+        await m.react('❌')
 
-        let filter = (reaction, user) => user.id === msg.author.id && ["#⃣", "📢", "📂"].concat(config.categories.map(val => val.emote)).includes(reaction.emoji.name)
+        let filter = (reaction, user) => user.id === msg.author.id && ["#⃣", "📢", "📂", "❌"].concat(config.categories.map(val => val.emote)).includes(reaction.emoji.name)
 
         let reac = m.createReactionCollector(filter, {time: 300000,errors:['time']})
 
@@ -42,13 +44,40 @@ module.exports = class extends CommandPattern {
             let emoji = reaction.emoji.name
             await reaction.users.remove(msg.author.id)
 
-            if (emoji === "#⃣") await changeChannel(msg, m, color)
-            else if (emoji === "📢") await changeNotifiedRole(msg, m, color)
-            else if (emoji === "📂") await enableCategories(msg, m, color)
-            else await changeCategory(msg, m, color, reac)
+            if (emoji === "#⃣") await this.changeChannel(msg, m, color)
+            else if (emoji === "📢") await this.changeRole(msg, m, color)
+            else if (emoji === "📂") await this.enableCategories(m)
+            else if (emoji === "❌") {
+                reac.stop()
+                await m.delete()
+            }
+            else await this.changeCategory(msg, m, color, emoji)
 
         })
 
+
+    }
+
+
+    async changeCategory(msg, m, color, emoji) {
+
+        let cat = config.categories.find(val => val.emote === emoji)
+        if (db.guild.get(`guilds.${msg.guild.id}.updateIgnoreCategories`).indexOf(cat.name) > -1) {
+            db.guild.get(`guilds.${msg.guild.id}.updateIgnoreCategories`).pull(cat.name).write()
+        } else 
+            db.guild.get(`guilds.${msg.guild.id}.updateIgnoreCategories`).push(cat.name).write()
+
+        await m.edit(this.getEmbed(msg, color))
+
+    }
+
+
+    async enableCategories (m) {
+
+        for (let i in config.categories) {
+
+            await m.react(config.categories[i].emote)
+        }
 
     }
 
@@ -60,7 +89,7 @@ module.exports = class extends CommandPattern {
             .setDescription('*Si vous ne désirez plus que le bot envoie les updates, entrez simplement `off`*')
         )
 
-        let filter = me => me.author.id === msg.author.id && ( me.content.toLowerCase() === "off" || reg.test(me.content))
+        let filter = me => me.author.id === msg.author.id && ( me.content.toLowerCase() === "off" || channelReg.test(me.content))
         let rep = await msg.channel.awaitMessages(filter, {max: 1, time: 60000})
         await askMessage.delete()
         if (!rep.first()) return
@@ -70,9 +99,32 @@ module.exports = class extends CommandPattern {
         else {
 
             db.guild.set(`guilds.${msg.guild.id}.updateChannel`, rep.first().content.slice(2, -1)).write()
-            db.guild.set(`guilds.${msG.guild.id}.updateIgnoreNotifs`, []).write()
+            db.guild.set(`guilds.${msg.guild.id}.updateIgnoreCategories`, []).write()
 
         }
+
+        await m.edit(this.getEmbed(msg, color))
+
+    }
+
+    async changeRole (msg, m, color) {
+
+        let askMessage = await msg.channel.send(new MessageEmbed()
+            .setTitle('Veuillez mentionner le rôle qui sera notifié lors de nouvelles updates')
+            .setColor(color)
+            .setDescription('*Si vous ne désirez plus que le bot notifie un quelconque rôle lors des updates, entrez simplement `off`*')
+        )
+
+        let filter = me => me.author.id === msg.author.id && ( me.content.toLowerCase() === "off" || roleReg.test(me.content))
+        let rep = await msg.channel.awaitMessages(filter, {max: 1, time: 60000})
+        await askMessage.delete()
+        if (!rep.first()) return
+        await rep.first().delete()
+
+        if (rep.first().content.toLowerCase() === "off") db.guild.set(`guilds.${msg.guild.id}.updateRole`, false).write()
+        else db.guild.set(`guilds.${msg.guild.id}.updateRole`, rep.first().content.slice(3, -1)).write()
+
+        await m.edit(this.getEmbed(msg, color))
 
     }
 
@@ -82,10 +134,10 @@ module.exports = class extends CommandPattern {
     getEmbed(msg, color) {
 
         //variables
-        let guildObj = db.guild.get(`guilds.${msg.guild.id}`).value
+        let guildObj = db.guild.get(`guilds.${msg.guild.id}`).value()
         let channel = guildObj.updateChannel,
             role = guildObj.updateRole,
-            categories = config.categories.map(cat => `\\${cat.emote} **${cat.fancyName}** : ${guildObj.updateIgnoreNotifs.includes(cat.name) ? "\\❌":"\\✅"}`)
+            categories = config.categories.map(cat => `\\${cat.emote} **${cat.fancyName}** : ${guildObj.updateIgnoreCategories.includes(cat.name) ? "\\❌":"\\✅"}`)
 
         return new MessageEmbed()
             .setTitle("Etat actuel du système d'updates et de notifications du serveur " + msg.guild.name)

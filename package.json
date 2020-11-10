@@ -12,7 +12,9 @@
     "lowdb": "^1.0.0",
     "mal-scraper": "^2.11.2",
     "mongodb-uri": "^0.9.7",
-    "mongoose": "^5.10.9"
+    "mongoose": "^5.10.9",
+    "mongoose-trigger": "^1.0.1",
+    "systeminformation": "^4.28.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

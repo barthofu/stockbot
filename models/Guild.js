@@ -9,7 +9,7 @@ module.exports = class {
             nsfwEnabled: true,
             updateChannel: false,
             updateRole: false,
-            updateIgnoreNotifs: []
+            updateIgnoreCategories: []
 
         }
 

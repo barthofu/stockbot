@@ -4,9 +4,9 @@
       "id": "559497139257081862",
       "prefix": "s!",
       "nsfwEnabled": true,
-      "updateChannel": false,
-      "updateRole": false,
-      "updateIgnoreNotifs": []
+      "updateChannel": "717012699162345523",
+      "updateRole": "559501946894024742",
+      "updateIgnoreCategories": []
     }
   },
   "deleted": {}

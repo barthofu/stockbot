@@ -86,7 +86,7 @@ module.exports = class extends CommandPattern {
 
             let arrReactions = env.reactions
             
-            for (i in arrReactions) await m.react(arrReactions[i])
+            for (let i in arrReactions) await m.react(arrReactions[i])
             
             async function sub(m) {
                 let [wait] = await Promise.race([

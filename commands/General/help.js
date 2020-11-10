@@ -1,4 +1,5 @@
 const CommandPattern = require("../../models/Command.js");
+const fs = require("fs")
 
 const commandParams = {
     

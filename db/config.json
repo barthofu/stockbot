@@ -38,42 +38,49 @@
             "name": "anime",
             "fancyName": "Animes",
             "emote": "⛩",
+            "image": "https://image.flaticon.com/icons/png/512/1199/1199002.png",
             "genres": false
         },
         {
             "name": "manga",
             "fancyName": "Manga",
             "emote": "📚",
+            "image": "https://www.shareicon.net/data/2016/09/01/823296_book_512x512.png",
             "genres": false
         },
         {
             "name": "série",
             "fancyName": "Séries",
             "emote": "🎞",
+            "image": "https://img.icons8.com/cotton/2x/movie-beginning.png",
             "genres": false
         },
         {
             "name": "film",
             "fancyName": "Films",
             "emote": "📺",
+            "image": "https://icons-for-free.com/iconfiles/png/512/clapper+cut+director+making+movie+take+icon-1320195777589696004.png",
             "genres":  ["Animation Japonaise", "Action/Aventure", "Science-Fiction", "Marvel", "Fantasy", "Dessins Animés", "Dramatique", "Autres"]
         },
         {
             "name": "musique",
             "fancyName": "Musiques",
             "emote": "🎵",
-            "genres": ["OST", "Rock", "Rap FR", "Rap US", "Autres"]
+            "image": "https://eglise180.com/wp-content/uploads/2018/05/Headphones-Play-Music-icon.png",
+            "genres": ["OST", "Rock", "Rap FR", "Rap US", "Autre"]
         },
         {
             "name": "jeux",
             "fancyName": "Jeux",
             "emote": "🎮",
+            "image": "http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/gamepad-icon.png",
             "genres": false
         },
         {
             "name": "NSFW",
             "fancyName": "NSFW",
             "emote": "🔞",
+            "image": "https://image.flaticon.com/icons/png/512/578/578923.png",
             "genres": false
         }
     ]

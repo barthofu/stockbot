@@ -1,3 +1,5 @@
+const mongoose = require("mongoose")
+
 const objectCategory = {
 
     anime: {
@@ -9,7 +11,7 @@ const objectCategory = {
         episodesCount: {type: Number},
         trailer: {type: String},
         tags: {type: Array, default: []},
-        scoreMAL: {type: Number},
+        scoreMAL: {type: String, default: ""},
         urlMAL: {type: String},
         aliases: {type: Array, default: []},
 
@@ -23,7 +25,7 @@ const objectCategory = {
         author: {type: String, require: true},
         volumesCount: {type: Number},
         tags: {type: Array, default: []},
-        scoreMAL: {type: Number},
+        scoreMAL: {type: String, default: ""},
         urlMAL: {type: String},
         aliases: {type: Array, default: []},
 
@@ -56,6 +58,7 @@ const objectCategory = {
         name: {type: String, require: true},
         releaseDate: {type: String, require: true},
         studio: {type: String, require: true},
+        genre: {type: String, require: true}
 
     },
 

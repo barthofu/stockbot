@@ -6,7 +6,7 @@ module.exports = class {
         
         client.startingConsole()
         
-        setInterval(() => {
+        setInterval(async () => {
             
             //activity change
             let activity = config.activities[index]
@@ -26,9 +26,11 @@ module.exports = class {
             index++
             if (index === config.activities.length) index = 0
             
-            
             //stats update
             client.updateStats()
+
+            //mongo checker
+            //await mongo.check()
             
         }, 15 * 1000) //each 15 sec
         

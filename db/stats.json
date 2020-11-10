@@ -1,11 +1,14 @@
 {
   "actual": {
     "commands": {
-      "total": 147,
+      "total": 206,
       "details": {
-        "stockage": 137,
+        "stockage": 140,
         "profile": 9,
-        "help": 1
+        "help": 1,
+        "monitor": 12,
+        "updatechannel": 15,
+        "asklist": 29
       }
     }
   },
@@ -250,6 +253,158 @@
           "stockage": 137,
           "profile": 9,
           "help": 1
+        }
+      }
+    },
+    {
+      "date": "07-11-2020",
+      "guilds": 3,
+      "users": 1,
+      "activeUsers": 2,
+      "commands": {
+        "total": 148,
+        "details": {
+          "stockage": 137,
+          "profile": 9,
+          "help": 1,
+          "monitor": 1
+        }
+      }
+    },
+    {
+      "date": "08-11-2020",
+      "guilds": 3,
+      "users": 1,
+      "activeUsers": 2,
+      "commands": {
+        "total": 158,
+        "details": {
+          "stockage": 137,
+          "profile": 9,
+          "help": 1,
+          "monitor": 11
+        }
+      }
+    },
+    {
+      "date": "08-11-2020",
+      "guilds": 3,
+      "users": 1,
+      "activeUsers": 2,
+      "commands": {
+        "total": 160,
+        "details": {
+          "stockage": 139,
+          "profile": 9,
+          "help": 1,
+          "monitor": 11
+        }
+      }
+    },
+    {
+      "date": "08-11-2020",
+      "guilds": 3,
+      "users": 1,
+      "activeUsers": 2,
+      "commands": {
+        "total": 160,
+        "details": {
+          "stockage": 139,
+          "profile": 9,
+          "help": 1,
+          "monitor": 11
+        }
+      }
+    },
+    {
+      "date": "08-11-2020",
+      "guilds": 3,
+      "users": 1,
+      "activeUsers": 2,
+      "commands": {
+        "total": 160,
+        "details": {
+          "stockage": 139,
+          "profile": 9,
+          "help": 1,
+          "monitor": 11
+        }
+      }
+    },
+    {
+      "date": "08-11-2020",
+      "guilds": 3,
+      "users": 1,
+      "activeUsers": 2,
+      "commands": {
+        "total": 160,
+        "details": {
+          "stockage": 139,
+          "profile": 9,
+          "help": 1,
+          "monitor": 11
+        }
+      }
+    },
+    {
+      "date": "08-11-2020",
+      "guilds": 3,
+      "users": 1,
+      "activeUsers": 2,
+      "commands": {
+        "total": 160,
+        "details": {
+          "stockage": 139,
+          "profile": 9,
+          "help": 1,
+          "monitor": 11
+        }
+      }
+    },
+    {
+      "date": "08-11-2020",
+      "guilds": 3,
+      "users": 1,
+      "activeUsers": 2,
+      "commands": {
+        "total": 160,
+        "details": {
+          "stockage": 139,
+          "profile": 9,
+          "help": 1,
+          "monitor": 11
+        }
+      }
+    },
+    {
+      "date": "09-11-2020",
+      "guilds": 3,
+      "users": 1,
+      "activeUsers": 2,
+      "commands": {
+        "total": 160,
+        "details": {
+          "stockage": 139,
+          "profile": 9,
+          "help": 1,
+          "monitor": 11
+        }
+      }
+    },
+    {
+      "date": "10-11-2020",
+      "guilds": 3,
+      "users": 1,
+      "activeUsers": 2,
+      "commands": {
+        "total": 205,
+        "details": {
+          "stockage": 139,
+          "profile": 9,
+          "help": 1,
+          "monitor": 12,
+          "updatechannel": 15,
+          "asklist": 29
         }
       }
     }

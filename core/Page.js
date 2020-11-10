@@ -1,5 +1,3 @@
-const { MessageEmbed } = require("discord.js")
-
 module.exports = class EmbedPage {
 
     constructor(page, userID, color) {
@@ -19,7 +17,7 @@ module.exports = class EmbedPage {
 
             let val = categoryObject[key]
             if (key === "_saut") description += "\n"
-            else if (val === false) description += ""
+            else if (!val || val === "") description += ""
             else description += `**${key.split("__").join(" ").split("_").join("'")} :** ${val}\n`
 
         })
@@ -29,13 +27,12 @@ module.exports = class EmbedPage {
         
         //embed
         let embed = new MessageEmbed()
-            .setAuthor(bot.users.cache.get(this.userID).username, bot.users.cache.get(this.userID).displayAvatarURL({dynamic: true}))
             .setColor(color)
             .setThumbnail("https://bsyswallet.com/assets/img/new/loading.gif")
             .setImage(this.page.imageURL)
 
             .setTitle(
-                this.page[this.page.cat === "anime" ? db.user.find(val => val.id === this.userID).get("langTitle").value() === "🇬🇧" ? "name" : "japName" : "name"]
+                this.page[this.userID ? this.page.cat === "anime" ? db.user.find(val => val.id === this.userID).get("langTitle").value() === "🇬🇧" ? "name" : "japName" : "name" : "name"]
             )
             .setDescription(description)
 
@@ -63,14 +60,33 @@ module.exports = class EmbedPage {
         let newObject = await mongo[this.page.cat].findOneAndUpdate({_id:this.page._id}, mongo.inc("stats.visites", 1), mongo.constOption()).catch(e => mongo.error(e))
         await mongo.save(this.page._id, newObject)
 
-        //footer important message
-        embed.setFooter("MESSAGE IMPORTANT : De nombreux liens sont indisponibles car nous déplaçons certains contenus que nous stockons sur mega sur d'autres comptes. Si vous voyez ce message, c'est que l'opération n'est pas terminée.")
+        if (this.userID) {
+
+            embed.setAuthor(bot.users.cache.get(this.userID).username, bot.users.cache.get(this.userID).displayAvatarURL({dynamic: true}))
+            //footer important message
+            embed.setFooter("MESSAGE IMPORTANT : De nombreux liens sont indisponibles car nous déplaçons certains contenus que nous stockons sur mega sur d'autres comptes. Si vous voyez ce message, c'est que l'opération n'est pas terminée.")
+
+        }
 
         return embed
 
 
     }
 
+
+    check (element) {
+
+        if (!element) return false //check false and null
+
+        else if (element.length == 0) return false //check "" and []
+
+        else if (element == 0) return false
+
+        else if (element == "off" || element == "N/A") return false
+
+        return true
+
+    }
 
 
 
@@ -84,17 +100,17 @@ module.exports = class EmbedPage {
 
                 categoryObject = {
 
-                    Titre__alternatif: `*${db.user.find(val => val.id === this.userID).get("langTitle").value() === "🇬🇧" ? this.page.japName : this.page.name}*`,
+                    Titre__alternatif: `*${this.userID ? db.user.find(val => val.id === this.userID).get("langTitle").value() === "🇬🇧" ? this.page.japName : this.page.name : this.page.japName}*`,
 
                     _saut: null,
                     Année__de__sortie: this.page.releaseDate,
                     Studio__d_animation: this.page.studio,
                     Nombre__d_épisodes: this.page.episodesCount,
-                    Score__MAL: "[" + this.page.scoreMAL + "](" + this.page.urlMAL + ")",
+                    Score__MAL: this.check(this.page.scoreMAL) ? "[" + this.page.scoreMAL + "]" + this.check(this.page.urlMAL) ? `(${this.page.urlMAL})` : "" : false,
                     Tags: this.page.tags.map(val => "`"+ val + "`"),
-                    Trailer: "[🎥](" + this.page.trailer + ")",
+                    Trailer: this.check(this.page.trailer) ? "[🎥](" + this.page.trailer + ")" : false,
                     Votes: this.page.stats.like.length + "\\👍 | " + this.page.stats.dislike.length + "\\👎",
-                    Fournisseur: this.page.fournisseur == false ? false : "Fourni par " + this.page.fournisseur,
+                    Fournisseur: this.check(this.page.fournisseur) ? "Fourni par " + this.page.fournisseur : false,
 
                     _saut: null,
                     Résumé: this.page.description
@@ -112,7 +128,7 @@ module.exports = class EmbedPage {
                     Auteur: this.page.author,
                     Nombre__de__tomes: this.page.volumesCount,
                     Votes: this.page.stats.like.length + "\\👍 | " + this.page.stats.dislike.length + "\\👎",
-                    Fournisseur: this.page.fournisseur == false ? false : "Fourni par " + this.page.fournisseur,
+                    Fournisseur: this.check(this.page.fournisseur) ? "Fourni par " + this.page.fournisseur : false,
 
                     _saut: null,
                     Résumé: this.page.description
@@ -128,7 +144,7 @@ module.exports = class EmbedPage {
 
                     Date__de__sortie__initiale: this.page.releaseDate,
                     Votes: this.page.stats.like.length + "\\👍 | " + this.page.stats.dislike.length + "\\👎",
-                    Fournisseur: this.page.fournisseur == false ? false : "Fourni par " + this.page.fournisseur,
+                    Fournisseur: this.check(this.page.fournisseur) ? "Fourni par " + this.page.fournisseur : false,
 
                     _saut: null,
                     Résumé: this.page.description
@@ -144,7 +160,7 @@ module.exports = class EmbedPage {
 
                     Date__de__sortie: this.page.releaseDate,
                     Votes: this.page.stats.like.length + "\\👍 | " + this.page.stats.dislike.length + "\\👎",
-                    Fournisseur: this.page.fournisseur == false ? false : "Fourni par " + this.page.fournisseur,
+                    Fournisseur: this.check(this.page.fournisseur) ? "Fourni par " + this.page.fournisseur : false,
 
                     _saut: null,
                     Résumé: this.page.description
@@ -160,7 +176,7 @@ module.exports = class EmbedPage {
 
                     Genre: this.page.genre,
                     Votes: this.page.stats.like.length + "\\👍 | " + this.page.stats.dislike.length + "\\👎",
-                    Fournisseur: this.page.fournisseur == false ? false : "Fourni par " + this.page.fournisseur,
+                    Fournisseur: this.check(this.page.fournisseur) ? "Fourni par " + this.page.fournisseur : false,
 
                 }
                 break
@@ -173,8 +189,9 @@ module.exports = class EmbedPage {
 
                     Date__de__sortie: this.page.releaseDate,
                     Studio: this.page.studio,
+                    Plateforme: this.page.genre,
                     Votes: this.page.stats.like.length + "\\👍 | " + this.page.stats.dislike.length + "\\👎",
-                    Fournisseur: this.page.fournisseur == false ? false : "Fourni par " + this.page.fournisseur,
+                    Fournisseur: this.check(this.page.fournisseur) ? "Fourni par " + this.page.fournisseur : false,
 
                     _saut: null,
                     
@@ -191,7 +208,7 @@ module.exports = class EmbedPage {
 
                     Type: this.page.genre,
                     Votes: this.page.stats.like.length + "\\👍 | " + this.page.stats.dislike.length + "\\👎",
-                    Fournisseur: this.page.fournisseur == false ? false : "Fourni par " + this.page.fournisseur,
+                    Fournisseur: this.check(this.page.fournisseur) ? "Fourni par " + this.page.fournisseur : false,
 
                 }
                 break

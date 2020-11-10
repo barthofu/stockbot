@@ -48,7 +48,7 @@ module.exports = class extends CommandPattern {
         if (msg.mentions.users.size > 0) user = msg.mentions.users.first()
 
         //filtrage et ajout des fields sur l'embed
-        for (i in config.categories.filter(val => ["anime", "manga", "série", "film"].includes(val.name))) {
+        for (let i in config.categories.filter(val => ["anime", "manga", "série", "film"].includes(val.name))) {
             let cat = config.categories[i].name
             stats.completed[cat] = db[cat].filter(val => val.stats.completed.includes(user.id))
             stats.planning[cat] = db[cat].filter(val => val.stats.planning.includes(user.id))

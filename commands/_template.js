@@ -2,11 +2,11 @@ const CommandPattern = require("../../models/Command.js");
 
 const commandParams = {
     
-    name: "info",
+    name: "",
     aliases: [],
     desc: "",
     enabled: true,
-    dm: true,
+    dm: false,
     nsfw: false,
     memberPermission: [],
     botPermission: [],

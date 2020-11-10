@@ -540,7 +540,7 @@ async function displayPage(params, m, cat, _id = false) {
     if (config.dev.includes(msg.author.id)) reactions.push("⚙️")
 
     //add reactions
-    for (i in reactions) await m.react(reactions[i])
+    for (let i in reactions) await m.react(reactions[i])
     
     //filter and collector
     let filter = (reaction, user) => (reactions.includes(reaction.emoji.name) || reactions.includes(reaction.emoji.id)) && user.id === msg.author.id
@@ -754,7 +754,7 @@ async function displayPage(params, m, cat, _id = false) {
                 reaction.users.remove(bot.user.id)
                 let additionnalReactions = ['anime', 'manga', 'film', 'série'].includes(cat) ? ["👁", "⌚", "📊", "🔗"] : ["📊", "🔗"]   
                 reactions = reactions.concat(additionnalReactions)
-                for (i in additionnalReactions) await m.react(additionnalReactions[i])
+                for (let i in additionnalReactions) await m.react(additionnalReactions[i])
                 break
 
         }
