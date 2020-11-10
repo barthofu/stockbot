@@ -15,15 +15,17 @@ module.exports = class {
     }
 
 
-    async init (isReload) {
+    async init () {
 
+        console.log("client")
         this.loadCommands();
         this.loadEvents();
         this.loadJSON();
         await mongo.saveAll()
 
-        if (isReload) this.login();
+        this.login();
     }
+
 
 
     login () { this.bot.login(credentials.token);  }
@@ -118,8 +120,29 @@ module.exports = class {
 
 
     async reload (msg) {
-        
-        await this.init(true);
+        //reload commands and databases
+
+        //commands
+        let categories = fs.readdirSync(`./commands`).filter(file => !file.includes("."));
+        for (let i in categories) {
+            fs.readdirSync(`./commands/${categories[i]}`).filter(file => file.endsWith('.js') && !file.startsWith("_")).forEach(file => {
+                const command = new (require(`../commands/${categories[i]}/${file}`))();
+                this.bot.commands.set(command.info.name, command);
+                delete require.cache[require.resolve(`../commands/${categories[i]}/${file}`)];
+            });
+        }
+
+        //databases
+        let filesArrays = [
+            fs.readdirSync(`${__dirname}/../db`).filter(val => val.endsWith(".json")),
+        ]
+        for (let i in filesArrays) {
+            for (let j in filesArrays[i]) {
+                let file = filesArrays[i][j];
+                let adapter = new FileSync(`${__dirname}/../db/${file}`);
+                db[file.replace(".json", "")] = low(adapter);
+            }
+        }
 
         console.log("All the commands and databases has been reloaded!");
         msg.react('✅');

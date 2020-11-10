@@ -3,6 +3,8 @@ const mongoose = require("mongoose"),
       credentials = require("../.credentials.json").db.mongoDB,
       Category = require("../models/mongo/Category");
 
+
+
 module.exports = class Mongo {
 
     constructor () {
@@ -15,12 +17,14 @@ module.exports = class Mongo {
         this._authSource = credentials.authSource;
 
         this._initiated  = false;
-        this.watch = {}
+        this.anime = null
     }
 
 
 
-    init () {
+    async init () {
+
+        console.log("mongo")
 
         return mongoose.connect(mongoUri.format({
             username: this._username,
@@ -31,53 +35,20 @@ module.exports = class Mongo {
         }), { useNewUrlParser: true, useUnifiedTopology: true }
         ).then(async (db) => {
 
+            console.log("mongo then")
             this.db = db;
             this._initiated = true;
 
-            //define mongo collections
+            //define mongo databases
             for (let i in config.categories) {
                 let cat = config.categories[i].name;
-                this[cat] = new Category(cat).getModel();
+                mongo[cat] = new Category(cat).getModel();
             }
-
-            await this.startWatch()
 
             return;
         }).catch(e => console.log(e))
     }
 
-
-
-
-    async startWatch () {
-
-        for (let i in config.categories) {
-
-            let cat = config.categories[i].name;
-            let collection = new (require("./models/mongo/Category"))("anime").getModel()
-
-            this.watch[cat] = collection.watch([ { $match: { "operationType": "insert" } } ]).on('change', (data) => this.watch(data))
-        }
-    }
-
-
-    async watch (data) {
-
-        await this.saveAll();
-        
-        //send the verification embed on discord
-        let embed = await utils.getPageEmbed(data.fullDocument._id);
-        let m = await bot.channels.cache.get(config.addVerificationChannel).send(embed.setTimestamp(new Date()));
-        await m.react("✅");
-        await m.react("❌");
-
-        //save to the local db
-        db.data.get("awaitVerification").push({
-            _id: data.fullDocument._id,
-            messageId: m.id,
-            timestamp: new Date().getTime()
-        }).write();
-    }
 
     async save (_id, newObject = false) {
 
@@ -96,7 +67,6 @@ module.exports = class Mongo {
 
     async saveAll () {
 
-        console.log(this)
         for (let i in config.categories) {
 
             let cat = config.categories[i].name;

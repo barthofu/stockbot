@@ -1,5 +1,5 @@
 const CommandPattern = require("../../models/Command.js");
-mongo.ask = require("../../models/mongo/Ask")
+      mongo.ask = require("../../models/mongo/Ask")
 
 const commandParams = {
     
