@@ -1,410 +1,4659 @@
 {
   "actual": {
     "commands": {
-      "total": 207,
+      "total": 273,
       "details": {
-        "stockage": 141,
+        "stockage": 152,
         "profile": 9,
         "help": 1,
         "monitor": 12,
-        "updatechannel": 15,
-        "asklist": 29
+        "updatechannel": 16,
+        "asklist": 34,
+        "nsfw": 6,
+        "ask": 9,
+        "stats": 19,
+        "suggest": 2,
+        "report": 2,
+        "gametuto": 1,
+        "invite": 1,
+        "logs": 2,
+        "ping": 7
       }
     }
   },
   "daily": [
     {
-      "date": "10-10-2020",
-      "guilds": 3,
-      "users": 98,
-      "activeUsers": 0,
+      "date": "06-04-2020",
+      "guilds": 111,
+      "users": 6978,
+      "activeUsers": 491,
       "commands": {
-        "total": 1,
+        "total": 22141,
+        "details": {}
+      },
+      "pages": {
+        "visits": 7730,
+        "total": 950,
         "details": {
-          "stockage": 1
+          "anime": 281,
+          "manga": 85,
+          "série": 133,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "07-04-2020",
+      "guilds": 111,
+      "users": 6978,
+      "activeUsers": 491,
+      "commands": {
+        "total": 22141,
+        "details": {}
+      },
+      "pages": {
+        "visits": 7730,
+        "total": 950,
+        "details": {
+          "anime": 281,
+          "manga": 85,
+          "série": 133,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "08-04-2020",
+      "guilds": 111,
+      "users": 6937,
+      "activeUsers": 492,
+      "commands": {
+        "total": 22212,
+        "details": {}
+      },
+      "pages": {
+        "visits": 7765,
+        "total": 950,
+        "details": {
+          "anime": 281,
+          "manga": 85,
+          "série": 133,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "09-04-2020",
+      "guilds": 112,
+      "users": 7038,
+      "activeUsers": 494,
+      "commands": {
+        "total": 22292,
+        "details": {}
+      },
+      "pages": {
+        "visits": 7811,
+        "total": 950,
+        "details": {
+          "anime": 281,
+          "manga": 85,
+          "série": 133,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "10-04-2020",
+      "guilds": 112,
+      "users": 7139,
+      "activeUsers": 496,
+      "commands": {
+        "total": 22367,
+        "details": {}
+      },
+      "pages": {
+        "visits": 7862,
+        "total": 951,
+        "details": {
+          "anime": 282,
+          "manga": 85,
+          "série": 133,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "11-04-2020",
+      "guilds": 111,
+      "users": 7188,
+      "activeUsers": 497,
+      "commands": {
+        "total": 22488,
+        "details": {}
+      },
+      "pages": {
+        "visits": 7946,
+        "total": 951,
+        "details": {
+          "anime": 282,
+          "manga": 85,
+          "série": 133,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "12-04-2020",
+      "guilds": 111,
+      "users": 6989,
+      "activeUsers": 497,
+      "commands": {
+        "total": 22518,
+        "details": {}
+      },
+      "pages": {
+        "visits": 7960,
+        "total": 951,
+        "details": {
+          "anime": 282,
+          "manga": 85,
+          "série": 133,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "13-04-2020",
+      "guilds": 112,
+      "users": 7104,
+      "activeUsers": 499,
+      "commands": {
+        "total": 22556,
+        "details": {}
+      },
+      "pages": {
+        "visits": 7995,
+        "total": 951,
+        "details": {
+          "anime": 282,
+          "manga": 85,
+          "série": 133,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "14-04-2020",
+      "guilds": 112,
+      "users": 7172,
+      "activeUsers": 501,
+      "commands": {
+        "total": 22605,
+        "details": {}
+      },
+      "pages": {
+        "visits": 8023,
+        "total": 951,
+        "details": {
+          "anime": 282,
+          "manga": 85,
+          "série": 133,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "15-04-2020",
+      "guilds": 111,
+      "users": 7238,
+      "activeUsers": 503,
+      "commands": {
+        "total": 22650,
+        "details": {}
+      },
+      "pages": {
+        "visits": 8051,
+        "total": 951,
+        "details": {
+          "anime": 282,
+          "manga": 85,
+          "série": 133,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "16-04-2020",
+      "guilds": 111,
+      "users": 7289,
+      "activeUsers": 506,
+      "commands": {
+        "total": 22702,
+        "details": {}
+      },
+      "pages": {
+        "visits": 8126,
+        "total": 951,
+        "details": {
+          "anime": 282,
+          "manga": 85,
+          "série": 133,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "17-04-2020",
+      "guilds": 111,
+      "users": 7327,
+      "activeUsers": 508,
+      "commands": {
+        "total": 22730,
+        "details": {}
+      },
+      "pages": {
+        "visits": 8147,
+        "total": 951,
+        "details": {
+          "anime": 282,
+          "manga": 85,
+          "série": 133,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "18-04-2020",
+      "guilds": 112,
+      "users": 7372,
+      "activeUsers": 511,
+      "commands": {
+        "total": 22785,
+        "details": {}
+      },
+      "pages": {
+        "visits": 8180,
+        "total": 951,
+        "details": {
+          "anime": 282,
+          "manga": 85,
+          "série": 133,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "19-04-2020",
+      "guilds": 113,
+      "users": 7429,
+      "activeUsers": 514,
+      "commands": {
+        "total": 22840,
+        "details": {}
+      },
+      "pages": {
+        "visits": 8221,
+        "total": 951,
+        "details": {
+          "anime": 282,
+          "manga": 85,
+          "série": 133,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "20-04-2020",
+      "guilds": 114,
+      "users": 7129,
+      "activeUsers": 517,
+      "commands": {
+        "total": 22891,
+        "details": {}
+      },
+      "pages": {
+        "visits": 8277,
+        "total": 951,
+        "details": {
+          "anime": 282,
+          "manga": 85,
+          "série": 133,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "21-04-2020",
+      "guilds": 114,
+      "users": 7234,
+      "activeUsers": 518,
+      "commands": {
+        "total": 22916,
+        "details": {}
+      },
+      "pages": {
+        "visits": 8331,
+        "total": 951,
+        "details": {
+          "anime": 282,
+          "manga": 85,
+          "série": 133,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "22-04-2020",
+      "guilds": 114,
+      "users": 7251,
+      "activeUsers": 522,
+      "commands": {
+        "total": 22973,
+        "details": {}
+      },
+      "pages": {
+        "visits": 8374,
+        "total": 951,
+        "details": {
+          "anime": 282,
+          "manga": 85,
+          "série": 133,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "24-04-2020",
+      "guilds": 115,
+      "users": 7182,
+      "activeUsers": 524,
+      "commands": {
+        "total": 23022,
+        "details": {}
+      },
+      "pages": {
+        "visits": 8399,
+        "total": 951,
+        "details": {
+          "anime": 282,
+          "manga": 85,
+          "série": 133,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "25-04-2020",
+      "guilds": 115,
+      "users": 7226,
+      "activeUsers": 526,
+      "commands": {
+        "total": 23056,
+        "details": {}
+      },
+      "pages": {
+        "visits": 8420,
+        "total": 951,
+        "details": {
+          "anime": 282,
+          "manga": 85,
+          "série": 133,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "26-04-2020",
+      "guilds": 115,
+      "users": 7289,
+      "activeUsers": 526,
+      "commands": {
+        "total": 23075,
+        "details": {}
+      },
+      "pages": {
+        "visits": 8432,
+        "total": 951,
+        "details": {
+          "anime": 282,
+          "manga": 85,
+          "série": 133,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "27-04-2020",
+      "guilds": 115,
+      "users": 7331,
+      "activeUsers": 528,
+      "commands": {
+        "total": 23121,
+        "details": {}
+      },
+      "pages": {
+        "visits": 8466,
+        "total": 951,
+        "details": {
+          "anime": 282,
+          "manga": 85,
+          "série": 133,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "28-04-2020",
+      "guilds": 115,
+      "users": 7374,
+      "activeUsers": 528,
+      "commands": {
+        "total": 23133,
+        "details": {}
+      },
+      "pages": {
+        "visits": 8476,
+        "total": 951,
+        "details": {
+          "anime": 282,
+          "manga": 85,
+          "série": 133,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "29-04-2020",
+      "guilds": 115,
+      "users": 7240,
+      "activeUsers": 529,
+      "commands": {
+        "total": 23160,
+        "details": {}
+      },
+      "pages": {
+        "visits": 8494,
+        "total": 951,
+        "details": {
+          "anime": 282,
+          "manga": 85,
+          "série": 133,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "30-04-2020",
+      "guilds": 116,
+      "users": 7304,
+      "activeUsers": 529,
+      "commands": {
+        "total": 23187,
+        "details": {}
+      },
+      "pages": {
+        "visits": 8516,
+        "total": 951,
+        "details": {
+          "anime": 282,
+          "manga": 85,
+          "série": 133,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "01-05-2020",
+      "guilds": 116,
+      "users": 7213,
+      "activeUsers": 530,
+      "commands": {
+        "total": 23225,
+        "details": {}
+      },
+      "pages": {
+        "visits": 8540,
+        "total": 951,
+        "details": {
+          "anime": 282,
+          "manga": 85,
+          "série": 133,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "02-05-2020",
+      "guilds": 117,
+      "users": 7254,
+      "activeUsers": 530,
+      "commands": {
+        "total": 23249,
+        "details": {}
+      },
+      "pages": {
+        "visits": 8553,
+        "total": 951,
+        "details": {
+          "anime": 282,
+          "manga": 85,
+          "série": 133,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "03-05-2020",
+      "guilds": 117,
+      "users": 7324,
+      "activeUsers": 530,
+      "commands": {
+        "total": 23264,
+        "details": {}
+      },
+      "pages": {
+        "visits": 8562,
+        "total": 951,
+        "details": {
+          "anime": 282,
+          "manga": 85,
+          "série": 133,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "04-05-2020",
+      "guilds": 117,
+      "users": 7324,
+      "activeUsers": 530,
+      "commands": {
+        "total": 23264,
+        "details": {}
+      },
+      "pages": {
+        "visits": 8562,
+        "total": 951,
+        "details": {
+          "anime": 282,
+          "manga": 85,
+          "série": 133,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "05-05-2020",
+      "guilds": 115,
+      "users": 7282,
+      "activeUsers": 532,
+      "commands": {
+        "total": 23296,
+        "details": {}
+      },
+      "pages": {
+        "visits": 8576,
+        "total": 950,
+        "details": {
+          "anime": 282,
+          "manga": 85,
+          "série": 132,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "06-05-2020",
+      "guilds": 115,
+      "users": 7322,
+      "activeUsers": 534,
+      "commands": {
+        "total": 23355,
+        "details": {}
+      },
+      "pages": {
+        "visits": 8596,
+        "total": 950,
+        "details": {
+          "anime": 282,
+          "manga": 85,
+          "série": 132,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "07-05-2020",
+      "guilds": 114,
+      "users": 7318,
+      "activeUsers": 537,
+      "commands": {
+        "total": 23511,
+        "details": {}
+      },
+      "pages": {
+        "visits": 8622,
+        "total": 949,
+        "details": {
+          "anime": 282,
+          "manga": 84,
+          "série": 132,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "08-05-2020",
+      "guilds": 113,
+      "users": 7394,
+      "activeUsers": 541,
+      "commands": {
+        "total": 23612,
+        "details": {}
+      },
+      "pages": {
+        "visits": 9067,
+        "total": 949,
+        "details": {
+          "anime": 282,
+          "manga": 84,
+          "série": 132,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "09-05-2020",
+      "guilds": 113,
+      "users": 7363,
+      "activeUsers": 543,
+      "commands": {
+        "total": 23659,
+        "details": {}
+      },
+      "pages": {
+        "visits": 9109,
+        "total": 949,
+        "details": {
+          "anime": 282,
+          "manga": 84,
+          "série": 132,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "10-05-2020",
+      "guilds": 113,
+      "users": 7389,
+      "activeUsers": 546,
+      "commands": {
+        "total": 23704,
+        "details": {}
+      },
+      "pages": {
+        "visits": 9129,
+        "total": 950,
+        "details": {
+          "anime": 282,
+          "manga": 84,
+          "série": 132,
+          "film": 308,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "11-05-2020",
+      "guilds": 113,
+      "users": 7431,
+      "activeUsers": 549,
+      "commands": {
+        "total": 23766,
+        "details": {}
+      },
+      "pages": {
+        "visits": 9495,
+        "total": 950,
+        "details": {
+          "anime": 282,
+          "manga": 84,
+          "série": 132,
+          "film": 308,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "12-05-2020",
+      "guilds": 113,
+      "users": 7457,
+      "activeUsers": 549,
+      "commands": {
+        "total": 23815,
+        "details": {}
+      },
+      "pages": {
+        "visits": 9521,
+        "total": 950,
+        "details": {
+          "anime": 282,
+          "manga": 84,
+          "série": 132,
+          "film": 308,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "13-05-2020",
+      "guilds": 113,
+      "users": 7511,
+      "activeUsers": 549,
+      "commands": {
+        "total": 23887,
+        "details": {}
+      },
+      "pages": {
+        "visits": 9578,
+        "total": 950,
+        "details": {
+          "anime": 282,
+          "manga": 84,
+          "série": 132,
+          "film": 308,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "14-05-2020",
+      "guilds": 113,
+      "users": 7610,
+      "activeUsers": 551,
+      "commands": {
+        "total": 23983,
+        "details": {}
+      },
+      "pages": {
+        "visits": 9924,
+        "total": 950,
+        "details": {
+          "anime": 282,
+          "manga": 84,
+          "série": 132,
+          "film": 308,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "15-05-2020",
+      "guilds": 113,
+      "users": 7659,
+      "activeUsers": 551,
+      "commands": {
+        "total": 24169,
+        "details": {}
+      },
+      "pages": {
+        "visits": 9949,
+        "total": 950,
+        "details": {
+          "anime": 282,
+          "manga": 84,
+          "série": 132,
+          "film": 308,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "16-05-2020",
+      "guilds": 113,
+      "users": 7712,
+      "activeUsers": 552,
+      "commands": {
+        "total": 24222,
+        "details": {}
+      },
+      "pages": {
+        "visits": 9960,
+        "total": 950,
+        "details": {
+          "anime": 282,
+          "manga": 84,
+          "série": 132,
+          "film": 308,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "18-05-2020",
+      "guilds": 116,
+      "users": 7459,
+      "activeUsers": 552,
+      "commands": {
+        "total": 24252,
+        "details": {}
+      },
+      "pages": {
+        "visits": 9980,
+        "total": 950,
+        "details": {
+          "anime": 282,
+          "manga": 84,
+          "série": 132,
+          "film": 308,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "19-05-2020",
+      "guilds": 116,
+      "users": 7546,
+      "activeUsers": 556,
+      "commands": {
+        "total": 24294,
+        "details": {}
+      },
+      "pages": {
+        "visits": 10014,
+        "total": 952,
+        "details": {
+          "anime": 284,
+          "manga": 84,
+          "série": 132,
+          "film": 308,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "20-05-2020",
+      "guilds": 116,
+      "users": 7513,
+      "activeUsers": 556,
+      "commands": {
+        "total": 24352,
+        "details": {}
+      },
+      "pages": {
+        "visits": 10051,
+        "total": 952,
+        "details": {
+          "anime": 284,
+          "manga": 84,
+          "série": 132,
+          "film": 308,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "21-05-2020",
+      "guilds": 118,
+      "users": 7649,
+      "activeUsers": 565,
+      "commands": {
+        "total": 24460,
+        "details": {}
+      },
+      "pages": {
+        "visits": 10162,
+        "total": 952,
+        "details": {
+          "anime": 284,
+          "manga": 84,
+          "série": 132,
+          "film": 308,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "22-05-2020",
+      "guilds": 118,
+      "users": 7715,
+      "activeUsers": 567,
+      "commands": {
+        "total": 24500,
+        "details": {}
+      },
+      "pages": {
+        "visits": 10210,
+        "total": 952,
+        "details": {
+          "anime": 284,
+          "manga": 84,
+          "série": 132,
+          "film": 308,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "24-05-2020",
+      "guilds": 118,
+      "users": 7536,
+      "activeUsers": 568,
+      "commands": {
+        "total": 24548,
+        "details": {}
+      },
+      "pages": {
+        "visits": 10250,
+        "total": 952,
+        "details": {
+          "anime": 284,
+          "manga": 84,
+          "série": 132,
+          "film": 308,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "25-05-2020",
+      "guilds": 118,
+      "users": 7640,
+      "activeUsers": 569,
+      "commands": {
+        "total": 24583,
+        "details": {}
+      },
+      "pages": {
+        "visits": 10278,
+        "total": 952,
+        "details": {
+          "anime": 284,
+          "manga": 84,
+          "série": 132,
+          "film": 308,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "26-05-2020",
+      "guilds": 117,
+      "users": 7718,
+      "activeUsers": 570,
+      "commands": {
+        "total": 24603,
+        "details": {}
+      },
+      "pages": {
+        "visits": 10290,
+        "total": 952,
+        "details": {
+          "anime": 284,
+          "manga": 84,
+          "série": 132,
+          "film": 308,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "27-05-2020",
+      "guilds": 118,
+      "users": 7781,
+      "activeUsers": 571,
+      "commands": {
+        "total": 24674,
+        "details": {}
+      },
+      "pages": {
+        "visits": 10331,
+        "total": 952,
+        "details": {
+          "anime": 284,
+          "manga": 84,
+          "série": 132,
+          "film": 308,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "28-05-2020",
+      "guilds": 119,
+      "users": 7832,
+      "activeUsers": 572,
+      "commands": {
+        "total": 24713,
+        "details": {}
+      },
+      "pages": {
+        "visits": 10355,
+        "total": 953,
+        "details": {
+          "anime": 285,
+          "manga": 84,
+          "série": 132,
+          "film": 308,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "29-05-2020",
+      "guilds": 119,
+      "users": 7882,
+      "activeUsers": 574,
+      "commands": {
+        "total": 24765,
+        "details": {}
+      },
+      "pages": {
+        "visits": 10382,
+        "total": 953,
+        "details": {
+          "anime": 285,
+          "manga": 84,
+          "série": 132,
+          "film": 308,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "30-05-2020",
+      "guilds": 119,
+      "users": 7949,
+      "activeUsers": 576,
+      "commands": {
+        "total": 24821,
+        "details": {}
+      },
+      "pages": {
+        "visits": 10420,
+        "total": 953,
+        "details": {
+          "anime": 285,
+          "manga": 84,
+          "série": 132,
+          "film": 308,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "31-05-2020",
+      "guilds": 119,
+      "users": 8001,
+      "activeUsers": 576,
+      "commands": {
+        "total": 24833,
+        "details": {}
+      },
+      "pages": {
+        "visits": 10426,
+        "total": 953,
+        "details": {
+          "anime": 285,
+          "manga": 84,
+          "série": 132,
+          "film": 308,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "01-06-2020",
+      "guilds": 119,
+      "users": 8041,
+      "activeUsers": 580,
+      "commands": {
+        "total": 24853,
+        "details": {}
+      },
+      "pages": {
+        "visits": 10438,
+        "total": 953,
+        "details": {
+          "anime": 285,
+          "manga": 84,
+          "série": 132,
+          "film": 308,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "02-06-2020",
+      "guilds": 121,
+      "users": 7675,
+      "activeUsers": 583,
+      "commands": {
+        "total": 24926,
+        "details": {}
+      },
+      "pages": {
+        "visits": 10476,
+        "total": 953,
+        "details": {
+          "anime": 285,
+          "manga": 84,
+          "série": 132,
+          "film": 308,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "03-06-2020",
+      "guilds": 123,
+      "users": 7782,
+      "activeUsers": 584,
+      "commands": {
+        "total": 24958,
+        "details": {}
+      },
+      "pages": {
+        "visits": 10493,
+        "total": 953,
+        "details": {
+          "anime": 285,
+          "manga": 84,
+          "série": 132,
+          "film": 308,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "04-06-2020",
+      "guilds": 123,
+      "users": 7881,
+      "activeUsers": 586,
+      "commands": {
+        "total": 25009,
+        "details": {}
+      },
+      "pages": {
+        "visits": 10526,
+        "total": 953,
+        "details": {
+          "anime": 285,
+          "manga": 84,
+          "série": 132,
+          "film": 308,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "05-06-2020",
+      "guilds": 123,
+      "users": 7817,
+      "activeUsers": 589,
+      "commands": {
+        "total": 25082,
+        "details": {}
+      },
+      "pages": {
+        "visits": 10572,
+        "total": 953,
+        "details": {
+          "anime": 285,
+          "manga": 84,
+          "série": 132,
+          "film": 308,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "07-06-2020",
+      "guilds": 123,
+      "users": 7740,
+      "activeUsers": 594,
+      "commands": {
+        "total": 25137,
+        "details": {}
+      },
+      "pages": {
+        "visits": 10626,
+        "total": 952,
+        "details": {
+          "anime": 285,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "08-06-2020",
+      "guilds": 123,
+      "users": 7813,
+      "activeUsers": 595,
+      "commands": {
+        "total": 25220,
+        "details": {}
+      },
+      "pages": {
+        "visits": 10654,
+        "total": 952,
+        "details": {
+          "anime": 285,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "09-06-2020",
+      "guilds": 124,
+      "users": 7853,
+      "activeUsers": 599,
+      "commands": {
+        "total": 25305,
+        "details": {}
+      },
+      "pages": {
+        "visits": 10707,
+        "total": 952,
+        "details": {
+          "anime": 285,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "11-06-2020",
+      "guilds": 124,
+      "users": 7861,
+      "activeUsers": 601,
+      "commands": {
+        "total": 25377,
+        "details": {}
+      },
+      "pages": {
+        "visits": 10743,
+        "total": 952,
+        "details": {
+          "anime": 285,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "12-06-2020",
+      "guilds": 125,
+      "users": 8199,
+      "activeUsers": 604,
+      "commands": {
+        "total": 25411,
+        "details": {}
+      },
+      "pages": {
+        "visits": 10760,
+        "total": 952,
+        "details": {
+          "anime": 285,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "13-06-2020",
+      "guilds": 125,
+      "users": 8220,
+      "activeUsers": 605,
+      "commands": {
+        "total": 25434,
+        "details": {}
+      },
+      "pages": {
+        "visits": 10773,
+        "total": 952,
+        "details": {
+          "anime": 285,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "14-06-2020",
+      "guilds": 125,
+      "users": 8276,
+      "activeUsers": 609,
+      "commands": {
+        "total": 25490,
+        "details": {}
+      },
+      "pages": {
+        "visits": 10813,
+        "total": 952,
+        "details": {
+          "anime": 285,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "15-06-2020",
+      "guilds": 125,
+      "users": 8167,
+      "activeUsers": 610,
+      "commands": {
+        "total": 25575,
+        "details": {}
+      },
+      "pages": {
+        "visits": 10841,
+        "total": 952,
+        "details": {
+          "anime": 285,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "16-06-2020",
+      "guilds": 126,
+      "users": 8303,
+      "activeUsers": 613,
+      "commands": {
+        "total": 25624,
+        "details": {}
+      },
+      "pages": {
+        "visits": 10886,
+        "total": 952,
+        "details": {
+          "anime": 285,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "17-06-2020",
+      "guilds": 126,
+      "users": 8342,
+      "activeUsers": 613,
+      "commands": {
+        "total": 25653,
+        "details": {}
+      },
+      "pages": {
+        "visits": 10903,
+        "total": 952,
+        "details": {
+          "anime": 285,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "18-06-2020",
+      "guilds": 126,
+      "users": 8406,
+      "activeUsers": 616,
+      "commands": {
+        "total": 25680,
+        "details": {}
+      },
+      "pages": {
+        "visits": 10922,
+        "total": 952,
+        "details": {
+          "anime": 285,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "19-06-2020",
+      "guilds": 126,
+      "users": 8296,
+      "activeUsers": 616,
+      "commands": {
+        "total": 25701,
+        "details": {}
+      },
+      "pages": {
+        "visits": 10936,
+        "total": 953,
+        "details": {
+          "anime": 285,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "20-06-2020",
+      "guilds": 126,
+      "users": 8356,
+      "activeUsers": 618,
+      "commands": {
+        "total": 25736,
+        "details": {}
+      },
+      "pages": {
+        "visits": 10956,
+        "total": 953,
+        "details": {
+          "anime": 285,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "21-06-2020",
+      "guilds": 126,
+      "users": 8398,
+      "activeUsers": 619,
+      "commands": {
+        "total": 25752,
+        "details": {}
+      },
+      "pages": {
+        "visits": 10964,
+        "total": 953,
+        "details": {
+          "anime": 285,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "22-06-2020",
+      "guilds": 126,
+      "users": 8440,
+      "activeUsers": 621,
+      "commands": {
+        "total": 25785,
+        "details": {}
+      },
+      "pages": {
+        "visits": 10986,
+        "total": 953,
+        "details": {
+          "anime": 285,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "23-06-2020",
+      "guilds": 126,
+      "users": 8478,
+      "activeUsers": 624,
+      "commands": {
+        "total": 25829,
+        "details": {}
+      },
+      "pages": {
+        "visits": 11017,
+        "total": 953,
+        "details": {
+          "anime": 285,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "24-06-2020",
+      "guilds": 127,
+      "users": 8512,
+      "activeUsers": 624,
+      "commands": {
+        "total": 25885,
+        "details": {}
+      },
+      "pages": {
+        "visits": 11051,
+        "total": 953,
+        "details": {
+          "anime": 285,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "25-06-2020",
+      "activeUsers": 624,
+      "commands": {
+        "total": 25978,
+        "details": {}
+      },
+      "pages": {
+        "visits": 11098,
+        "total": 953,
+        "details": {
+          "anime": 285,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "26-06-2020",
+      "activeUsers": 624,
+      "commands": {
+        "total": 26017,
+        "details": {}
+      },
+      "pages": {
+        "visits": 11117,
+        "total": 953,
+        "details": {
+          "anime": 285,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "27-06-2020",
+      "activeUsers": 625,
+      "commands": {
+        "total": 26073,
+        "details": {}
+      },
+      "pages": {
+        "visits": 11135,
+        "total": 953,
+        "details": {
+          "anime": 285,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "28-06-2020",
+      "activeUsers": 627,
+      "commands": {
+        "total": 26160,
+        "details": {}
+      },
+      "pages": {
+        "visits": 11154,
+        "total": 953,
+        "details": {
+          "anime": 285,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "29-06-2020",
+      "activeUsers": 627,
+      "commands": {
+        "total": 26236,
+        "details": {}
+      },
+      "pages": {
+        "visits": 11202,
+        "total": 953,
+        "details": {
+          "anime": 285,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "30-06-2020",
+      "activeUsers": 628,
+      "commands": {
+        "total": 26278,
+        "details": {}
+      },
+      "pages": {
+        "visits": 11223,
+        "total": 953,
+        "details": {
+          "anime": 285,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "01-07-2020",
+      "activeUsers": 628,
+      "commands": {
+        "total": 26323,
+        "details": {}
+      },
+      "pages": {
+        "visits": 11239,
+        "total": 953,
+        "details": {
+          "anime": 285,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "02-07-2020",
+      "activeUsers": 628,
+      "commands": {
+        "total": 26360,
+        "details": {}
+      },
+      "pages": {
+        "visits": 11258,
+        "total": 953,
+        "details": {
+          "anime": 285,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "03-07-2020",
+      "activeUsers": 628,
+      "commands": {
+        "total": 26388,
+        "details": {}
+      },
+      "pages": {
+        "visits": 11276,
+        "total": 953,
+        "details": {
+          "anime": 285,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "04-07-2020",
+      "activeUsers": 630,
+      "commands": {
+        "total": 26463,
+        "details": {}
+      },
+      "pages": {
+        "visits": 11309,
+        "total": 954,
+        "details": {
+          "anime": 286,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "05-07-2020",
+      "activeUsers": 631,
+      "commands": {
+        "total": 26547,
+        "details": {}
+      },
+      "pages": {
+        "visits": 11346,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "06-07-2020",
+      "activeUsers": 633,
+      "commands": {
+        "total": 26623,
+        "details": {}
+      },
+      "pages": {
+        "visits": 11392,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "07-07-2020",
+      "activeUsers": 636,
+      "commands": {
+        "total": 26666,
+        "details": {}
+      },
+      "pages": {
+        "visits": 11425,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "08-07-2020",
+      "activeUsers": 636,
+      "commands": {
+        "total": 26696,
+        "details": {}
+      },
+      "pages": {
+        "visits": 11446,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "09-07-2020",
+      "activeUsers": 639,
+      "commands": {
+        "total": 26747,
+        "details": {}
+      },
+      "pages": {
+        "visits": 11478,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "10-07-2020",
+      "activeUsers": 641,
+      "commands": {
+        "total": 26802,
+        "details": {}
+      },
+      "pages": {
+        "visits": 11513,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "11-07-2020",
+      "activeUsers": 645,
+      "commands": {
+        "total": 26848,
+        "details": {}
+      },
+      "pages": {
+        "visits": 11546,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "12-07-2020",
+      "activeUsers": 645,
+      "commands": {
+        "total": 26892,
+        "details": {}
+      },
+      "pages": {
+        "visits": 11575,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "13-07-2020",
+      "activeUsers": 647,
+      "commands": {
+        "total": 26953,
+        "details": {}
+      },
+      "pages": {
+        "visits": 11610,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "14-07-2020",
+      "activeUsers": 648,
+      "commands": {
+        "total": 26996,
+        "details": {}
+      },
+      "pages": {
+        "visits": 11638,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "15-07-2020",
+      "activeUsers": 648,
+      "commands": {
+        "total": 27035,
+        "details": {}
+      },
+      "pages": {
+        "visits": 11665,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "16-07-2020",
+      "activeUsers": 651,
+      "commands": {
+        "total": 27091,
+        "details": {}
+      },
+      "pages": {
+        "visits": 11706,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "17-07-2020",
+      "activeUsers": 653,
+      "commands": {
+        "total": 27218,
+        "details": {}
+      },
+      "pages": {
+        "visits": 11786,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "18-07-2020",
+      "activeUsers": 653,
+      "commands": {
+        "total": 27274,
+        "details": {}
+      },
+      "pages": {
+        "visits": 11822,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "19-07-2020",
+      "activeUsers": 658,
+      "commands": {
+        "total": 27323,
+        "details": {}
+      },
+      "pages": {
+        "visits": 11855,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "21-07-2020",
+      "activeUsers": 660,
+      "commands": {
+        "total": 27380,
+        "details": {}
+      },
+      "pages": {
+        "visits": 11884,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "22-07-2020",
+      "activeUsers": 660,
+      "commands": {
+        "total": 27399,
+        "details": {}
+      },
+      "pages": {
+        "visits": 11900,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "23-07-2020",
+      "activeUsers": 662,
+      "commands": {
+        "total": 27428,
+        "details": {}
+      },
+      "pages": {
+        "visits": 11924,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "24-07-2020",
+      "activeUsers": 663,
+      "commands": {
+        "total": 27495,
+        "details": {}
+      },
+      "pages": {
+        "visits": 11973,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "25-07-2020",
+      "activeUsers": 664,
+      "commands": {
+        "total": 27522,
+        "details": {}
+      },
+      "pages": {
+        "visits": 11990,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "26-07-2020",
+      "activeUsers": 665,
+      "commands": {
+        "total": 27573,
+        "details": {}
+      },
+      "pages": {
+        "visits": 12010,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "27-07-2020",
+      "activeUsers": 670,
+      "commands": {
+        "total": 27633,
+        "details": {}
+      },
+      "pages": {
+        "visits": 12029,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "28-07-2020",
+      "activeUsers": 672,
+      "commands": {
+        "total": 27670,
+        "details": {}
+      },
+      "pages": {
+        "visits": 12045,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "29-07-2020",
+      "activeUsers": 674,
+      "commands": {
+        "total": 27752,
+        "details": {}
+      },
+      "pages": {
+        "visits": 12092,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "31-07-2020",
+      "activeUsers": 674,
+      "commands": {
+        "total": 27852,
+        "details": {}
+      },
+      "pages": {
+        "visits": 12124,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "01-08-2020",
+      "activeUsers": 678,
+      "commands": {
+        "total": 27947,
+        "details": {}
+      },
+      "pages": {
+        "visits": 12162,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "02-08-2020",
+      "activeUsers": 679,
+      "commands": {
+        "total": 28083,
+        "details": {}
+      },
+      "pages": {
+        "visits": 12216,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "03-08-2020",
+      "activeUsers": 679,
+      "commands": {
+        "total": 28113,
+        "details": {}
+      },
+      "pages": {
+        "visits": 12233,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "04-08-2020",
+      "activeUsers": 684,
+      "commands": {
+        "total": 28173,
+        "details": {}
+      },
+      "pages": {
+        "visits": 12267,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "05-08-2020",
+      "activeUsers": 685,
+      "commands": {
+        "total": 28236,
+        "details": {}
+      },
+      "pages": {
+        "visits": 12310,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "06-08-2020",
+      "activeUsers": 685,
+      "commands": {
+        "total": 28267,
+        "details": {}
+      },
+      "pages": {
+        "visits": 12323,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "07-08-2020",
+      "activeUsers": 687,
+      "commands": {
+        "total": 28318,
+        "details": {}
+      },
+      "pages": {
+        "visits": 12359,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "08-08-2020",
+      "activeUsers": 688,
+      "commands": {
+        "total": 28370,
+        "details": {}
+      },
+      "pages": {
+        "visits": 12395,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "09-08-2020",
+      "activeUsers": 688,
+      "commands": {
+        "total": 28402,
+        "details": {}
+      },
+      "pages": {
+        "visits": 12414,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "10-08-2020",
+      "activeUsers": 690,
+      "commands": {
+        "total": 28443,
+        "details": {}
+      },
+      "pages": {
+        "visits": 12426,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "11-08-2020",
+      "activeUsers": 691,
+      "commands": {
+        "total": 28480,
+        "details": {}
+      },
+      "pages": {
+        "visits": 12444,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "12-08-2020",
+      "activeUsers": 692,
+      "commands": {
+        "total": 28522,
+        "details": {}
+      },
+      "pages": {
+        "visits": 12472,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "13-08-2020",
+      "activeUsers": 696,
+      "commands": {
+        "total": 28583,
+        "details": {}
+      },
+      "pages": {
+        "visits": 12507,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "14-08-2020",
+      "activeUsers": 696,
+      "commands": {
+        "total": 28616,
+        "details": {}
+      },
+      "pages": {
+        "visits": 12523,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 309,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "15-08-2020",
+      "activeUsers": 697,
+      "commands": {
+        "total": 28657,
+        "details": {}
+      },
+      "pages": {
+        "visits": 12543,
+        "total": 957,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "16-08-2020",
+      "activeUsers": 697,
+      "commands": {
+        "total": 28680,
+        "details": {}
+      },
+      "pages": {
+        "visits": 12554,
+        "total": 957,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "17-08-2020",
+      "activeUsers": 697,
+      "commands": {
+        "total": 28708,
+        "details": {}
+      },
+      "pages": {
+        "visits": 12567,
+        "total": 957,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "18-08-2020",
+      "activeUsers": 699,
+      "commands": {
+        "total": 28731,
+        "details": {}
+      },
+      "pages": {
+        "visits": 12575,
+        "total": 956,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "19-08-2020",
+      "activeUsers": 699,
+      "commands": {
+        "total": 28771,
+        "details": {}
+      },
+      "pages": {
+        "visits": 12593,
+        "total": 956,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "20-08-2020",
+      "activeUsers": 699,
+      "commands": {
+        "total": 28799,
+        "details": {}
+      },
+      "pages": {
+        "visits": 12611,
+        "total": 956,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "21-08-2020",
+      "activeUsers": 699,
+      "commands": {
+        "total": 28822,
+        "details": {}
+      },
+      "pages": {
+        "visits": 12627,
+        "total": 956,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "22-08-2020",
+      "activeUsers": 699,
+      "commands": {
+        "total": 28849,
+        "details": {}
+      },
+      "pages": {
+        "visits": 12644,
+        "total": 956,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "23-08-2020",
+      "activeUsers": 700,
+      "commands": {
+        "total": 28893,
+        "details": {}
+      },
+      "pages": {
+        "visits": 12673,
+        "total": 956,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "24-08-2020",
+      "activeUsers": 700,
+      "commands": {
+        "total": 28932,
+        "details": {}
+      },
+      "pages": {
+        "visits": 12702,
+        "total": 956,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "25-08-2020",
+      "activeUsers": 701,
+      "commands": {
+        "total": 28956,
+        "details": {}
+      },
+      "pages": {
+        "visits": 12717,
+        "total": 956,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "26-08-2020",
+      "activeUsers": 701,
+      "commands": {
+        "total": 28976,
+        "details": {}
+      },
+      "pages": {
+        "visits": 12730,
+        "total": 956,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "27-08-2020",
+      "activeUsers": 702,
+      "commands": {
+        "total": 29006,
+        "details": {}
+      },
+      "pages": {
+        "visits": 12743,
+        "total": 956,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "28-08-2020",
+      "activeUsers": 703,
+      "commands": {
+        "total": 29051,
+        "details": {}
+      },
+      "pages": {
+        "visits": 12771,
+        "total": 956,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "29-08-2020",
+      "activeUsers": 703,
+      "commands": {
+        "total": 29071,
+        "details": {}
+      },
+      "pages": {
+        "visits": 12778,
+        "total": 956,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "30-08-2020",
+      "activeUsers": 703,
+      "commands": {
+        "total": 29088,
+        "details": {}
+      },
+      "pages": {
+        "visits": 12784,
+        "total": 956,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "31-08-2020",
+      "activeUsers": 704,
+      "commands": {
+        "total": 29115,
+        "details": {}
+      },
+      "pages": {
+        "visits": 12802,
+        "total": 956,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "01-09-2020",
+      "activeUsers": 708,
+      "commands": {
+        "total": 29153,
+        "details": {}
+      },
+      "pages": {
+        "visits": 12811,
+        "total": 956,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "02-09-2020",
+      "activeUsers": 709,
+      "commands": {
+        "total": 29190,
+        "details": {}
+      },
+      "pages": {
+        "visits": 12823,
+        "total": 956,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "03-09-2020",
+      "activeUsers": 709,
+      "commands": {
+        "total": 29239,
+        "details": {}
+      },
+      "pages": {
+        "visits": 12856,
+        "total": 956,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "04-09-2020",
+      "activeUsers": 711,
+      "commands": {
+        "total": 29262,
+        "details": {}
+      },
+      "pages": {
+        "visits": 12873,
+        "total": 956,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "05-09-2020",
+      "activeUsers": 714,
+      "commands": {
+        "total": 29292,
+        "details": {}
+      },
+      "pages": {
+        "visits": 12878,
+        "total": 956,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "06-09-2020",
+      "activeUsers": 714,
+      "commands": {
+        "total": 29302,
+        "details": {}
+      },
+      "pages": {
+        "visits": 12880,
+        "total": 956,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "07-09-2020",
+      "activeUsers": 715,
+      "commands": {
+        "total": 29355,
+        "details": {}
+      },
+      "pages": {
+        "visits": 12910,
+        "total": 956,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "08-09-2020",
+      "activeUsers": 717,
+      "commands": {
+        "total": 29376,
+        "details": {}
+      },
+      "pages": {
+        "visits": 12923,
+        "total": 956,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "09-09-2020",
+      "activeUsers": 717,
+      "commands": {
+        "total": 29391,
+        "details": {}
+      },
+      "pages": {
+        "visits": 12928,
+        "total": 956,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "10-09-2020",
+      "activeUsers": 722,
+      "commands": {
+        "total": 29468,
+        "details": {}
+      },
+      "pages": {
+        "visits": 12962,
+        "total": 956,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "11-09-2020",
+      "activeUsers": 724,
+      "commands": {
+        "total": 29550,
+        "details": {}
+      },
+      "pages": {
+        "visits": 12997,
+        "total": 956,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "12-09-2020",
+      "activeUsers": 726,
+      "commands": {
+        "total": 29617,
+        "details": {}
+      },
+      "pages": {
+        "visits": 13054,
+        "total": 956,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "13-09-2020",
+      "activeUsers": 726,
+      "commands": {
+        "total": 29657,
+        "details": {}
+      },
+      "pages": {
+        "visits": 13076,
+        "total": 956,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "14-09-2020",
+      "activeUsers": 727,
+      "commands": {
+        "total": 29689,
+        "details": {}
+      },
+      "pages": {
+        "visits": 13094,
+        "total": 956,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "15-09-2020",
+      "activeUsers": 727,
+      "commands": {
+        "total": 29704,
+        "details": {}
+      },
+      "pages": {
+        "visits": 13104,
+        "total": 956,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "16-09-2020",
+      "activeUsers": 732,
+      "commands": {
+        "total": 29777,
+        "details": {}
+      },
+      "pages": {
+        "visits": 13131,
+        "total": 956,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "17-09-2020",
+      "activeUsers": 749,
+      "commands": {
+        "total": 30040,
+        "details": {}
+      },
+      "pages": {
+        "visits": 13268,
+        "total": 956,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 307,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "18-09-2020",
+      "activeUsers": 751,
+      "commands": {
+        "total": 30087,
+        "details": {}
+      },
+      "pages": {
+        "visits": 13293,
+        "total": 957,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 17,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "19-09-2020",
+      "activeUsers": 759,
+      "commands": {
+        "total": 30161,
+        "details": {}
+      },
+      "pages": {
+        "visits": 13315,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "21-09-2020",
+      "activeUsers": 763,
+      "commands": {
+        "total": 30245,
+        "details": {}
+      },
+      "pages": {
+        "visits": 13357,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "22-09-2020",
+      "activeUsers": 763,
+      "commands": {
+        "total": 30270,
+        "details": {}
+      },
+      "pages": {
+        "visits": 13372,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "23-09-2020",
+      "activeUsers": 764,
+      "commands": {
+        "total": 30302,
+        "details": {}
+      },
+      "pages": {
+        "visits": 13390,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "24-09-2020",
+      "activeUsers": 764,
+      "commands": {
+        "total": 30325,
+        "details": {}
+      },
+      "pages": {
+        "visits": 13401,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "25-09-2020",
+      "activeUsers": 765,
+      "commands": {
+        "total": 30352,
+        "details": {}
+      },
+      "pages": {
+        "visits": 13420,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "26-09-2020",
+      "activeUsers": 768,
+      "commands": {
+        "total": 30427,
+        "details": {}
+      },
+      "pages": {
+        "visits": 13456,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "27-09-2020",
+      "activeUsers": 771,
+      "commands": {
+        "total": 30463,
+        "details": {}
+      },
+      "pages": {
+        "visits": 13479,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "28-09-2020",
+      "activeUsers": 774,
+      "commands": {
+        "total": 30513,
+        "details": {}
+      },
+      "pages": {
+        "visits": 13512,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "29-09-2020",
+      "activeUsers": 775,
+      "commands": {
+        "total": 30547,
+        "details": {}
+      },
+      "pages": {
+        "visits": 13527,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "30-09-2020",
+      "activeUsers": 776,
+      "commands": {
+        "total": 30569,
+        "details": {}
+      },
+      "pages": {
+        "visits": 13544,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "01-10-2020",
+      "activeUsers": 777,
+      "commands": {
+        "total": 30595,
+        "details": {}
+      },
+      "pages": {
+        "visits": 13555,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "02-10-2020",
+      "activeUsers": 777,
+      "commands": {
+        "total": 30623,
+        "details": {}
+      },
+      "pages": {
+        "visits": 13569,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "03-10-2020",
+      "activeUsers": 777,
+      "commands": {
+        "total": 30648,
+        "details": {}
+      },
+      "pages": {
+        "visits": 13583,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "04-10-2020",
+      "activeUsers": 780,
+      "commands": {
+        "total": 30702,
+        "details": {}
+      },
+      "pages": {
+        "visits": 13609,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "05-10-2020",
+      "activeUsers": 780,
+      "commands": {
+        "total": 30764,
+        "details": {}
+      },
+      "pages": {
+        "visits": 13645,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "06-10-2020",
+      "activeUsers": 780,
+      "commands": {
+        "total": 30785,
+        "details": {}
+      },
+      "pages": {
+        "visits": 13655,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "07-10-2020",
+      "activeUsers": 782,
+      "commands": {
+        "total": 30796,
+        "details": {}
+      },
+      "pages": {
+        "visits": 13664,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "08-10-2020",
+      "activeUsers": 784,
+      "commands": {
+        "total": 30817,
+        "details": {}
+      },
+      "pages": {
+        "visits": 13672,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "09-10-2020",
+      "activeUsers": 785,
+      "commands": {
+        "total": 30826,
+        "details": {}
+      },
+      "pages": {
+        "visits": 13679,
+        "total": 958,
+        "details": {
+          "anime": 290,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
         }
       }
     },
     {
       "date": "10-10-2020",
-      "guilds": 3,
-      "users": 98,
-      "activeUsers": 1,
+      "activeUsers": 786,
       "commands": {
-        "total": 34,
+        "total": 30858,
+        "details": {}
+      },
+      "pages": {
+        "visits": 13696,
+        "total": 959,
         "details": {
-          "stockage": 34
-        }
-      }
-    },
-    {
-      "date": "10-10-2020",
-      "guilds": 3,
-      "users": 98,
-      "activeUsers": 1,
-      "commands": {
-        "total": 34,
-        "details": {
-          "stockage": 34
-        }
-      }
-    },
-    {
-      "date": "10-10-2020",
-      "guilds": 3,
-      "users": 98,
-      "activeUsers": 1,
-      "commands": {
-        "total": 34,
-        "details": {
-          "stockage": 34
-        }
-      }
-    },
-    {
-      "date": "10-10-2020",
-      "guilds": 3,
-      "users": 98,
-      "activeUsers": 1,
-      "commands": {
-        "total": 34,
-        "details": {
-          "stockage": 34
-        }
-      }
-    },
-    {
-      "date": "10-10-2020",
-      "guilds": 3,
-      "users": 98,
-      "activeUsers": 1,
-      "commands": {
-        "total": 34,
-        "details": {
-          "stockage": 34
-        }
-      }
-    },
-    {
-      "date": "10-10-2020",
-      "guilds": 3,
-      "users": 98,
-      "activeUsers": 1,
-      "commands": {
-        "total": 34,
-        "details": {
-          "stockage": 34
+          "anime": 291,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
         }
       }
     },
     {
       "date": "11-10-2020",
-      "guilds": 3,
-      "users": 98,
-      "activeUsers": 1,
+      "activeUsers": 790,
       "commands": {
-        "total": 34,
+        "total": 30922,
+        "details": {}
+      },
+      "pages": {
+        "visits": 13724,
+        "total": 959,
         "details": {
-          "stockage": 34
+          "anime": 291,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "12-10-2020",
+      "activeUsers": 791,
+      "commands": {
+        "total": 30960,
+        "details": {}
+      },
+      "pages": {
+        "visits": 13745,
+        "total": 959,
+        "details": {
+          "anime": 291,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
         }
       }
     },
     {
       "date": "13-10-2020",
-      "guilds": 3,
-      "users": 97,
-      "activeUsers": 2,
+      "activeUsers": 791,
       "commands": {
-        "total": 63,
+        "total": 30990,
+        "details": {}
+      },
+      "pages": {
+        "visits": 13759,
+        "total": 959,
         "details": {
-          "stockage": 63
-        }
-      }
-    },
-    {
-      "date": "13-10-2020",
-      "guilds": 3,
-      "users": 97,
-      "activeUsers": 2,
-      "commands": {
-        "total": 80,
-        "details": {
-          "stockage": 80
-        }
-      }
-    },
-    {
-      "date": "13-10-2020",
-      "guilds": 3,
-      "users": 97,
-      "activeUsers": 2,
-      "commands": {
-        "total": 80,
-        "details": {
-          "stockage": 80
-        }
-      }
-    },
-    {
-      "date": "13-10-2020",
-      "guilds": 3,
-      "users": 97,
-      "activeUsers": 2,
-      "commands": {
-        "total": 80,
-        "details": {
-          "stockage": 80
-        }
-      }
-    },
-    {
-      "date": "13-10-2020",
-      "guilds": 3,
-      "users": 97,
-      "activeUsers": 2,
-      "commands": {
-        "total": 80,
-        "details": {
-          "stockage": 80
-        }
-      }
-    },
-    {
-      "date": "13-10-2020",
-      "guilds": 3,
-      "users": 97,
-      "activeUsers": 2,
-      "commands": {
-        "total": 80,
-        "details": {
-          "stockage": 80
-        }
-      }
-    },
-    {
-      "date": "13-10-2020",
-      "guilds": 3,
-      "users": 97,
-      "activeUsers": 2,
-      "commands": {
-        "total": 80,
-        "details": {
-          "stockage": 80
+          "anime": 291,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
         }
       }
     },
     {
       "date": "14-10-2020",
-      "guilds": 3,
-      "users": 97,
-      "activeUsers": 2,
+      "activeUsers": 792,
       "commands": {
-        "total": 80,
+        "total": 31029,
+        "details": {}
+      },
+      "pages": {
+        "visits": 13780,
+        "total": 959,
         "details": {
-          "stockage": 80
+          "anime": 291,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "15-10-2020",
+      "activeUsers": 794,
+      "commands": {
+        "total": 31058,
+        "details": {}
+      },
+      "pages": {
+        "visits": 13799,
+        "total": 959,
+        "details": {
+          "anime": 291,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "16-10-2020",
+      "activeUsers": 796,
+      "commands": {
+        "total": 31102,
+        "details": {}
+      },
+      "pages": {
+        "visits": 13824,
+        "total": 959,
+        "details": {
+          "anime": 291,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "17-10-2020",
+      "activeUsers": 799,
+      "commands": {
+        "total": 31122,
+        "details": {}
+      },
+      "pages": {
+        "visits": 13835,
+        "total": 959,
+        "details": {
+          "anime": 291,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "18-10-2020",
+      "activeUsers": 800,
+      "commands": {
+        "total": 31143,
+        "details": {}
+      },
+      "pages": {
+        "visits": 13843,
+        "total": 959,
+        "details": {
+          "anime": 291,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "19-10-2020",
+      "activeUsers": 802,
+      "commands": {
+        "total": 31217,
+        "details": {}
+      },
+      "pages": {
+        "visits": 13860,
+        "total": 959,
+        "details": {
+          "anime": 291,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "20-10-2020",
+      "activeUsers": 804,
+      "commands": {
+        "total": 31241,
+        "details": {}
+      },
+      "pages": {
+        "visits": 13876,
+        "total": 959,
+        "details": {
+          "anime": 291,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "21-10-2020",
+      "activeUsers": 804,
+      "commands": {
+        "total": 31280,
+        "details": {}
+      },
+      "pages": {
+        "visits": 13895,
+        "total": 959,
+        "details": {
+          "anime": 291,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
         }
       }
     },
     {
       "date": "22-10-2020",
-      "guilds": 3,
-      "users": 96,
-      "activeUsers": 2,
+      "activeUsers": 804,
       "commands": {
-        "total": 80,
+        "total": 31358,
+        "details": {}
+      },
+      "pages": {
+        "visits": 13919,
+        "total": 959,
         "details": {
-          "stockage": 80
+          "anime": 291,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
         }
       }
     },
     {
       "date": "23-10-2020",
-      "guilds": 3,
-      "users": 96,
-      "activeUsers": 2,
+      "activeUsers": 808,
       "commands": {
-        "total": 80,
+        "total": 31450,
+        "details": {}
+      },
+      "pages": {
+        "visits": 13952,
+        "total": 959,
         "details": {
-          "stockage": 80
+          "anime": 291,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "24-10-2020",
+      "activeUsers": 810,
+      "commands": {
+        "total": 31473,
+        "details": {}
+      },
+      "pages": {
+        "visits": 13964,
+        "total": 959,
+        "details": {
+          "anime": 291,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "25-10-2020",
+      "activeUsers": 811,
+      "commands": {
+        "total": 31517,
+        "details": {}
+      },
+      "pages": {
+        "visits": 13973,
+        "total": 959,
+        "details": {
+          "anime": 291,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "26-10-2020",
+      "activeUsers": 814,
+      "commands": {
+        "total": 31568,
+        "details": {}
+      },
+      "pages": {
+        "visits": 14004,
+        "total": 959,
+        "details": {
+          "anime": 291,
+          "manga": 84,
+          "série": 131,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "27-10-2020",
+      "activeUsers": 815,
+      "commands": {
+        "total": 31622,
+        "details": {}
+      },
+      "pages": {
+        "visits": 14033,
+        "total": 960,
+        "details": {
+          "anime": 291,
+          "manga": 84,
+          "série": 132,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "28-10-2020",
+      "activeUsers": 817,
+      "commands": {
+        "total": 31663,
+        "details": {}
+      },
+      "pages": {
+        "visits": 14052,
+        "total": 960,
+        "details": {
+          "anime": 291,
+          "manga": 84,
+          "série": 132,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "29-10-2020",
+      "activeUsers": 821,
+      "commands": {
+        "total": 31762,
+        "details": {}
+      },
+      "pages": {
+        "visits": 14087,
+        "total": 960,
+        "details": {
+          "anime": 291,
+          "manga": 84,
+          "série": 132,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "30-10-2020",
+      "activeUsers": 825,
+      "commands": {
+        "total": 31794,
+        "details": {}
+      },
+      "pages": {
+        "visits": 14105,
+        "total": 960,
+        "details": {
+          "anime": 291,
+          "manga": 84,
+          "série": 132,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "31-10-2020",
+      "activeUsers": 827,
+      "commands": {
+        "total": 31819,
+        "details": {}
+      },
+      "pages": {
+        "visits": 14119,
+        "total": 960,
+        "details": {
+          "anime": 291,
+          "manga": 84,
+          "série": 132,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "01-11-2020",
+      "activeUsers": 828,
+      "commands": {
+        "total": 31861,
+        "details": {}
+      },
+      "pages": {
+        "visits": 14141,
+        "total": 960,
+        "details": {
+          "anime": 291,
+          "manga": 84,
+          "série": 132,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
         }
       }
     },
     {
       "date": "02-11-2020",
-      "guilds": 3,
-      "users": 1,
-      "activeUsers": 2,
+      "activeUsers": 830,
       "commands": {
-        "total": 136,
+        "total": 31922,
+        "details": {}
+      },
+      "pages": {
+        "visits": 14166,
+        "total": 960,
         "details": {
-          "stockage": 135,
-          "profile": 1
+          "anime": 291,
+          "manga": 84,
+          "série": 132,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
         }
       }
     },
     {
       "date": "03-11-2020",
-      "guilds": 3,
-      "users": 1,
-      "activeUsers": 2,
+      "activeUsers": 836,
       "commands": {
-        "total": 147,
+        "total": 31958,
+        "details": {}
+      },
+      "pages": {
+        "visits": 14181,
+        "total": 960,
         "details": {
-          "stockage": 137,
-          "profile": 9,
-          "help": 1
+          "anime": 291,
+          "manga": 84,
+          "série": 132,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "04-11-2020",
+      "activeUsers": 837,
+      "commands": {
+        "total": 31996,
+        "details": {}
+      },
+      "pages": {
+        "visits": 14191,
+        "total": 960,
+        "details": {
+          "anime": 291,
+          "manga": 84,
+          "série": 132,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "05-11-2020",
+      "activeUsers": 840,
+      "commands": {
+        "total": 32024,
+        "details": {}
+      },
+      "pages": {
+        "visits": 14210,
+        "total": 960,
+        "details": {
+          "anime": 291,
+          "manga": 84,
+          "série": 132,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "06-11-2020",
+      "activeUsers": 845,
+      "commands": {
+        "total": 32060,
+        "details": {}
+      },
+      "pages": {
+        "visits": 14226,
+        "total": 960,
+        "details": {
+          "anime": 291,
+          "manga": 84,
+          "série": 132,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
         }
       }
     },
     {
       "date": "07-11-2020",
-      "guilds": 3,
-      "users": 1,
-      "activeUsers": 2,
+      "activeUsers": 846,
       "commands": {
-        "total": 148,
+        "total": 32117,
+        "details": {}
+      },
+      "pages": {
+        "visits": 14247,
+        "total": 960,
         "details": {
-          "stockage": 137,
-          "profile": 9,
-          "help": 1,
-          "monitor": 1
+          "anime": 291,
+          "manga": 84,
+          "série": 132,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
         }
       }
     },
     {
       "date": "08-11-2020",
-      "guilds": 3,
-      "users": 1,
-      "activeUsers": 2,
+      "activeUsers": 849,
       "commands": {
-        "total": 158,
+        "total": 32183,
+        "details": {}
+      },
+      "pages": {
+        "visits": 14283,
+        "total": 960,
         "details": {
-          "stockage": 137,
-          "profile": 9,
-          "help": 1,
-          "monitor": 11
-        }
-      }
-    },
-    {
-      "date": "08-11-2020",
-      "guilds": 3,
-      "users": 1,
-      "activeUsers": 2,
-      "commands": {
-        "total": 160,
-        "details": {
-          "stockage": 139,
-          "profile": 9,
-          "help": 1,
-          "monitor": 11
-        }
-      }
-    },
-    {
-      "date": "08-11-2020",
-      "guilds": 3,
-      "users": 1,
-      "activeUsers": 2,
-      "commands": {
-        "total": 160,
-        "details": {
-          "stockage": 139,
-          "profile": 9,
-          "help": 1,
-          "monitor": 11
-        }
-      }
-    },
-    {
-      "date": "08-11-2020",
-      "guilds": 3,
-      "users": 1,
-      "activeUsers": 2,
-      "commands": {
-        "total": 160,
-        "details": {
-          "stockage": 139,
-          "profile": 9,
-          "help": 1,
-          "monitor": 11
-        }
-      }
-    },
-    {
-      "date": "08-11-2020",
-      "guilds": 3,
-      "users": 1,
-      "activeUsers": 2,
-      "commands": {
-        "total": 160,
-        "details": {
-          "stockage": 139,
-          "profile": 9,
-          "help": 1,
-          "monitor": 11
-        }
-      }
-    },
-    {
-      "date": "08-11-2020",
-      "guilds": 3,
-      "users": 1,
-      "activeUsers": 2,
-      "commands": {
-        "total": 160,
-        "details": {
-          "stockage": 139,
-          "profile": 9,
-          "help": 1,
-          "monitor": 11
-        }
-      }
-    },
-    {
-      "date": "08-11-2020",
-      "guilds": 3,
-      "users": 1,
-      "activeUsers": 2,
-      "commands": {
-        "total": 160,
-        "details": {
-          "stockage": 139,
-          "profile": 9,
-          "help": 1,
-          "monitor": 11
+          "anime": 291,
+          "manga": 84,
+          "série": 132,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
         }
       }
     },
     {
       "date": "09-11-2020",
-      "guilds": 3,
-      "users": 1,
-      "activeUsers": 2,
+      "activeUsers": 851,
       "commands": {
-        "total": 160,
+        "total": 32251,
+        "details": {}
+      },
+      "pages": {
+        "visits": 14322,
+        "total": 960,
         "details": {
-          "stockage": 139,
-          "profile": 9,
-          "help": 1,
-          "monitor": 11
+          "anime": 291,
+          "manga": 84,
+          "série": 132,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
         }
       }
     },
     {
       "date": "10-11-2020",
+      "activeUsers": 855,
+      "commands": {
+        "total": 32300,
+        "details": {}
+      },
+      "pages": {
+        "visits": 14342,
+        "total": 960,
+        "details": {
+          "anime": 291,
+          "manga": 84,
+          "série": 132,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "11-11-2020",
+      "activeUsers": 858,
+      "commands": {
+        "total": 32340,
+        "details": {}
+      },
+      "pages": {
+        "visits": 14363,
+        "total": 960,
+        "details": {
+          "anime": 291,
+          "manga": 84,
+          "série": 132,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "12-11-2020",
       "guilds": 3,
-      "users": 1,
+      "users": 99,
       "activeUsers": 2,
       "commands": {
-        "total": 205,
+        "total": 246,
         "details": {
-          "stockage": 139,
+          "stockage": 152,
           "profile": 9,
           "help": 1,
           "monitor": 12,
-          "updatechannel": 15,
-          "asklist": 29
+          "updatechannel": 16,
+          "asklist": 34,
+          "nsfw": 6,
+          "ask": 8,
+          "stats": 8
+        }
+      },
+      "pages": {
+        "visits": null,
+        "total": 969,
+        "categories": {
+          "anime": 300,
+          "manga": 84,
+          "série": 132,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
         }
       }
     }

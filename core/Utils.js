@@ -193,14 +193,17 @@ module.exports = class Utils {
 
         //get embed
         let embed = await this.getPageEmbed(_id)
-        embed.setFooter(`Nouvelle page dans catégorie ${cat}`, 'https://exampassed.net/wp-content/uploads/2018/07/new.gif')
-        embed.setThumbnail(config.categories.find(val => val.name == cat).image)
+        embed
+            .setFooter(`Nouvelle page dans catégorie ${cat}`, 'https://exampassed.net/wp-content/uploads/2018/07/new.gif')
+            .setThumbnail(config.categories.find(val => val.name == cat).image)
+            .setTimestamp(new Date())
 
         let checkedGuilds = db.guild.get("guilds").values().filter((value) => this.sendNewPageValidator(value, cat)).value()
 
         for (let i in checkedGuilds) {
 
             let guild = checkedGuilds[i]
+            console.log(guild)
             await bot.channels.cache.get(guild.updateChannel).send(
                 guild.updateRole ? `<@&${guild.updateRole}>` : null,
                 embed
@@ -283,7 +286,7 @@ module.exports = class Utils {
 
 
 
-    listPages(userID = false, numberPerPages = 30) {
+    listPages(userID = false, numberPerPages = 20) {
 
         let pages = {}
 
@@ -359,14 +362,17 @@ module.exports = class Utils {
 
         return {
             
-            serveurs: bot.guilds.cache.size,
-            utilisateurs: bot.users.cache.size,
-            utilisateurs_réels: db.user.size().value(),
-            visites_totales: this.mergePages().map(val => val.visites).reduce((a, b) => a+b, 0),
-            total_commandes: db.stats.get("actual.commands.total").value(),
-            pages_indexées: {
+            guilds: bot.guilds.cache.size,
+            users: bot.users.cache.size,
+            activeUsers: db.user.size().value(),
+            commands: {
+                total: db.stats.get("actual.commands.total").value(),
+                details: db.stats.get("actual.commands.details").value()
+            },
+            pages: {
+                visits: this.mergePages().map(val => val.visites).reduce((a, b) => a + b),
                 total: this.mergePages().length,
-                catégories: catObj
+                categories: catObj
             }
 
         }

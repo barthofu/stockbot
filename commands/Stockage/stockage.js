@@ -3,7 +3,7 @@ const CommandPattern = require("../../models/Command.js");
 const commandParams = {
     
     name: "stockage",
-    aliases: ["s"],
+    aliases: ["s", "search"],
     desc: "",
     enabled: true,
     dm: false,

@@ -22,8 +22,8 @@ let menu = class {
                     "<:Info_Tech_1:676891779009871903><:Info_Tech_2:676891779248685107><:Info_Tech_3:676891779462856757><:Info_Tech_4:676891779349479462><:Info_Tech_5:676891779643211796><:Info_Tech_6:676891779936550914><:Info_Tech_7:676891781203492924><:Info_Tech_8:676891781375197184><:Info_Tech_9:676891781299961880><:Info_Tech_10:676891781186453515><:Info_Tech_11:676891781438373939><:Info_Tech_12:676891781509546025>"
                     
                 ],
-                image: "https://cdn.discordapp.com/attachments/440197774688911373/519983986160697368/Multi_Color_Bar.gif",
-                thumbnail: "https://images-ext-2.discordapp.net/external/s14Xcmhu4_CqZwHMLV-iqIwEcWRLhCX3XkMUUQc3aXs/https/bsyswallet.com/assets/img/new/loading.gif",
+                image: config.ressources.images.multicolorBar,
+                thumbnail: config.ressources.images.multicolorLoading,
 
                 
                 async getEmbed(params) {
@@ -37,7 +37,7 @@ let menu = class {
                     .setTitle(`Bienvenue sur l'Interface de Stockage`)
                     .setAuthor(msg.author.username, msg.author.displayAvatarURL({dynamic: true}))
                     .setDescription(`${this.emojiImages[0]}\n\n\\📂 | Accède aux catégories (animes, séries, films...)\n\\🔍 | Effectue une recherche\n\\⚙️ | Paramètres\n\n${this.emojiImages[1]}\n\n[\`${data.latest.cat}\`] ◈ **${data.latest.name}**\n*${data.latest.date}*\n\n${this.emojiImages[2]}\n\n◈ Plus visitée : **${mostVisited.name}** [\`${mostVisited.cat}\`] (**${mostVisited.stats.visites}** \\👀)\n◈ Mieux notée : **${mostLiked.name}** [\`${mostLiked.cat}\`] (**${mostLiked.stats.like.length}** \\👍)`)
-                    .addField(`\u200b`, `${this.emojiImages[3]}\n\n• **Stockage utilisé :** [${data.stats.poids} To](https://www.google.com/)\n• **Nombre de fichiers :** [${data.stats.fichiers}](https://www.google.com/)\n• **Nombre de pages indexées :** [${utils.getStats().pages_indexées.total}](https://www.google.com/)`)
+                    .addField(`\u200b`, `${this.emojiImages[3]}\n\n• **Stockage utilisé :** [${data.stats.poids} To](https://www.google.com/)\n• **Nombre de fichiers :** [${data.stats.fichiers}](https://www.google.com/)\n• **Nombre de pages indexées :** [${utils.getStats().pages.total}](https://www.google.com/)`)
                     .setImage(this.image)
                     .setThumbnail(this.thumbnail)
                     .setColor(color)
@@ -76,15 +76,15 @@ let menu = class {
                     let embed = new MessageEmbed()
                     .setTitle(`Catégories`)
                     .setAuthor(msg.author.username, msg.author.displayAvatarURL({dynamic: true}))
-                    .setDescription("Veuillez cliquer sur la réaction de la catégorie à laquelle vous voulez accéder\n\u200b")
-                    //.setImage("https://cdn.discordapp.com/attachments/440197774688911373/519983986160697368/Multi_Color_Bar.gif")
-                    //.setThumbnail("https://images-ext-1.discordapp.net/external/NCvOBUh2E34_AyhtY5T55WsLvKTmpUltFCoyuJWHgoY/https/images-ext-2.discordapp.net/external/s14Xcmhu4_CqZwHMLV-iqIwEcWRLhCX3XkMUUQc3aXs/https/bsyswallet.com/assets/img/new/loading.gif")
+                    .setDescription("\u200b")
+                    .setFooter("Veuillez cliquer sur la réaction de la catégorie à laquelle vous voulez accéder")
                     .setThumbnail('https://blog.macsales.com/wp-content/uploads/2017/03/Folder-icon-284x284.png')
+                    .setImage(config.ressources.images.multicolorBar)
                     .setColor(color)
                     config.categories.forEach(cat => {
-                        if (cat.name !== "NSFW") embed.addField(`${cat.emote}  **${cat.fancyName}**`, "\u200b")
+                        if (cat.name !== "NSFW") embed.addField(`${cat.emote}  **${cat.fancyName}**`, "\u200b", true)
                     })
-                    if (db.guild.get(`guilds.${msg.guild.id}.nsfwEnabled`).value() === true) embed.addField("🔞  **NSFW**", "\u200b")
+                    if (db.guild.get(`guilds.${msg.guild.id}.nsfwEnabled`).value() === true) embed.addField("🔞  **NSFW**", "\u200b", true)
                     else {
                         if (this.reactions.indexOf("🔞") > -1) this.reactions.pop()
                     }
@@ -136,13 +136,14 @@ let menu = class {
                     this.pages = pages
 
                     this.total = pages.content.length
-                    
+                    let catEmote = config.categories.find(val => val.name == this.arrayCategories[catNumber]).emote
                     return new MessageEmbed()
-                    .setTitle(`Catégorie : ${this.arrayTitles[catNumber].toUpperCase()}`)
+                    .setTitle(`\u200b\t \t  \t  \t  \t  \t  \t${catEmote} ${this.arrayTitles[catNumber].toUpperCase()} ${catEmote}`)
                     .setColor(color)
+                    .setImage(config.ressources.images.multicolorBar)
                     .setAuthor(msg.author.username, msg.author.displayAvatarURL({dynamic: true}))
-                    .setDescription(`*Pour accéder à une page, veuillez répondre à ce message avec le numéro de cette dernière.*${pages.titles[this.page-1]? `\n\n__**${pages.titles[this.page-1]}**__`:'\u200b'}\n\n${pages.content[this.page - 1].map(val => val.texte).join('\r\n')}`)
-                    .setFooter(`Page ${this.page}/${this.total}`)            
+                    .setDescription(`${pages.titles[this.page-1]? `\n\n__**${pages.titles[this.page-1]}**__\n\n`:'\u200b'}${pages.content[this.page - 1].map(val => val.texte).join('\r\n')}`)
+                    .setFooter(`Page ${this.page}/${this.total} - Entrez le numéro correspondant à la page dans le tchat`)            
                 },
                 
                 timeout(m) {
@@ -162,8 +163,8 @@ let menu = class {
                         if (this.page == 1) this.page = this.total+1
                         this.page--
                         m.edit(new MessageEmbed(m.embeds[0])
-                        .setFooter(`Page ${this.page}/${this.total}`)
-                        .setDescription(`*Pour accéder à une page, veuillez répondre à ce message avec le numéro de cette dernière.*${pages.titles[this.page-1]? `\n\n__**${pages.titles[this.page-1]}**__`:'\u200b'}\n\n${pages.content[this.page - 1].map(val => val.texte).join('\r\n')}`)
+                        .setFooter(`Page ${this.page}/${this.total} - Entrez le numéro correspondant à la page dans le tchat`)            
+                        .setDescription(`${pages.titles[this.page-1]? `\n\n__**${pages.titles[this.page-1]}**__\n\n`:'\u200b'}${pages.content[this.page - 1].map(val => val.texte).join('\r\n')}`)
                         )
                         break
                         
@@ -172,8 +173,8 @@ let menu = class {
                         if (this.page == this.total) this.page = 0
                         this.page++
                         m.edit(new MessageEmbed(m.embeds[0])
-                        .setFooter(`Page ${this.page}/${this.total}`)
-                        .setDescription(`*Pour accéder à une page, veuillez répondre à ce message avec le numéro de cette dernière.*${pages.titles[this.page-1]? `\n\n__**${pages.titles[this.page-1]}**__`:'\u200b'}\n\n${pages.content[this.page - 1].map(val => val.texte).join('\r\n')}`)
+                        .setFooter(`Page ${this.page}/${this.total} - Entrez le numéro correspondant à la page dans le tchat`)            
+                        .setDescription(`${pages.titles[this.page-1]? `\n\n__**${pages.titles[this.page-1]}**__\n\n`:'\u200b'}${pages.content[this.page - 1].map(val => val.texte).join('\r\n')}`)
                         )
                         break
                         

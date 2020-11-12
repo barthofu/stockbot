@@ -15,12 +15,14 @@
     ],
 
     "colors": {
-        "default": ""
+        "default": "2f3136"
     },
 
     "evalName": "stock",
 
     "startingConsoleDetailed": false,
+
+    "addVerificationChannel": "567398326622748692",
 
     "activities": [
         {
@@ -32,6 +34,17 @@
             "type": "STREAMING"
         }
     ],
+
+    "ressources": {
+
+        "images": {
+
+            "multicolorBar": "https://i.imgur.com/XxooEsH.gif",
+            "multicolorLoading": "https://i.imgur.com/34wMzia.gif"
+
+        }
+
+    },
     
     "categories": [
         {

@@ -50,6 +50,7 @@ module.exports = class extends CommandPattern {
             else if (emoji === "❌") {
                 reac.stop()
                 await m.delete()
+                await msg.react("✅")
             }
             else await this.changeCategory(msg, m, color, emoji)
 

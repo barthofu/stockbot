@@ -5,14 +5,14 @@ const objectCategory = {
     anime: {
 
         name: {type: String, require: true},
-        japName: {type: String},
+        japName: {type: String, default: ""},
         releaseDate: {type: String, require: true},
         studio: {type: String, require: true},
-        episodesCount: {type: Number},
+        episodesCount: {type: Number, default: 0},
         trailer: {type: String},
         tags: {type: Array, default: []},
         scoreMAL: {type: String, default: ""},
-        urlMAL: {type: String},
+        urlMAL: {type: String, default: ""},
         aliases: {type: Array, default: []},
 
     },
@@ -20,13 +20,13 @@ const objectCategory = {
     manga: {
         
         name: {type: String, require: true},
-        japName: {type: String},
+        japName: {type: String, default: ""},
         releaseDate: {type: String, require: true},
         author: {type: String, require: true},
-        volumesCount: {type: Number},
+        volumesCount: {type: Number, default: 0},
         tags: {type: Array, default: []},
         scoreMAL: {type: String, default: ""},
-        urlMAL: {type: String},
+        urlMAL: {type: String, default: ""},
         aliases: {type: Array, default: []},
 
     },
@@ -77,6 +77,7 @@ const objectCategory = {
 
 
 const config = {
+    timestamps: true,
     versionKey: false
 }
 
@@ -84,7 +85,7 @@ const objectConst = {
 
     description: {type: String, default: "*Pas de description...*"},
     imageURL: {type: String, require: true},
-    fournisseur: {type: String},
+    fournisseur: {type: String, default: ""},
     lien: {type: Array, default: []},
     stats: {
         poids: {type: Number, default: 0},
@@ -92,7 +93,8 @@ const objectConst = {
         like: {type: Array, default: []},
         dislike: {type: Array, default: []}
     },
-    cat: {type: String, default: null}
+    cat: {type: String, require: true},
+    addedBy: {type: String, default: ""}
 
 }
 

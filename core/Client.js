@@ -10,14 +10,14 @@ module.exports = class {
 
     constructor () {
 
-        this.bot = new Discord.Client({"restTimeOffset": 200});
+        this.bot = new Discord.Client({"restTimeOffset": 50});
         this.bot.commands = new Discord.Collection();
+        this.MessageEmbed = Discord.MessageEmbed
     }
 
 
     async init () {
 
-        console.log("client")
         this.loadCommands();
         this.loadEvents();
         this.loadJSON();
@@ -34,13 +34,11 @@ module.exports = class {
 
     loadJSON () {
 
-        let pathArray = `${__dirname}/../db`;
-        for (let i in pathArray) {
-            fs.readdirSync(pathArray).filter(val => val.endsWith(".json")).forEach(file => {
-                let adapter = new FileSync(`${pathArray}/${file}`);
-                db[file.replace(".json", "")] = low(adapter);
-            });
-        }
+        fs.readdirSync(`${__dirname}/../db`).filter(val => val.endsWith(".json")).forEach(file => {
+            let adapter = new FileSync(`${__dirname}/../db/${file}`);
+            db[file.replace(".json", "")] = low(adapter);
+        });
+        
     }
 
 
@@ -77,14 +75,10 @@ module.exports = class {
         if (day !== db.stats.get(`daily[${db.stats.get(`daily`).size().value()-1}].date`).value()) {
 
             let date = `${dateFormat(new Date(new Date().getTime() - 60 * 60 * 24), "dd-mm-yyyy")}`;
-            let obj = db.stats.get('actual').value();
-            db.stats.get("daily").push({
-                date: date,
-                guilds: this.bot.guilds.cache.size,
-                users: this.bot.users.cache.size,
-                activeUsers: db.user.size().value(),
-                commands: obj.commands
-            }).write();
+            db.stats.get("daily").push(Object.assign(
+                { date: date },
+                utils.getStats()
+            )).write();
         }
 
     }
@@ -120,33 +114,15 @@ module.exports = class {
 
 
     async reload (msg) {
-        //reload commands and databases
 
-        //commands
-        let categories = fs.readdirSync(`./commands`).filter(file => !file.includes("."));
-        for (let i in categories) {
-            fs.readdirSync(`./commands/${categories[i]}`).filter(file => file.endsWith('.js') && !file.startsWith("_")).forEach(file => {
-                const command = new (require(`../commands/${categories[i]}/${file}`))();
-                this.bot.commands.set(command.info.name, command);
-                delete require.cache[require.resolve(`../commands/${categories[i]}/${file}`)];
-            });
-        }
-
-        //databases
-        let filesArrays = [
-            fs.readdirSync(`${__dirname}/../db`).filter(val => val.endsWith(".json")),
-        ]
-        for (let i in filesArrays) {
-            for (let j in filesArrays[i]) {
-                let file = filesArrays[i][j];
-                let adapter = new FileSync(`${__dirname}/../db/${file}`);
-                db[file.replace(".json", "")] = low(adapter);
-            }
-        }
+        //reload commands and local json
+        this.loadCommands();
+        this.loadJSON();
 
         console.log("All the commands and databases has been reloaded!");
         msg.react('✅');
 
+        mongo.saveAll()
     }
 
 

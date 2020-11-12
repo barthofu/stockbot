@@ -28,9 +28,6 @@ module.exports = class {
             
             //stats update
             client.updateStats()
-
-            //mongo checker
-            //await mongo.check()
             
         }, 15 * 1000) //each 15 sec
         

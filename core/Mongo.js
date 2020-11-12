@@ -3,8 +3,6 @@ const mongoose = require("mongoose"),
       credentials = require("../.credentials.json").db.mongoDB,
       Category = require("../models/mongo/Category");
 
-
-
 module.exports = class Mongo {
 
     constructor () {
@@ -17,14 +15,11 @@ module.exports = class Mongo {
         this._authSource = credentials.authSource;
 
         this._initiated  = false;
-        this.anime = null
     }
 
 
 
     async init () {
-
-        console.log("mongo")
 
         return mongoose.connect(mongoUri.format({
             username: this._username,
@@ -35,19 +30,55 @@ module.exports = class Mongo {
         }), { useNewUrlParser: true, useUnifiedTopology: true }
         ).then(async (db) => {
 
-            console.log("mongo then")
             this.db = db;
             this._initiated = true;
 
             //define mongo databases
             for (let i in config.categories) {
                 let cat = config.categories[i].name;
-                mongo[cat] = new Category(cat).getModel();
+                this[cat] = new Category(cat).getModel();
             }
+
+            await this.startWatch()
 
             return;
         }).catch(e => console.log(e))
     }
+
+
+    async startWatch () {
+
+        for (let i in config.categories) {
+
+            let cat = config.categories[i].name;
+
+            this.watch[cat] = mongo[cat].watch([ { $match: { "operationType": "insert" } } ]).on('change', (data) => this.watch(data))
+        }
+    }
+
+    async watch (data) {
+
+        await this.saveAll();
+        //send the verification embed on discord
+        let embed = await utils.getPageEmbed(data.fullDocument._id);
+        let m = await bot.channels.cache.get(config.addVerificationChannel).send(
+            embed
+                .setTimestamp(new Date())
+                .setFooter(`Ajouté par ${bot.users.cache.get(data.fullDocument.addedBy).tag}`)
+                .setThumbnail(config.categories.find(val => val.name == data.fullDocument.cat).image)
+        );
+        await m.react("✅");
+        await m.react("❌");
+
+        //save to the local db
+        db.data.get("awaitVerification").push({
+            _id: data.fullDocument._id,
+            cat: data.fullDocument.cat,
+            messageId: m.id,
+            timestamp: new Date().getTime()
+        }).write();
+    }
+
 
 
     async save (_id, newObject = false) {
@@ -71,50 +102,6 @@ module.exports = class Mongo {
 
             let cat = config.categories[i].name;
             db[cat] = await this[cat].find();
-        }
-    }
-
-
-
-    async saveChecker () {
-
-        for (let i in config.categories) {
-            
-            let cat = config.categories[i].name;
-            let mongoCat = await mongo[cat].find();
-
-            mongoChecker[cat] = mongoCat.map(val => val._id.toString());
-        }
-    }
-
-
-
-    async check() {
-
-        let tempChecker = [];
-
-        for (let i in config.categories) {
-            
-            let cat = config.categories[i].name;
-            let mongoCat = await mongo[cat].find();
-            let tempArray = mongoCat.map(val => val._id.toString());
-            let tester = tempArray.filter(val => !mongoChecker[cat].includes(val)).map(val => {return {_id: val, cat: cat}});
-
-            tempChecker = tempChecker.concat(tester);
-
-        }
-
-        if (tempChecker.length > 0) {
-
-            await this.saveAll();
-            
-            for (let i in tempChecker) {
-
-                console.log("page envoyée");
-                await utils.sendNewPage(tempChecker[i]._id, tempChecker[i].cat, this);
-            }
-
-            await this.saveChecker();
         }
     }
 

@@ -1,5 +1,5 @@
 const CommandPattern = require("../../models/Command.js");
-      mongo.ask = require("../../models/mongo/Ask")
+mongo.ask = require("../../models/mongo/Ask")
 
 const commandParams = {
     
@@ -80,18 +80,8 @@ module.exports = class extends CommandPattern {
                     await m.edit(this.getEmbed(msg, color, page, askArray, perPage))
                     break;
 
-                
-
-
-
             }
         })
-
-
-
-        
-        
-
     }
 
     getEmbed (msg, color, page, askArray, perPage) {
