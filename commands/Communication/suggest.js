@@ -27,7 +27,7 @@ module.exports = class extends CommandPattern {
 
         //send to the suggestion channel
         bot.channels.cache.get("776140167806713878").send(new MessageEmbed()
-            .setAuthor(msg.author.username, msg.author.displayAvatarURL())
+            .setAuthor(msg.author.username, msg.author.displayAvatarURL({dynamic: true}))
             .setFooter(msg.author.id)
             .setTimestamp()
             .setDescription(args.join(' '))

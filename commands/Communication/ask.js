@@ -26,7 +26,7 @@ module.exports = class extends CommandPattern {
     async run (msg, args, cmd, color) {
 
         let embed = new MessageEmbed()
-        .setAuthor(msg.author.username, msg.author.displayAvatarURL())
+        .setAuthor(msg.author.username, msg.author.displayAvatarURL({dynamic: true}))
         .setColor(color)
         .setImage(config.ressources.images.multicolorBar)
         .setTitle("Catégorie de la demande")
@@ -60,7 +60,7 @@ module.exports = class extends CommandPattern {
 
         //send to the ask channel
         bot.channels.cache.get("560892152570183711").send(new MessageEmbed()
-            .setAuthor(msg.author.username, msg.author.displayAvatarURL())
+            .setAuthor(msg.author.username, msg.author.displayAvatarURL({dynamic: true}))
             .setFooter(msg.author.id)
             .setColor("FFF200")
             .setTimestamp()

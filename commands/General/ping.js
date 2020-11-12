@@ -34,7 +34,7 @@ module.exports = class extends CommandPattern {
                 "**API**: `" + Math.round(bot.ws.ping) + "ms`",
                 "**Uptime**: " + this.msToTime(bot.uptime)
             ].join("\n"))
-            .setFooter("Demandé par : " + msg.author.tag, msg.author.displayAvatarURL())
+            .setFooter("Demandé par : " + msg.author.tag, msg.author.displayAvatarURL({dynamic: true}))
             .setColor(color)
             .setTimestamp()
         ).catch(() => m.edit("🆘 Une erreur est survenue."));

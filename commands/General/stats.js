@@ -108,7 +108,7 @@ module.exports = class extends CommandPattern {
     async getEmbed(msg, color, page, day, rawStats) {
 
         return new MessageEmbed()
-            .setAuthor(msg.author.username, msg.author.displayAvatarURL())
+            .setAuthor(msg.author.username, msg.author.displayAvatarURL({dynamic: true}))
             .setColor(color)
             .setImage(await this.genLink(page, day, rawStats))
             .setFooter(`${page}/${stats.length} | ${day} jours`)

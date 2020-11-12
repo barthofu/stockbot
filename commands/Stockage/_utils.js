@@ -155,6 +155,8 @@ let menu = class {
                     let { msg, Menu } = params
                     
                     let pages = this.pages
+
+                    reaction.users.remove(msg.author.id)
                     
                     switch (reaction.emoji.name) {
                         
