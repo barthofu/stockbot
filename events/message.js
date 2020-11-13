@@ -36,7 +36,7 @@ module.exports = class {
                 postCommand(value.info.name, msg) 
 
                 //check maintenance
-                if (db.config.get('maintenance').value() === true && !config.dev.includes(msg.author.id)) return msg.reply("le bot est en maintenance, merci de réessayer plus tard.") 
+                if (db.data.get('maintenance').value() === true && !config.dev.includes(msg.author.id)) return msg.reply("le bot est en maintenance, merci de réessayer plus tard.") 
                 //check user permission
                 if (value.permission.owner == true && !config.dev.includes(msg.author.id)) return msg.reply("tu manques de permissions pour pouvoir utiliser cette commande !")
                 let neededPermission = []
