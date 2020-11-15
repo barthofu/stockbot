@@ -203,7 +203,6 @@ module.exports = class Utils {
         for (let i in checkedGuilds) {
 
             let guild = checkedGuilds[i]
-            console.log(guild)
             await bot.channels.cache.get(guild.updateChannel).send(
                 guild.updateRole ? `<@&${guild.updateRole}>` : null,
                 embed

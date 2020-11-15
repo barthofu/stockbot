@@ -10,58 +10,49 @@
     "fichiers": 42680
   },
   "awaitVerification": [
+  ],
+  "seasonals": [
     {
-      "_id": "5fab0cbf29040000de007e9a",
-      "messageId": "775841553024286760",
-      "timestamp": 1605045440728
+      "name": "One Piece",
+      "season": false,
+      "lien": "https://mega.nz/folder/Ga4FUYzB#aa0BunQ7KaHo-ZFdBmOrPg",
+      "image": "https://vignette.wikia.nocookie.net/onepiece/images/d/d8/Arc_Wano.png/revision/latest?cb=20190615102959&path-prefix=fr",
+      "airing": { "day": "Dimanche", "hour": "2h30"}
     },
     {
-      "_id": "5fabf670ff160000b1003032",
-      "cat": "anime",
-      "messageId": "776092485692030997",
-      "timestamp": 1605105266735
+      "name": "Boruto",
+      "season": false,
+      "lien": "https://mega.nz/folder/7yhlzDjL#HCBpxmmvDcGdkPmJeEyOqQ",
+      "image": "https://cdn.discordapp.com/attachments/543552811489558529/729311826965430282/IMG_20200705_142348.jpg",
+      "airing": { "day": "Dimanche", "hour": "10h30"}
     },
     {
-      "_id": "5fabf7e1ff160000b1003034",
-      "cat": "anime",
-      "messageId": "776094032748871691",
-      "timestamp": 1605105635645
+      "name": "Black Clover",
+      "season": false,
+      "lien": "https://mega.nz/folder/H7Ag3YTR#hheKvrbIJpZBgdkAX1VW_Q",
+      "image": "https://media.senscritique.com/media/000017691998/source_big/Black_Clover.jpg",
+      "airing": { "day": "Mardi", "hour": "11h30"}
     },
     {
-      "_id": "5fabf8f6ff160000b1003036",
-      "cat": "anime",
-      "messageId": "776095195401814066",
-      "timestamp": 1605105912847
+      "name": "Fire Force",
+      "season": "2",
+      "lien": "https://mega.nz/folder/HiQWibZS#CkiNNJXwMzTW3r3qQPlC_Q",
+      "image": "https://toonamifaithful.com/wp-content/uploads/2020/05/Fireforce_S2_Keyart-727x1024-1.jpg",
+      "airing": { "day": "Vendredi", "hour": "19h"}
     },
     {
-      "_id": "5fabfa90ff160000b1003039",
-      "cat": "anime",
-      "messageId": "776096911408365610",
-      "timestamp": 1605106321977
+      "name": "Haikyu!!",
+      "season": "4 Part 2",
+      "lien": "https://mega.nz/folder/2m5yUJRa#mE2LCqzyNnEVzr0i4nHOtw",
+      "image": "https://www.ledojomanga.com/bdd_local/upload/images/haikyuu-to-the-top-partie-2.jpg",
+      "airing": { "day": "Vendredi", "hour": "18h30"}
     },
     {
-      "_id": "5fabfae3ff160000b100303a",
-      "cat": "anime",
-      "messageId": "776097260760858664",
-      "timestamp": 1605106405250
-    },
-    {
-      "_id": "5fac0282ff160000b100303f",
-      "cat": "anime",
-      "messageId": "776105444073799690",
-      "timestamp": 1605108356344
-    },
-    {
-      "_id": "5fac0347ff160000b1003040",
-      "cat": "anime",
-      "messageId": "776106271052398622",
-      "timestamp": 1605108553613
-    },
-    {
-      "_id": "5fac03a9ff160000b1003041",
-      "cat": "anime",
-      "messageId": "776106679447584809",
-      "timestamp": 1605108650909
+      "name": "Jujutsu Kaisen",
+      "season": "1",
+      "lien": "https://mega.nz/folder/PyBUVJ4I#brff8dkr1iCN6F-gXoa3fw",
+      "image": "https://cdn.statically.io/img/animeschedule.sfo2.cdn.digitaloceanspaces.com/production/assets/public/img/shows/default/jujutsu-kaisen-da37f058a6.jpg",
+      "airing": { "day": "Vendredi", "hour": "17h30"}
     }
   ]
 }
