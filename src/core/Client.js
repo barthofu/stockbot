@@ -4,7 +4,7 @@ let GuildPattern  = require("../models/Guild.js"),
     low           = require('lowdb'),
     Discord       = require('discord.js'),
     fs            = require('fs'),
-    credentials   = require("../.credentials.json");
+    credentials   = require("../../.credentials.json");
 
 module.exports = class {
 
@@ -34,8 +34,8 @@ module.exports = class {
 
     loadJSON () {
 
-        fs.readdirSync(`${__dirname}/../db`).filter(val => val.endsWith(".json")).forEach(file => {
-            let adapter = new FileSync(`${__dirname}/../db/${file}`);
+        fs.readdirSync(`./src/db`).filter(val => val.endsWith(".json")).forEach(file => {
+            let adapter = new FileSync(`./src/db/${file}`);
             db[file.replace(".json", "")] = low(adapter);
         });
         
@@ -45,7 +45,7 @@ module.exports = class {
 
     loadEvents () {
 
-        fs.readdirSync(`${__dirname}/../events`).filter(file => file.endsWith('.js')).forEach(file => {
+        fs.readdirSync(`./src/events`).filter(file => file.endsWith('.js')).forEach(file => {
             const eventName = file.split(".")[0];
             const eventClass = new (require(`../events/${file}`))();
             this.bot.on(eventName, (...args) => eventClass.run(...args));
@@ -57,9 +57,9 @@ module.exports = class {
 
     loadCommands () {
 
-        let categories = fs.readdirSync(`${__dirname}/../commands`).filter(file => !file.includes("."));
+        let categories = fs.readdirSync(`./src/commands`).filter(file => !file.includes("."));
         for (let i in categories) {
-            fs.readdirSync(`${__dirname}/../commands/${categories[i]}`).filter(file => file.endsWith('.js') && !file.startsWith("_")).forEach(file => {
+            fs.readdirSync(`./src/commands/${categories[i]}`).filter(file => file.endsWith('.js') && !file.startsWith("_")).forEach(file => {
                 const command = new (require(`../commands/${categories[i]}/${file}`))();
                 this.bot.commands.set(command.info.name, command);
                 delete require.cache[require.resolve(`../commands/${categories[i]}/${file}`)];
@@ -130,20 +130,20 @@ module.exports = class {
     startingConsole () {
         
         let params = {
-            categories: fs.readdirSync(`./commands`).length,
+            categories: fs.readdirSync(`./src/commands`).length,
             commands: this.bot.commands.size,
             databases: Object.keys(db).length,
-            events: fs.readdirSync("./events").filter(file => file.endsWith('.js')).length
+            events: fs.readdirSync("./src/events").filter(file => file.endsWith('.js')).length
         }
 
         console.log(`\u200b\n\u200b\n\u200b\n\u200b\n\u200b\t\t╔═════════════════════════════════════╗\n\u200b\t\t║ ${this.bot.user.username} is connected!${new Array(Math.abs(22-this.bot.user.username.length)).fill(" ").join("")}║\n\u200b\t\t╚═════════════════════════════════════╝\n\u200b\t\t\t\t• • •\n\u200b`);
-        console.log(`› ${params.commands} commands loaded${config.startingConsoleDetailed==true?"\n"+fs.readdirSync("./commands").map(
-            val => `\u200B\t› ${val}\n${fs.readdirSync("./commands/"+val).map(
+        console.log(`› ${params.commands} commands loaded${config.startingConsoleDetailed==true?"\n"+fs.readdirSync("./src/commands").map(
+            val => `\u200B\t› ${val}\n${fs.readdirSync("./src/commands/"+val).map(
                 val2 => `\u200B\t    \u200b› ${val2.split(".")[0]}`
                 ).join("\r\n")}`
             ).join("\r\n"):""}`);
         console.log(`› ${params.databases} databases loaded (JSON)${config.startingConsoleDetailed==true?"\n"+Object.keys(db).map(val => `\u200B\t› ${val}`).join("\r\n"):""}`);
-        console.log(`› ${params.events} events loaded${config.startingConsoleDetailed==true?"\n"+fs.readdirSync("./events").filter(file => file.endsWith('.js')).map(val => `\u200B\t› ${val}`).join("\r\n"):""}\n\u200b\t\t\t\t• • •\n\u200b`);
+        console.log(`› ${params.events} events loaded${config.startingConsoleDetailed==true?"\n"+fs.readdirSync("./src/events").filter(file => file.endsWith('.js')).map(val => `\u200B\t› ${val}`).join("\r\n"):""}\n\u200b\t\t\t\t• • •\n\u200b`);
     }
 
 

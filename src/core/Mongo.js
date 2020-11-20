@@ -1,6 +1,6 @@
 const mongoose = require("mongoose"),
       mongoUri = require("mongodb-uri"),
-      credentials = require("../.credentials.json").db.mongoDB,
+      credentials = require("../../.credentials.json").db.mongoDB,
       Category = require("../models/mongo/Category");
 
 module.exports = class Mongo {

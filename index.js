@@ -14,4 +14,4 @@ Personal Website: https://barthofu.me
 
 */
 
-require("./core/Init.js")();
+require("./src/core/Init.js")();
