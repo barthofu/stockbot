@@ -1,7 +1,7 @@
 {
   "actual": {
     "commands": {
-      "total": 290,
+      "total": 293,
       "details": {
         "stockage": 159,
         "profile": 9,
@@ -20,7 +20,8 @@
         "ping": 7,
         "maintenance": 1,
         "newepisode": 7,
-        "send": 2
+        "send": 2,
+        "sendembed": 3
       }
     }
   },

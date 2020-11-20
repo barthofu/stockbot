@@ -32,11 +32,12 @@ module.exports = class extends CommandPattern {
         await msg.channel.send("Confirmez-vous l'envoi de ce message ? (`oui` ou `non`)")
         let filter = m => (m.author.id === msg.author.id && (m.content.toLowerCase() === 'oui' || m.content.toLowerCase() === 'non'))
         rep = await msg.channel.awaitMessages(filter, {max:1,time:30000})
+        if (!rep.first().content) return msg.reply('commande annulée.')
 
         if (rep.first().content.toLowerCase() === 'oui') {
 
             //send to update channels
-            let checkedGuilds = db.guild.get("guilds").values().filter((value) => utils.sendNewPageValidator(value, "anime")).value();
+            let checkedGuilds = db.guild.get("guilds").values().filter((value) => utils.sendNewPageValidator(value)).value();
             for (let i in checkedGuilds) await bot.channels.cache.get(checkedGuilds[i].updateChannel).send(texte);
 
         } else msg.reply('commande annulée.')

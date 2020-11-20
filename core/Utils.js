@@ -235,7 +235,7 @@ module.exports = class Utils {
         }
         
         //check if category is enabled
-        else if (guildObj.updateIgnoreCategories.includes(cat)) return false
+        else if (cat && guildObj.updateIgnoreCategories.includes(cat)) return false
 
         //check if nsfw is disabled
         else if (!guildObj.nsfwEnabled) return false
