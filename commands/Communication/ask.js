@@ -1,4 +1,3 @@
-const { MessageEmbed } = require("discord.js");
 const CommandPattern = require("../../models/Command.js");
 mongo.ask = require("../../models/mongo/Ask");
 
