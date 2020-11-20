@@ -31,9 +31,9 @@ module.exports = class extends CommandPattern {
         .setAuthor(msg.author.username, msg.author.displayAvatarURL({dynamic: true}))
         .setThumbnail("https://upload.wikimedia.org/wikipedia/commons/a/a4/Cute-Ball-Help-icon.png")
         
-        let categories = fs.readdirSync(`./commands`)
+        let categories = fs.readdirSync(`./src/commands`)
         categories.forEach(category => {
-            embed.addField(`${category}`, fs.readdirSync(`./commands/${category}`).filter(file => file.endsWith(".js")).map(
+            embed.addField(`${category}`, fs.readdirSync(`./src/commands/${category}`).filter(file => file.endsWith(".js")).map(
                     commandName => {
                         let command = bot.commands.get(commandName.split(".")[0])
                         return command.verification.enabled == true || command.permission.owner == false?`\`${db.guild.get(`guilds.${msg.guild.id}.prefix`).value()}${commandName.split(".")[0]}\`${command.info.aliases.length > 0?` (${command.info.aliases.map(val => `\`${val}\``).join(" | ")})`:""} | ${command["info"]["desc"]} ${this.checkCommand(command)}`:""
