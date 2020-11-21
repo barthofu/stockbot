@@ -51,7 +51,6 @@ module.exports = class Mongo {
         for (let i in config.categories) {
 
             let cat = config.categories[i].name;
-
             this.watch[cat] = mongo[cat].watch([ { $match: { "operationType": "insert" } } ]).on('change', (data) => this.watch(data))
         }
     }

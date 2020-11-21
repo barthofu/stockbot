@@ -44,7 +44,7 @@ module.exports = class {
 
     loadLogs () {
 
-        this.logger = fs.createWriteStream('./log.txt', {
+        this.logger = fs.createWriteStream('./logs.txt', {
             flags: 'a'
           })
     }
