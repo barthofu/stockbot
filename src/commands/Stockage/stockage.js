@@ -65,7 +65,6 @@ module.exports = class extends CommandPattern {
             if (result.length === 0)  return msg.reply(`la recherche rapide de \`${args.join(" ")}\` n'a donné aucun résultat !`)
             
             let embed = await utils.getPageEmbed(result[0]._id, msg.author.id, color)
-            console.log(embed)
             let m = await msg.channel.send(embed)
             await displayPage(params, m, result[0].cat, result[0]._id)
             return

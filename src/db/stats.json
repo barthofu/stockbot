@@ -1,9 +1,9 @@
 {
   "actual": {
     "commands": {
-      "total": 343,
+      "total": 352,
       "details": {
-        "stockage": 163,
+        "stockage": 172,
         "profile": 9,
         "help": 23,
         "monitor": 12,

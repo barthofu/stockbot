@@ -33,6 +33,7 @@ module.exports = class {
 
             if (value.info.name == cmd || value.info.aliases.map(val => val.replace("_", "")).includes(cmd)) {
 
+                //stats and logs
                 postCommand(value.info.name, msg);
                 let commandName = value.info.name;
                 utils.log("command", {commandName, msg});
@@ -53,7 +54,7 @@ module.exports = class {
                 })
                 if (neededPermission.length > 0) return msg.reply(`je n'ai pas ces permissions pour pouvoir éxecuter cette commande :\n${neededPermission.join(', ')}`)
                 //check DM
-                if (value.verification.dm === false && msg.channel.type === "dm") return msg.reply("cette commande ne peut pas être utilisée ici.")
+                if (value.verification.dm === false && msg.channel.type === "dm") return msg.reply("Cette commande ne peut pas être utilisée ici.")
                 //check NSFW
                 if (value.verification.nsfw === true && !msg.channel.nsfw) return msg.reply("tu dois être dans un salon NSFW pour utiliser cette commande.")
                 //check if enabled
@@ -92,7 +93,5 @@ function postCommand (cmd, msg) {
     if (!db.stats.get(`actual.commands.details`).has(cmd).value()) db.stats.set(`actual.commands.details.${cmd}`, 0).write()
     db.stats.update('actual.commands.total', val => val + 1).write()
     db.stats.update(`actual.commands.details.${cmd}`, val => val + 1).write()
-
-    //logs
 
 }

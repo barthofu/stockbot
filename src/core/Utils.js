@@ -401,11 +401,11 @@ module.exports = class Utils {
 
             case "command": 
                 bot.channels.cache.get(config.channels.logs.commands).send(new MessageEmbed()
-                    .setTitle(args.msg.guild.name)
+                    .setTitle(args.msg.guild?.name || "DM")
                     .setAuthor(args.msg.author.username, args.msg.author.displayAvatarURL({dynamic: true}))
-                    .setThumbnail(args.msg.guild.iconURL())
+                    .setThumbnail(args.msg.guild?.iconURL() || null)
                     .setDescription("```\ns!" + args.commandName + "```")
-                    .setFooter(`userId: ${args.msg.author.id}\nguildId: ${args.msg.guild.id}`)
+                    .setFooter(`userId: ${args.msg.author.id}\nguildId: ${args.msg.guild?.id || "dm channel"}`)
                 );
                 break;
 

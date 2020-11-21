@@ -541,6 +541,7 @@ async function displayPage(params, m, cat, _id = false) {
     let reactions = ["👍", "👎", "570967120255385600"]
     if (_id == false) reactions = ["◀", "▶", "#️⃣"].concat(reactions)
     if (config.dev.includes(msg.author.id)) reactions.push("⚙️")
+    if (msg.author.id === config.ownerID) reactions.push("🗑")
 
     //add reactions
     for (let i in reactions) await m.react(reactions[i])
@@ -705,6 +706,34 @@ async function displayPage(params, m, cat, _id = false) {
                 break
 
 
+            case "🗑":
+
+                let mBis = await msg.channel.send(new MessageEmbed()
+                    .setColor(color)
+                    .setTitle("🗑 | Ecris le nom de la page pour confirmer sa suppression :")
+                    .setDescription("*`cancel` si tu souhaites annuler...*")
+                )
+
+                let confirmation = await msg.channel.awaitMessages(me => me.author.id === msg.author.id && [pageData.name, "cancel"].includes(me.content), {max:1, time:30000})
+                await mBis.delete()
+                if(!confirmation.first()) return
+                await confirmation.first().delete()
+                if (confirmation.first().content === "cancel") return
+                else {
+
+                    //delete the entry from mongodb
+                    await mongo[pageData.cat].deleteOne({_id: pageData._id});
+                    //remove message
+                    await m.delete()
+                    //log
+                    utils.log("pageDelete", {pageData, msg});
+                } 
+                
+
+
+
+
+                break;
 
             case "👁":
             case "⌚":
