@@ -410,12 +410,12 @@ module.exports = class Utils {
                 break;
 
             case "guildCreate": 
-                bot.channels.cache.get(config.channels.logs.guildCreate).send(`Ajouté au serveur : **${guild}** (\`${guild.memberCount}\` membres)`);
+                bot.channels.cache.get(config.channels.logs.guildCreate).send(`Ajouté au serveur : **${args.guild}** (\`${args.guild.memberCount}\` membres)`);
                 this.logWriteInFile(`Ajouté au serveur : ${args.guild} (${args.guild.memberCount} membres)`);
                 break;
 
             case "guildDelete": 
-                bot.channels.cache.get(config.channels.logs.guildDelete).send(`Supprimé du serveur : **${guild}** (\`${guild.memberCount}\` membres)`);
+                bot.channels.cache.get(config.channels.logs.guildDelete).send(`Supprimé du serveur : **${args.guild}** (\`${args.guild.memberCount}\` membres)`);
                 this.logWriteInFile(`Supprimé du serveur : ${args.guild} (${args.guild.memberCount} membres)`);
                 break;
 

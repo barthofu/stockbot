@@ -7,6 +7,14 @@
       "updateChannel": "567398326622748692",
       "updateRole": "559501946894024742",
       "updateIgnoreCategories": []
+    },
+    "779739794782683156": {
+      "id": "779739794782683156",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
     }
   },
   "deleted": {}
