@@ -5,7 +5,7 @@ const commandParams = {
     
     name: "asklist",
     aliases: [],
-    desc: "",
+    desc: "Affiche la liste des demandes en attente sur le bot.",
     enabled: true,
     dm: false,
     nsfw: false,

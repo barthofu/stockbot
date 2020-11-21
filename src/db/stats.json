@@ -1,11 +1,11 @@
 {
   "actual": {
     "commands": {
-      "total": 314,
+      "total": 336,
       "details": {
         "stockage": 163,
         "profile": 9,
-        "help": 1,
+        "help": 23,
         "monitor": 12,
         "updatechannel": 16,
         "asklist": 49,

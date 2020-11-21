@@ -4,14 +4,14 @@ const commandParams = {
     
     name: "stats",
     aliases: [],
-    desc: "",
+    desc: "Fournis différents graphiques d'évolution des stats du bot.",
     enabled: true,
     dm: false,
     nsfw: false,
     memberPermission: [],
     botPermission: [],
     owner: false,
-    cooldown: 0
+    cooldown: null
 
 }
 

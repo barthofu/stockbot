@@ -4,14 +4,14 @@ const commandParams = {
     
     name: "gametuto",
     aliases: [],
-    desc: "",
+    desc: "Affiche l'aide pour installer un jeu cracké.",
     enabled: true,
     dm: true,
     nsfw: false,
     memberPermission: [],
     botPermission: [],
     owner: false,
-    cooldown: 0
+    cooldown: null
 
 }
 

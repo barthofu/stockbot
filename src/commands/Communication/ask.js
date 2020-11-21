@@ -5,7 +5,7 @@ const commandParams = {
     
     name: "ask",
     aliases: [],
-    desc: "",
+    desc: "Envoie une demande d'ajout d'un anime, musique, film, etc sur le bot.",
     enabled: true,
     dm: false,
     nsfw: false,

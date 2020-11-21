@@ -31,7 +31,7 @@ module.exports = class {
 
         for (var [key, value] of bot.commands) {
 
-            if (value.info.name == cmd || value.info.aliases.includes(cmd)) {
+            if (value.info.name == cmd || value.info.aliases.map(val => val.replace("_", "")).includes(cmd)) {
 
                 postCommand(value.info.name, msg);
                 let commandName = value.info.name;
@@ -42,13 +42,13 @@ module.exports = class {
                 //check user permission
                 if (value.permission.owner == true && !config.dev.includes(msg.author.id)) return msg.reply("tu manques de permissions pour pouvoir utiliser cette commande !")
                 let neededPermission = []
-                value.permission.member.forEach(permission => {
+                value.permission.memberPermission.forEach(permission => {
                     if(!msg.channel.permissionsFor(msg.member).has(perm)) neededPermission.push(permission)
                 })
                 if (neededPermission.length > 0 && !config.dev.includes(msg.author.id)) return msg.reply("tu manques de permissions pour pouvoir utiliser cette commande !")
                 //check bot permission
                 neededPermission = []
-                value.permission.bot.forEach(permission => {
+                value.permission.botPermission.forEach(permission => {
                     if(!msg.channel.permissionsFor(msg.guild.me).has(perm)) neededPermission.push("**"+permission+"**")
                 })
                 if (neededPermission.length > 0) return msg.reply(`je n'ai pas ces permissions pour pouvoir éxecuter cette commande :\n${neededPermission.join(', ')}`)

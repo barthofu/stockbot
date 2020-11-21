@@ -4,7 +4,7 @@ const commandParams = {
     
     name: "report",
     aliases: [],
-    desc: "",
+    desc: "Reporte un lien mort ou un autre problème dans le bot.",
     enabled: true,
     dm: true,
     nsfw: false,

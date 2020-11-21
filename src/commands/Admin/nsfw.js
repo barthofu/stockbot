@@ -4,11 +4,11 @@ const commandParams = {
     
     name: "nsfw",
     aliases: [],
-    desc: "",
+    desc: "Active/Désactive la catégorie et les annonces NSFW.",
     enabled: true,
     dm: false,
     nsfw: false,
-    memberPermission: [],
+    memberPermission: ["ADMINISTRATOR"],
     botPermission: [],
     owner: false,
     cooldown: null

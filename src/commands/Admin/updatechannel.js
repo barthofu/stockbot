@@ -5,10 +5,8 @@ const roleReg = /<@&(\d+)>/
 const commandParams = {
     
     name: "updatechannel",
-    aliases: [
-        "channelupdate"
-    ],
-    desc: "Permet de gérer le channel de news.",
+    aliases: [],
+    desc: "Permet de gérer le channel de news où seront postés les derniers ajouts du bot.",
     enabled: true,
     dm: false,
     nsfw: false,

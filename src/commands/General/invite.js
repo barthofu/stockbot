@@ -4,14 +4,14 @@ const commandParams = {
     
     name: "invite",
     aliases: [],
-    desc: "",
+    desc: "Fournis le lien d'invitation du bot.",
     enabled: true,
     dm: true,
     nsfw: false,
     memberPermission: [],
     botPermission: [],
     owner: false,
-    cooldown: 0
+    cooldown: null
 
 }
 

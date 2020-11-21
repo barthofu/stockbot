@@ -4,7 +4,7 @@ const commandParams = {
     
     name: "suggest",
     aliases: [],
-    desc: "",
+    desc: "Envoie une suggestion pour l'amélioration du bot.",
     enabled: true,
     dm: true,
     nsfw: false,

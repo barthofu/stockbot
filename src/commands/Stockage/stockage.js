@@ -3,8 +3,8 @@ const CommandPattern = require("../../models/Command.js");
 const commandParams = {
     
     name: "stockage",
-    aliases: ["s", "search"],
-    desc: "",
+    aliases: ["s", "_search"],
+    desc: "Accède à l'interface de stockage du bot.",
     enabled: true,
     dm: false,
     nsfw: false,

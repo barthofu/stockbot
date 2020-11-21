@@ -13,7 +13,7 @@ const commandParams = {
     
     name: "logs",
     aliases: [],
-    desc: "",
+    desc: "Affiche le contenu des dernières mises à jours du bot.",
     enabled: true,
     dm: false,
     nsfw: false,

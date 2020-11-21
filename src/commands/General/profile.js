@@ -14,7 +14,7 @@ const commandParams = {
     aliases: [
         "p"
     ],
-    desc: "",
+    desc: "Affiche le profil utilisateur.",
     enabled: true,
     dm: true,
     nsfw: false,

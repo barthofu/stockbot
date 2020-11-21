@@ -5,14 +5,14 @@ const commandParams = {
     
     name: "ping",
     aliases: [],
-    desc: "",
+    desc: "Effectue un ping.",
     enabled: true,
     dm: false,
     nsfw: false,
     memberPermission: [],
     botPermission: [],
     owner: false,
-    cooldown: 0
+    cooldown: null
 
 }
 

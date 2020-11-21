@@ -10,7 +10,7 @@ const commandParams = {
     nsfw: false,
     memberPermission: [],
     botPermission: [],
-    owner: false,
+    owner: true,
     cooldown: null
 
 }
