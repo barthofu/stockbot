@@ -22,7 +22,17 @@
 
     "startingConsoleDetailed": false,
 
-    "addVerificationChannel": "567398326622748692",
+    "channels": {
+
+        "addVerification": "567398326622748692",
+
+        "logs": {
+
+            "commands": "742878723459776604",
+            "guildCreate": "742878723459776604",
+            "guildDelete": "742878723459776604"
+        }
+    },
 
     "activities": [
         {

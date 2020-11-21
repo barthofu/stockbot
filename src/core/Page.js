@@ -40,7 +40,7 @@ module.exports = class EmbedPage {
 
         //liens
         let arrLiens = this.page.lien.map(val => `${val.replace("[x265]", "")}${val.indexOf("[x265]") > -1?" <:hevc_emote:725145359076294726>":""}`)
-        let titleText = "**━━━━━━━   Liens   ━━━━━━**"
+        let titleText = "**━━━━━━   Liens   ━━━━━**"
         if (arrLiens.join('\r\n').length >= 2048) {
             //3 FIELDS
             embed.addField(titleText, '\u200b\n'+arrLiens.slice(0, Math.floor(arrLiens.length/3)).join('\r\n'))

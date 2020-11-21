@@ -1,5 +1,6 @@
-const Fuse = require("fuse.js"),
+const Fuse      = require("fuse.js"),
       PageEmbed = require("./Page.js")
+      
 const searchOptions = {
     shouldSort: true,
     threshold: 0.4,
@@ -15,9 +16,6 @@ const searchOptions = {
 }
 
 module.exports = class Utils {
-
-
-
     
     convertArrayOfObjectToKeyObject (arr, key, value) {
 
@@ -373,9 +371,7 @@ module.exports = class Utils {
                 total: this.mergePages().length,
                 categories: catObj
             }
-
         }
-
     }
 
 
@@ -393,6 +389,57 @@ module.exports = class Utils {
         pages.sort((a, b) => b.stats.like.length - a.stats.like.length)
         return pages
 
+    }
+
+    log (type, args) {
+
+        switch (type) {
+
+            case "connected":
+                this.logWriteInFile(`Connexion réussie ! (${bot.guilds.cache.size} serveurs | ${bot.users.cache.size} utilisateurs)`);
+                break;
+
+            case "command": 
+                bot.channels.cache.get(config.channels.logs.command).send(new MessageEmbed()
+                    .setTitle(msg.guild.name)
+                    .setAuthor(msg.author.username, msg.author.displayAvatarURL({dynamic: true}))
+                    .setImage(msg.guild.iconURL())
+                    .setDescription("```\ns!" + commandName + "```")
+                    .setFooter(`userId: ${msg.author.id}\nguildId: ${msg.guild.id}`)
+                );
+                break;
+
+            case "guildCreate": 
+                bot.channels.cache.get(config.channels.logs.guildCreate).send(`Ajouté au serveur : **${guild}** (\`${guild.memberCount}\` membres)`);
+                this.logWriteInFile(`Ajouté au serveur : ${args.guild} (${args.guild.memberCount} membres)`);
+                break;
+
+            case "guildDelete": 
+                bot.channels.cache.get(config.channels.logs.guildDelete).send(`Supprimé du serveur : **${guild}** (\`${guild.memberCount}\` membres)`);
+                this.logWriteInFile(`Supprimé du serveur : ${args.guild} (${args.guild.memberCount} membres)`);
+                break;
+
+            case "pageAddRequest": 
+                this.logWriteInFile(`Demande d'ajout de page : [${args.obj.cat}] ${args.obj.name} (${args.obj._id}) par ${bot.users.cache.get(args.obj.authorId).tag}`);
+                break;
+
+            case "pageAdd": 
+                this.logWriteInFile(`Ajout de page : [${args.obj.cat}] ${args.obj.name} (${args.obj._id}) par ${args.userTag}`);
+                break;
+
+            case "pageRefused": 
+                this.logWriteInFile(`Page refusée : [${args.obj.cat}] ${args.obj.name} (${args.obj._id}) par ${args.userTag}`);
+                break;
+
+        
+        }
+    }
+
+
+    logWriteInFile (str) {
+
+        let date = dateFormat(new Date(), "dd-mm-yyyy HH:MM:ss");
+        client.logger.write(`\n[${date}] ⫸ ` + str)
     }
 
 }

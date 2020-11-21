@@ -5,6 +5,7 @@ module.exports = class {
     async run () {
         
         client.startingConsole()
+        utils.log("connected")
         
         setInterval(async () => {
             

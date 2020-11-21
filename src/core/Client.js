@@ -21,7 +21,8 @@ module.exports = class {
         this.loadCommands();
         this.loadEvents();
         this.loadJSON();
-        await mongo.saveAll()
+        this.loadLogs();
+        await mongo.saveAll();
 
         this.login();
     }
@@ -39,6 +40,13 @@ module.exports = class {
             db[file.replace(".json", "")] = low(adapter);
         });
         
+    }
+
+    loadLogs () {
+
+        this.logger = fs.createWriteStream('./log.txt', {
+            flags: 'a'
+          })
     }
 
 
@@ -97,6 +105,7 @@ module.exports = class {
 
 
     checkGuild (guildID) {
+        
         //check if this guild exists in the database, if not it creates it (or recovers it from the deleted ones)
         if (!db.guild.get("guilds").has(guildID).value()) {
             if (db.guild.get("deleted").has(guildID).value()) {

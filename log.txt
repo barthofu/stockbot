@@ -1,0 +1,24 @@
+
+[20-11-2020 23:15:01] ⫸ Connexion réussie ! (3 serveurs | 98 utilisateurs)
+[20-11-2020 23:23:48] ⫸ Connexion réussie ! (2 serveurs | 4 utilisateurs)
+[20-11-2020 23:24:30] ⫸ Connexion réussie ! (2 serveurs | 4 utilisateurs)
+[20-11-2020 23:27:36] ⫸ Connexion réussie ! (3 serveurs | 98 utilisateurs)
+[20-11-2020 23:40:15] ⫸ Connexion réussie ! (2 serveurs | 4 utilisateurs)
+[20-11-2020 23:40:39] ⫸ Connexion réussie ! (2 serveurs | 4 utilisateurs)
+[20-11-2020 23:49:32] ⫸ Connexion réussie ! (3 serveurs | 98 utilisateurs)
+[20-11-2020 23:50:36] ⫸ Connexion réussie ! (2 serveurs | 4 utilisateurs)
+[21-11-2020 11:54:48] ⫸ Connexion réussie ! (3 serveurs | 98 utilisateurs)
+[21-11-2020 11:56:39] ⫸ 260908777446965248
+[21-11-2020 12:00:53] ⫸ Connexion réussie ! (3 serveurs | 98 utilisateurs)
+[21-11-2020 12:01:30] ⫸ Connexion réussie ! (2 serveurs | 4 utilisateurs)
+[21-11-2020 12:01:47] ⫸ Ajouté au serveur : DiscBot Suite (98 membres)
+[21-11-2020 12:02:26] ⫸ Supprimé du serveur : DiscBot Suite (98 membres)
+[21-11-2020 12:02:46] ⫸ Ajouté au serveur : DiscBot Suite (98 membres)
+[21-11-2020 12:03:02] ⫸ Connexion réussie ! (3 serveurs | 98 utilisateurs)
+[21-11-2020 12:07:11] ⫸ Connexion réussie ! (3 serveurs | 98 utilisateurs)
+[21-11-2020 12:07:26] ⫸ Demande d'ajout de page : [anime] Test (5fb8f4ecee5d0000d9001734) par Bartho#7744
+[21-11-2020 12:08:13] ⫸ Connexion réussie ! (3 serveurs | 98 utilisateurs)
+[21-11-2020 12:08:21] ⫸ Demande d'ajout de page : [anime] Test (5fb8f523ee5d0000d9001735) par Bartho#7744
+[21-11-2020 12:08:31] ⫸ Page refusée : [anime] Test (5fb8f523ee5d0000d9001735) par Bartho#7744
+[21-11-2020 12:08:43] ⫸ Demande d'ajout de page : [anime] Test (5fb8f53aee5d0000d9001736) par Bartho#7744
+[21-11-2020 12:08:47] ⫸ Ajout de page : [anime] Test (5fb8f53aee5d0000d9001736) par Bartho#7744

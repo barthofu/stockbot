@@ -33,7 +33,9 @@ module.exports = class {
 
             if (value.info.name == cmd || value.info.aliases.includes(cmd)) {
 
-                postCommand(value.info.name, msg) 
+                postCommand(value.info.name, msg);
+                let commandName = value.info.name;
+                utils.log("command", {commandName, msg});
 
                 //check maintenance
                 if (db.data.get('maintenance').value() === true && !config.dev.includes(msg.author.id)) return msg.reply("le bot est en maintenance, merci de réessayer plus tard.") 

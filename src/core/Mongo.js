@@ -61,7 +61,7 @@ module.exports = class Mongo {
         await this.saveAll();
         //send the verification embed on discord
         let embed = await utils.getPageEmbed(data.fullDocument._id);
-        let m = await bot.channels.cache.get(config.addVerificationChannel).send(
+        let m = await bot.channels.cache.get(config.channels.addVerification).send(
             embed
                 .setTimestamp(new Date())
                 .setFooter(`Ajouté par ${bot.users.cache.get(data.fullDocument.addedBy).tag}`)
@@ -70,13 +70,21 @@ module.exports = class Mongo {
         await m.react("✅");
         await m.react("❌");
 
-        //save to the local db
-        db.data.get("awaitVerification").push({
+        //object
+        let obj = {
             _id: data.fullDocument._id,
             cat: data.fullDocument.cat,
+            name: data.fullDocument.name, 
+            authorId: data.fullDocument.addedBy,
             messageId: m.id,
             timestamp: new Date().getTime()
-        }).write();
+        }
+
+        //save to the local db
+        db.data.get("awaitVerification").push(obj).write();
+
+        //log
+        utils.log("pageAddRequest", {obj})
     }
 
 
