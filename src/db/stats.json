@@ -1,20 +1,20 @@
 {
   "actual": {
     "commands": {
-      "total": 298,
+      "total": 314,
       "details": {
         "stockage": 163,
         "profile": 9,
         "help": 1,
         "monitor": 12,
         "updatechannel": 16,
-        "asklist": 34,
+        "asklist": 49,
         "nsfw": 6,
         "ask": 9,
         "stats": 19,
         "suggest": 2,
         "report": 2,
-        "gametuto": 2,
+        "gametuto": 3,
         "invite": 1,
         "logs": 2,
         "ping": 7,

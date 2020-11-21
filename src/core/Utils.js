@@ -400,12 +400,12 @@ module.exports = class Utils {
                 break;
 
             case "command": 
-                bot.channels.cache.get(config.channels.logs.command).send(new MessageEmbed()
-                    .setTitle(msg.guild.name)
-                    .setAuthor(msg.author.username, msg.author.displayAvatarURL({dynamic: true}))
-                    .setImage(msg.guild.iconURL())
-                    .setDescription("```\ns!" + commandName + "```")
-                    .setFooter(`userId: ${msg.author.id}\nguildId: ${msg.guild.id}`)
+                bot.channels.cache.get(config.channels.logs.commands).send(new MessageEmbed()
+                    .setTitle(args.msg.guild.name)
+                    .setAuthor(args.msg.author.username, args.msg.author.displayAvatarURL({dynamic: true}))
+                    .setThumbnail(args.msg.guild.iconURL())
+                    .setDescription("```\ns!" + args.commandName + "```")
+                    .setFooter(`userId: ${args.msg.author.id}\nguildId: ${args.msg.guild.id}`)
                 );
                 break;
 
