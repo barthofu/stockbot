@@ -231,7 +231,7 @@ let menu = class {
                     let { msg, color} = params
                     
                     await m.reactions.removeAll()
-                    m = await m.edit(await utils.getPageEmbed(this.id, msg.author.id, color))
+                    m = await m.edit(await utils.getPageEmbed(this.id, msg.author.id, color, msg.channel.id))
                     await displayPage(params, m, utils.getPageByID(this.id).cat, this.id)
 
                     return "end"
@@ -529,7 +529,7 @@ async function displayPage(params, m, cat, _id = false) {
     //function to modify easily the embed
     async function getModifiedEmbed (footerAdd = " \u200b") {
 
-        let embed = await utils.getPageEmbed(pageData._id, msg.author.id, color)
+        let embed = await utils.getPageEmbed(pageData._id, msg.author.id, color, msg.channel.id)
         return embed.setFooter(page + "/" + pages.length + " " + footerAdd)
 
     }
@@ -538,7 +538,7 @@ async function displayPage(params, m, cat, _id = false) {
     if (_id === false) await m.edit(await getModifiedEmbed())
 
     //define reactions
-    let reactions = ["👍", "👎", "570967120255385600"]
+    let reactions = ["668090650746683392", "👍", "👎", "570967120255385600"]
     if (_id == false) reactions = ["◀", "▶", "#️⃣"].concat(reactions)
     if (config.dev.includes(msg.author.id)) reactions.push("⚙️")
     if (msg.author.id === config.ownerID) reactions.push("🗑")
@@ -651,7 +651,7 @@ async function displayPage(params, m, cat, _id = false) {
                         if (!rep.first()) return
                         if (rep.first().content.toLowerCase() == "cancel") {
                             await m3.delete() ; await m.delete()
-                            m = await msg.channel.send(await utils.getPageEmbed(pageData._id, msg.author.id, color))
+                            m = await msg.channel.send(await utils.getPageEmbed(pageData._id, msg.author.id, color, msg.channel.id))
                             await displayPage(params, m, pageData.cat, pageData._id)
                         } 
                         let indice = +rep.first().content
@@ -699,7 +699,7 @@ async function displayPage(params, m, cat, _id = false) {
                         await mongo.save(pageData._id, newObject)
                     }
                     await m.delete()
-                    m = await msg.channel.send(await utils.getPageEmbed(pageData._id, msg.author.id, color))
+                    m = await msg.channel.send(await utils.getPageEmbed(pageData._id, msg.author.id, color, msg.channel.id))
                     await displayPage(params, m, pageData.cat, pageData._id)
                     
                 }
@@ -729,10 +729,6 @@ async function displayPage(params, m, cat, _id = false) {
                     utils.log("pageDelete", {pageData, msg});
                 } 
                 
-
-
-
-
                 break;
 
             case "👁":
@@ -769,10 +765,10 @@ async function displayPage(params, m, cat, _id = false) {
             case "🔗":
 
                 bot.users.cache.get(msg.author.id).send(new MessageEmbed()
-                .setColor(color)
-                .setTitle(`${pageData.name} [${cat}]`)
-                .setDescription(pageData.lien.join("\r\n"))
-                .setThumbnail(pageData.imageURL)
+                    .setColor(color)
+                    .setTitle(`${pageData.name} [${cat}]`)
+                    .setDescription(pageData.lien.join("\r\n"))
+                    .setThumbnail(pageData.imageURL)
                 )
                 await m.edit(await getModifiedEmbed(
                     `- ✅ Lien(s) de cette page envoyé(s) en mp !`
@@ -782,12 +778,22 @@ async function displayPage(params, m, cat, _id = false) {
 
 
             default: 
-                //3 dots
-                reaction.users.remove(bot.user.id)
-                let additionnalReactions = ['anime', 'manga', 'film', 'série'].includes(cat) ? ["👁", "⌚", "📊", "🔗"] : ["📊", "🔗"]   
-                reactions = reactions.concat(additionnalReactions)
-                for (let i in additionnalReactions) await m.react(additionnalReactions[i])
-                break
+
+                    
+                if (reaction.emoji.id === "668090650746683392") {
+                    //back
+                    await m.delete()
+                    bot.commands.get("stockage").run(msg, [], "stockage", color, true)
+
+                } else {
+
+                    //3 dots
+                    reaction.users.remove(bot.user.id)
+                    let additionnalReactions = ['anime', 'manga', 'film', 'série'].includes(cat) ? ["👁", "⌚", "📊", "🔗"] : ["📊", "🔗"]   
+                    reactions = reactions.concat(additionnalReactions)
+                    for (let i in additionnalReactions) await m.react(additionnalReactions[i])
+                }
+                break;
 
         }
 

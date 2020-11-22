@@ -1,14 +1,15 @@
 module.exports = class EmbedPage {
 
-    constructor(page, userID, color) {
+    constructor(page, userID, color, channelID) {
 
-        this.page = page
-        this.userID = userID
-        this.color = color
+        this.page = page;
+        this.userID = userID;
+        this.color = color;
+        this.channelID = channelID;
     
     }
 
-    async getEmbed(color) {
+    async getEmbed() {
 
         //description
         let categoryObject = this.categoryPattern()
@@ -27,9 +28,9 @@ module.exports = class EmbedPage {
         
         //embed
         let embed = new MessageEmbed()
-            .setColor(color)
+            .setColor(this.color)
             .setThumbnail("https://bsyswallet.com/assets/img/new/loading.gif")
-            .setImage(this.page.imageURL)
+            .setImage(this.channelID ? bot.channels.cache.get(this.channelID).nsfw === false && this.page.cat === "NSFW" ? "https://preview.redd.it/yrk4gft60w721.png?auto=webp&s=022e389199e05ac28eac15c820e31d42e2f3a9c5" : this.page.imageURL : this.page.imageURL)
 
             .setTitle(
                 this.page[this.userID ? this.page.cat === "anime" ? db.user.find(val => val.id === this.userID).get("langTitle").value() === "🇬🇧" ? "name" : "japName" : "name" : "name"]
@@ -106,7 +107,7 @@ module.exports = class EmbedPage {
                     Année__de__sortie: this.page.releaseDate,
                     Studio__d_animation: this.page.studio,
                     Nombre__d_épisodes: this.page.episodesCount,
-                    Score__MAL: this.check(this.page.scoreMAL) ? "[" + this.page.scoreMAL + "]" + this.check(this.page.urlMAL) ? `(${this.page.urlMAL})` : "" : false,
+                    Score__MAL: this.check(this.page.scoreMAL) ? "[" + this.page.scoreMAL + "](" + (this.check(this.page.urlMAL) ? this.page.urlMAL : "https://google.com") + ")" : false,
                     Tags: this.page.tags.map(val => "`"+ val + "`"),
                     Trailer: this.check(this.page.trailer) ? "[🎥](" + this.page.trailer + ")" : false,
                     Votes: this.page.stats.like.length + "\\👍 | " + this.page.stats.dislike.length + "\\👎",

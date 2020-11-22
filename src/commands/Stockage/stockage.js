@@ -21,10 +21,10 @@ module.exports = class extends CommandPattern {
         super(commandParams)
     }
 
-    async run (msg, args, cmd, color) {
+    async run (msg, args, cmd, color, fetch) {
 
         var { menu, displayPage } = require("./_utils.js")
-        await msg.delete()
+        if (!fetch) await msg.delete()
 
         var Menu = new menu().Menu
         
@@ -64,7 +64,7 @@ module.exports = class extends CommandPattern {
 
             if (result.length === 0)  return msg.reply(`la recherche rapide de \`${args.join(" ")}\` n'a donné aucun résultat !`)
             
-            let embed = await utils.getPageEmbed(result[0]._id, msg.author.id, color)
+            let embed = await utils.getPageEmbed(result[0]._id, msg.author.id, color, msg.channel.id)
             let m = await msg.channel.send(embed)
             await displayPage(params, m, result[0].cat, result[0]._id)
             return

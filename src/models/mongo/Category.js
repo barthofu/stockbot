@@ -76,7 +76,7 @@ const objectCategory = {
 
 
 
-const config = {
+const configObject = {
     timestamps: true,
     versionKey: false
 }
@@ -101,7 +101,8 @@ const objectConst = {
 module.exports = class DataPage {
 
     constructor (cat) {
-        this.cat = cat
+        this.cat = cat;
+        this.catCollectionName = config.categories.find(val => val.name == cat).collectionName || cat;
     }
 
 
@@ -118,12 +119,12 @@ module.exports = class DataPage {
         )
 
         return mongoose.model(
-            this.cat, 
+            this.catCollectionName, 
             mongoose.Schema(
                 Object.assign(objectCategory[this.cat], objectConstCopy), 
-                config
+                configObject
             ),
-            this.cat
+            this.catCollectionName
         )
 
     }

@@ -73,6 +73,7 @@
         },
         {
             "name": "série",
+            "collectionName": "serie",
             "fancyName": "Séries",
             "emote": "🎞",
             "image": "https://img.icons8.com/cotton/2x/movie-beginning.png",

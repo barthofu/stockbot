@@ -28,7 +28,7 @@ module.exports = class {
             if (index === config.activities.length) index = 0
             
             //stats update
-            client.updateStats()
+            client.checkDaily()
             
         }, 15 * 1000) //each 15 sec
         

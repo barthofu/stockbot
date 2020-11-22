@@ -55,7 +55,8 @@ module.exports = class Utils {
                     like: data.voteup,
                     dislike: data.votedown
                 },
-                "cat": data.cat
+                "cat": data.cat,
+                "addedBy": "260908777446965248"
             }
 
             if (["anime", "manga", "série", "film"].includes(data.cat)) Object.assign(obj, {
@@ -244,11 +245,11 @@ module.exports = class Utils {
     }
 
     
-    async getPageEmbed(_id, userID = false, color = config.colors.default) {
+    async getPageEmbed(_id, userID = false, color = config.colors.default, channelID = false) {
 
         let page = this.getPageByID(_id) || this.getPageByName(_id)[0]
         if (!page) return false
-        let embed = new PageEmbed(page, userID, color)
+        let embed = new PageEmbed(page, userID, color, channelID)
         embed = await embed.getEmbed(color)
 
         return embed
@@ -367,7 +368,7 @@ module.exports = class Utils {
                 details: db.stats.get("actual.commands.details").value()
             },
             pages: {
-                visits: this.mergePages().map(val => val.visites).reduce((a, b) => a + b),
+                visits: this.mergePages().map(val => val.stats.visites).reduce((a, b) => a + b),
                 total: this.mergePages().length,
                 categories: catObj
             }

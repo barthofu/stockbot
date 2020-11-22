@@ -76,18 +76,27 @@ module.exports = class {
     }
 
 
+    checkDaily() {
+
+        let day = dateFormat(new Date(), "dd");
+        if (day != db.data.get("currentDay").value()) {
+
+            db.data.set("currentDay", day).write();
+
+            this.updateStats()
+        }
+    }
+
+
 
     updateStats () {
 
-        let day = `${dateFormat(new Date(), "dd-mm-yyyy")}`;
-        if (day !== db.stats.get(`daily[${db.stats.get(`daily`).size().value()-1}].date`).value()) {
 
             let date = `${dateFormat(new Date(new Date().getTime() - 60 * 60 * 24), "dd-mm-yyyy")}`;
             db.stats.get("daily").push(Object.assign(
                 { date: date },
                 utils.getStats()
             )).write();
-        }
 
     }
 

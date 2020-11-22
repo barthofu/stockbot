@@ -33,6 +33,14 @@
       "authorId": "260908777446965248",
       "messageId": "779664586131374080",
       "timestamp": 1605956923786
+    },
+    {
+      "_id": "5fb97b345bfae53d684fd0f2",
+      "cat": "NSFW",
+      "name": "sextape Punky & Bartho",
+      "authorId": "735029795691429901",
+      "messageId": "779808444592291890",
+      "timestamp": 1605991222543
     }
   ],
   "seasonals": [
@@ -96,5 +104,6 @@
         "hour": "17h30"
       }
     }
-  ]
+  ],
+  "currentDay": "22"
 }

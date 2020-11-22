@@ -1,17 +1,17 @@
 {
   "actual": {
     "commands": {
-      "total": 352,
+      "total": 377,
       "details": {
-        "stockage": 172,
+        "stockage": 193,
         "profile": 9,
-        "help": 23,
+        "help": 24,
         "monitor": 12,
         "updatechannel": 16,
         "asklist": 49,
         "nsfw": 6,
         "ask": 9,
-        "stats": 19,
+        "stats": 20,
         "suggest": 2,
         "report": 2,
         "gametuto": 3,
@@ -22,7 +22,7 @@
         "newepisode": 7,
         "send": 2,
         "sendembed": 3,
-        "displaylogs": 7
+        "displaylogs": 9
       }
     }
   },
@@ -4823,6 +4823,94 @@
           "musique": 18,
           "jeux": 107,
           "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "21-11-2020",
+      "guilds": 4,
+      "users": 98,
+      "activeUsers": 2,
+      "commands": {
+        "total": 352,
+        "details": {
+          "stockage": 172,
+          "profile": 9,
+          "help": 23,
+          "monitor": 12,
+          "updatechannel": 16,
+          "asklist": 49,
+          "nsfw": 6,
+          "ask": 9,
+          "stats": 19,
+          "suggest": 2,
+          "report": 2,
+          "gametuto": 3,
+          "invite": 1,
+          "logs": 2,
+          "ping": 7,
+          "maintenance": 1,
+          "newepisode": 7,
+          "send": 2,
+          "sendembed": 3,
+          "displaylogs": 7
+        }
+      },
+      "pages": {
+        "visits": null,
+        "total": 100,
+        "categories": {
+          "anime": 100,
+          "manga": 0,
+          "série": 0,
+          "film": 0,
+          "musique": 0,
+          "jeux": 0,
+          "NSFW": 0
+        }
+      }
+    },
+    {
+      "date": "21-11-2020",
+      "guilds": 4,
+      "users": 98,
+      "activeUsers": 2,
+      "commands": {
+        "total": 355,
+        "details": {
+          "stockage": 172,
+          "profile": 9,
+          "help": 24,
+          "monitor": 12,
+          "updatechannel": 16,
+          "asklist": 49,
+          "nsfw": 6,
+          "ask": 9,
+          "stats": 19,
+          "suggest": 2,
+          "report": 2,
+          "gametuto": 3,
+          "invite": 1,
+          "logs": 2,
+          "ping": 7,
+          "maintenance": 1,
+          "newepisode": 7,
+          "send": 2,
+          "sendembed": 3,
+          "displaylogs": 9
+        }
+      },
+      "pages": {
+        "visits": null,
+        "total": 966,
+        "categories": {
+          "anime": 295,
+          "manga": 84,
+          "série": 132,
+          "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 22
         }
       }
     }
