@@ -44,7 +44,7 @@ module.exports = class {
                 if (value.permission.owner == true && !config.dev.includes(msg.author.id)) return msg.reply("tu manques de permissions pour pouvoir utiliser cette commande !")
                 let neededPermission = []
                 value.permission.memberPermission.forEach(permission => {
-                    if(!msg.channel.permissionsFor(msg.member).has(perm)) neededPermission.push(permission)
+                    if(!msg.channel.permissionsFor(msg.member).has(permission)) neededPermission.push(permission)
                 })
                 if (neededPermission.length > 0 && !config.dev.includes(msg.author.id)) return msg.reply("tu manques de permissions pour pouvoir utiliser cette commande !")
                 //check bot permission

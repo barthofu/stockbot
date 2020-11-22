@@ -3,7 +3,7 @@
     "559497139257081862": {
       "id": "559497139257081862",
       "prefix": "s!",
-      "nsfwEnabled": false,
+      "nsfwEnabled": true,
       "updateChannel": "559825597728161825",
       "updateRole": false,
       "updateIgnoreCategories": []
@@ -68,14 +68,6 @@
       "prefix": "s!",
       "nsfwEnabled": true,
       "updateChannel": "586915520507543552",
-      "updateRole": false,
-      "updateIgnoreCategories": []
-    },
-    "588089165531447327": {
-      "id": "588089165531447327",
-      "prefix": "s!",
-      "nsfwEnabled": true,
-      "updateChannel": "599355147725963353",
       "updateRole": false,
       "updateIgnoreCategories": []
     },
@@ -1485,7 +1477,24 @@
       "updateChannel": false,
       "updateRole": false,
       "updateIgnoreCategories": []
+    },
+    "419214818965454879": {
+      "id": "419214818965454879",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
     }
   },
-  "deleted": {}
+  "deleted": {
+    "588089165531447327": {
+      "id": "588089165531447327",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": "599355147725963353",
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    }
+  }
 }
