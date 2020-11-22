@@ -1,17 +1,17 @@
 {
   "actual": {
     "commands": {
-      "total": 425,
+      "total": 478,
       "details": {
-        "stockage": 206,
-        "profile": 12,
-        "help": 28,
+        "stockage": 239,
+        "profile": 17,
+        "help": 29,
         "monitor": 12,
-        "updatechannel": 17,
-        "asklist": 51,
+        "updatechannel": 19,
+        "asklist": 55,
         "nsfw": 8,
         "ask": 9,
-        "stats": 21,
+        "stats": 23,
         "suggest": 2,
         "report": 2,
         "gametuto": 4,
@@ -19,10 +19,10 @@
         "logs": 2,
         "ping": 7,
         "maintenance": 2,
-        "newepisode": 7,
+        "newepisode": 12,
         "send": 2,
         "sendembed": 23,
-        "displaylogs": 9
+        "displaylogs": 10
       }
     }
   },

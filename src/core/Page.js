@@ -110,7 +110,7 @@ module.exports = class EmbedPage {
                     Score__MAL: this.check(this.page.scoreMAL) ? "[" + this.page.scoreMAL + "](" + (this.check(this.page.urlMAL) ? this.page.urlMAL : "https://google.com") + ")" : false,
                     Tags: this.page.tags.map(val => "`"+ val + "`"),
                     Trailer: this.check(this.page.trailer) ? "[🎥](" + this.page.trailer + ")" : false,
-                    Votes: this.page.stats.like.length + "\\👍 | " + this.page.stats.dislike.length + "\\👎",
+                    Votes: "`" + this.page.stats.like.length + " 👍 | " + this.page.stats.dislike.length + " 👎`",
                     Fournisseur: this.check(this.page.fournisseur) ? "Fourni par " + this.page.fournisseur : false,
 
                     _saut: null,
@@ -128,7 +128,7 @@ module.exports = class EmbedPage {
                     Début__de__publication: this.page.releaseDate,
                     Auteur: this.page.author,
                     Nombre__de__tomes: this.page.volumesCount,
-                    Votes: this.page.stats.like.length + "\\👍 | " + this.page.stats.dislike.length + "\\👎",
+                    Votes: "`" + this.page.stats.like.length + " 👍 | " + this.page.stats.dislike.length + " 👎`",
                     Fournisseur: this.check(this.page.fournisseur) ? "Fourni par " + this.page.fournisseur : false,
 
                     _saut: null,
@@ -144,7 +144,7 @@ module.exports = class EmbedPage {
                 categoryObject = {
 
                     Date__de__sortie__initiale: this.page.releaseDate,
-                    Votes: this.page.stats.like.length + "\\👍 | " + this.page.stats.dislike.length + "\\👎",
+                    Votes: "`" + this.page.stats.like.length + " 👍 | " + this.page.stats.dislike.length + " 👎`",
                     Fournisseur: this.check(this.page.fournisseur) ? "Fourni par " + this.page.fournisseur : false,
 
                     _saut: null,
@@ -160,7 +160,7 @@ module.exports = class EmbedPage {
                 categoryObject = {
 
                     Date__de__sortie: this.page.releaseDate,
-                    Votes: this.page.stats.like.length + "\\👍 | " + this.page.stats.dislike.length + "\\👎",
+                    Votes: "`" + this.page.stats.like.length + " 👍 | " + this.page.stats.dislike.length + " 👎`",
                     Fournisseur: this.check(this.page.fournisseur) ? "Fourni par " + this.page.fournisseur : false,
 
                     _saut: null,
@@ -176,7 +176,7 @@ module.exports = class EmbedPage {
                 categoryObject = {
 
                     Genre: this.page.genre,
-                    Votes: this.page.stats.like.length + "\\👍 | " + this.page.stats.dislike.length + "\\👎",
+                    Votes: "`" + this.page.stats.like.length + " 👍 | " + this.page.stats.dislike.length + " 👎`",
                     Fournisseur: this.check(this.page.fournisseur) ? "Fourni par " + this.page.fournisseur : false,
 
                 }
@@ -191,7 +191,7 @@ module.exports = class EmbedPage {
                     Date__de__sortie: this.page.releaseDate,
                     Studio: this.page.studio,
                     Plateforme: this.page.genre,
-                    Votes: this.page.stats.like.length + "\\👍 | " + this.page.stats.dislike.length + "\\👎",
+                    Votes: "`" + this.page.stats.like.length + " 👍 | " + this.page.stats.dislike.length + " 👎`",
                     Fournisseur: this.check(this.page.fournisseur) ? "Fourni par " + this.page.fournisseur : false,
 
                     _saut: null,
@@ -208,7 +208,7 @@ module.exports = class EmbedPage {
                 categoryObject = {
 
                     Type: this.page.genre,
-                    Votes: this.page.stats.like.length + "\\👍 | " + this.page.stats.dislike.length + "\\👎",
+                    Votes: "`" + this.page.stats.like.length + " 👍 | " + this.page.stats.dislike.length + " 👎`",
                     Fournisseur: this.check(this.page.fournisseur) ? "Fourni par " + this.page.fournisseur : false,
 
                 }

@@ -1477,6 +1477,22 @@
       "updateChannel": false,
       "updateRole": false,
       "updateIgnoreCategories": []
+    },
+    "589283420815753237": {
+      "id": "589283420815753237",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "751703431466582100": {
+      "id": "751703431466582100",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
     }
   },
   "deleted": {
