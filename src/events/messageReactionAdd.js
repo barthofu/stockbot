@@ -13,6 +13,12 @@ module.exports = class {
 
                 //delete the message
                 await reaction.message.delete();
+                //update latest
+                db.data.set("latest", {
+                    name: obj.name,
+                    cat: obj.cat,
+                    date: dateFormat(new Date, "dd/mm/yyyy à HH:MM")
+                }).write()
                 //send the new page embed in all the update channels
                 await utils.sendNewPage(obj._id, obj.cat, mongo);
                 //log

@@ -1,8 +1,8 @@
 {
 
-    "token": "",
+    "description": "Bot Discord français de référençage de liens de téléchargement de contenu multimédia (anime/manga/films/séries/etc)",
 
-    "description": "",
+    "version": "3.0.0",
 
     "prefix": "s!",
     
@@ -11,7 +11,10 @@
     "ownerID": "260908777446965248",
 
     "dev": [
-        "260908777446965248"
+        "260908777446965248",
+        "192761080114708480",
+        "341833849866813443",
+        "735029795691429901"
     ],
 
     "colors": {
@@ -36,12 +39,24 @@
 
     "activities": [
         {
-            "text": "discord.js v12",
+            "text": "stocker POIDS To de données",
             "type": "PLAYING"
         },
         {
-            "text": "some knowledge",
-            "type": "STREAMING"
+            "text": "trier FICHIERS fichiers",
+            "type": "PLAYING"
+        },
+        {
+            "text": "s!help",
+            "type": "WATCHING"
+        },
+        {
+            "text": "s!help",
+            "type": "WATCHING"
+        },
+        {
+            "text": "version VERSION",
+            "type": "PLAYING"
         }
     ],
 

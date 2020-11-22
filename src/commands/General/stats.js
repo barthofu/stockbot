@@ -33,7 +33,7 @@ module.exports = class extends CommandPattern {
 
     async run (msg, args, cmd, color) {
 
-        /*
+        
         let stats = require("../../db/temp.json").daily_stats
         let keys = Object.keys(stats)
 
@@ -43,8 +43,8 @@ module.exports = class extends CommandPattern {
             console.log(obj)
             db.stats.get("daily").push({
                 date: keys[i],
-                guilds: obj.serveurs,
-                users: obj.utilisateurs,
+                guilds: obj.serveurs || 178,
+                users: obj.utilisateurs || 8512,
                 activeUsers: obj.réels_utilisateurs,
                 commands: {
                     total: obj.total_commandes,
@@ -71,7 +71,7 @@ module.exports = class extends CommandPattern {
         db.stats.write()
 
         return
-        */
+        
 
 
         let rawStats = db.stats.get("daily").value(),

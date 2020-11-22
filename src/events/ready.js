@@ -4,8 +4,9 @@ module.exports = class {
     
     async run () {
         
-        client.startingConsole()
-        utils.log("connected")
+        client.startingConsole();
+        utils.log("connected");
+        bot.user.setStatus('idle');
         
         setInterval(async () => {
             
@@ -20,9 +21,13 @@ module.exports = class {
                 })
             } else {
                 //other activities
-                bot.user.setActivity(activity.text, {
-                    type: activity.type
-                }) //different activities : 'PLAYING', 'WATCHING', 'LISTENING'
+                bot.user.setActivity(
+                    activity.text
+                        .replace("POIDS", db.data.get("stats.poids").value())
+                        .replace("FICHIERS", db.data.get("stats.fichiers").value())
+                        .replace("VERSION", config.version),
+                    { type: activity.type }
+                ) //different activities : 'PLAYING', 'WATCHING', 'LISTENING'
             }
             index++
             if (index === config.activities.length) index = 0

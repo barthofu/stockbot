@@ -150,7 +150,7 @@ module.exports = class {
         let params = {
             categories: fs.readdirSync(`./src/commands`).length,
             commands: this.bot.commands.size,
-            databases: Object.keys(db).length,
+            databases: Object.keys(db).length - config.categories.length,
             events: fs.readdirSync("./src/events").filter(file => file.endsWith('.js')).length
         }
 

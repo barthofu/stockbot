@@ -65,7 +65,7 @@ module.exports = class EmbedPage {
 
             embed.setAuthor(bot.users.cache.get(this.userID).username, bot.users.cache.get(this.userID).displayAvatarURL({dynamic: true}))
             //footer important message
-            embed.setFooter("MESSAGE IMPORTANT : De nombreux liens sont indisponibles car nous déplaçons certains contenus que nous stockons sur mega sur d'autres comptes. Si vous voyez ce message, c'est que l'opération n'est pas terminée.")
+            embed.setFooter("MESSAGE IMPORTANT : Déplacement des fichiers bientôt terminé ! (encore quelques liens indisponibles)")
 
         }
 

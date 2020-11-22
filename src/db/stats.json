@@ -1,17 +1,17 @@
 {
   "actual": {
     "commands": {
-      "total": 377,
+      "total": 383,
       "details": {
-        "stockage": 193,
+        "stockage": 195,
         "profile": 9,
-        "help": 24,
+        "help": 26,
         "monitor": 12,
         "updatechannel": 16,
-        "asklist": 49,
+        "asklist": 50,
         "nsfw": 6,
         "ask": 9,
-        "stats": 20,
+        "stats": 21,
         "suggest": 2,
         "report": 2,
         "gametuto": 3,
@@ -1754,6 +1754,8 @@
     },
     {
       "date": "25-06-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 624,
       "commands": {
         "total": 25978,
@@ -1775,6 +1777,8 @@
     },
     {
       "date": "26-06-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 624,
       "commands": {
         "total": 26017,
@@ -1796,6 +1800,8 @@
     },
     {
       "date": "27-06-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 625,
       "commands": {
         "total": 26073,
@@ -1817,6 +1823,8 @@
     },
     {
       "date": "28-06-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 627,
       "commands": {
         "total": 26160,
@@ -1838,6 +1846,8 @@
     },
     {
       "date": "29-06-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 627,
       "commands": {
         "total": 26236,
@@ -1859,6 +1869,8 @@
     },
     {
       "date": "30-06-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 628,
       "commands": {
         "total": 26278,
@@ -1880,6 +1892,8 @@
     },
     {
       "date": "01-07-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 628,
       "commands": {
         "total": 26323,
@@ -1901,6 +1915,8 @@
     },
     {
       "date": "02-07-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 628,
       "commands": {
         "total": 26360,
@@ -1922,6 +1938,8 @@
     },
     {
       "date": "03-07-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 628,
       "commands": {
         "total": 26388,
@@ -1943,6 +1961,8 @@
     },
     {
       "date": "04-07-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 630,
       "commands": {
         "total": 26463,
@@ -1964,6 +1984,8 @@
     },
     {
       "date": "05-07-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 631,
       "commands": {
         "total": 26547,
@@ -1985,6 +2007,8 @@
     },
     {
       "date": "06-07-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 633,
       "commands": {
         "total": 26623,
@@ -2006,6 +2030,8 @@
     },
     {
       "date": "07-07-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 636,
       "commands": {
         "total": 26666,
@@ -2027,6 +2053,8 @@
     },
     {
       "date": "08-07-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 636,
       "commands": {
         "total": 26696,
@@ -2048,6 +2076,8 @@
     },
     {
       "date": "09-07-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 639,
       "commands": {
         "total": 26747,
@@ -2069,6 +2099,8 @@
     },
     {
       "date": "10-07-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 641,
       "commands": {
         "total": 26802,
@@ -2090,6 +2122,8 @@
     },
     {
       "date": "11-07-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 645,
       "commands": {
         "total": 26848,
@@ -2111,6 +2145,8 @@
     },
     {
       "date": "12-07-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 645,
       "commands": {
         "total": 26892,
@@ -2132,6 +2168,8 @@
     },
     {
       "date": "13-07-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 647,
       "commands": {
         "total": 26953,
@@ -2153,6 +2191,8 @@
     },
     {
       "date": "14-07-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 648,
       "commands": {
         "total": 26996,
@@ -2174,6 +2214,8 @@
     },
     {
       "date": "15-07-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 648,
       "commands": {
         "total": 27035,
@@ -2195,6 +2237,8 @@
     },
     {
       "date": "16-07-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 651,
       "commands": {
         "total": 27091,
@@ -2216,6 +2260,8 @@
     },
     {
       "date": "17-07-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 653,
       "commands": {
         "total": 27218,
@@ -2237,6 +2283,8 @@
     },
     {
       "date": "18-07-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 653,
       "commands": {
         "total": 27274,
@@ -2258,6 +2306,8 @@
     },
     {
       "date": "19-07-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 658,
       "commands": {
         "total": 27323,
@@ -2279,6 +2329,8 @@
     },
     {
       "date": "21-07-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 660,
       "commands": {
         "total": 27380,
@@ -2300,6 +2352,8 @@
     },
     {
       "date": "22-07-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 660,
       "commands": {
         "total": 27399,
@@ -2321,6 +2375,8 @@
     },
     {
       "date": "23-07-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 662,
       "commands": {
         "total": 27428,
@@ -2342,6 +2398,8 @@
     },
     {
       "date": "24-07-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 663,
       "commands": {
         "total": 27495,
@@ -2363,6 +2421,8 @@
     },
     {
       "date": "25-07-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 664,
       "commands": {
         "total": 27522,
@@ -2384,6 +2444,8 @@
     },
     {
       "date": "26-07-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 665,
       "commands": {
         "total": 27573,
@@ -2405,6 +2467,8 @@
     },
     {
       "date": "27-07-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 670,
       "commands": {
         "total": 27633,
@@ -2426,6 +2490,8 @@
     },
     {
       "date": "28-07-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 672,
       "commands": {
         "total": 27670,
@@ -2447,6 +2513,8 @@
     },
     {
       "date": "29-07-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 674,
       "commands": {
         "total": 27752,
@@ -2468,6 +2536,8 @@
     },
     {
       "date": "31-07-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 674,
       "commands": {
         "total": 27852,
@@ -2489,6 +2559,8 @@
     },
     {
       "date": "01-08-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 678,
       "commands": {
         "total": 27947,
@@ -2510,6 +2582,8 @@
     },
     {
       "date": "02-08-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 679,
       "commands": {
         "total": 28083,
@@ -2531,6 +2605,8 @@
     },
     {
       "date": "03-08-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 679,
       "commands": {
         "total": 28113,
@@ -2552,6 +2628,8 @@
     },
     {
       "date": "04-08-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 684,
       "commands": {
         "total": 28173,
@@ -2573,6 +2651,8 @@
     },
     {
       "date": "05-08-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 685,
       "commands": {
         "total": 28236,
@@ -2594,6 +2674,8 @@
     },
     {
       "date": "06-08-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 685,
       "commands": {
         "total": 28267,
@@ -2615,6 +2697,8 @@
     },
     {
       "date": "07-08-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 687,
       "commands": {
         "total": 28318,
@@ -2636,6 +2720,8 @@
     },
     {
       "date": "08-08-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 688,
       "commands": {
         "total": 28370,
@@ -2657,6 +2743,8 @@
     },
     {
       "date": "09-08-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 688,
       "commands": {
         "total": 28402,
@@ -2678,6 +2766,8 @@
     },
     {
       "date": "10-08-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 690,
       "commands": {
         "total": 28443,
@@ -2699,6 +2789,8 @@
     },
     {
       "date": "11-08-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 691,
       "commands": {
         "total": 28480,
@@ -2720,6 +2812,8 @@
     },
     {
       "date": "12-08-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 692,
       "commands": {
         "total": 28522,
@@ -2741,6 +2835,8 @@
     },
     {
       "date": "13-08-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 696,
       "commands": {
         "total": 28583,
@@ -2762,6 +2858,8 @@
     },
     {
       "date": "14-08-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 696,
       "commands": {
         "total": 28616,
@@ -2783,6 +2881,8 @@
     },
     {
       "date": "15-08-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 697,
       "commands": {
         "total": 28657,
@@ -2804,6 +2904,8 @@
     },
     {
       "date": "16-08-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 697,
       "commands": {
         "total": 28680,
@@ -2825,6 +2927,8 @@
     },
     {
       "date": "17-08-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 697,
       "commands": {
         "total": 28708,
@@ -2846,6 +2950,8 @@
     },
     {
       "date": "18-08-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 699,
       "commands": {
         "total": 28731,
@@ -2867,6 +2973,8 @@
     },
     {
       "date": "19-08-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 699,
       "commands": {
         "total": 28771,
@@ -2888,6 +2996,8 @@
     },
     {
       "date": "20-08-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 699,
       "commands": {
         "total": 28799,
@@ -2909,6 +3019,8 @@
     },
     {
       "date": "21-08-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 699,
       "commands": {
         "total": 28822,
@@ -2930,6 +3042,8 @@
     },
     {
       "date": "22-08-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 699,
       "commands": {
         "total": 28849,
@@ -2951,6 +3065,8 @@
     },
     {
       "date": "23-08-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 700,
       "commands": {
         "total": 28893,
@@ -2972,6 +3088,8 @@
     },
     {
       "date": "24-08-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 700,
       "commands": {
         "total": 28932,
@@ -2993,6 +3111,8 @@
     },
     {
       "date": "25-08-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 701,
       "commands": {
         "total": 28956,
@@ -3014,6 +3134,8 @@
     },
     {
       "date": "26-08-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 701,
       "commands": {
         "total": 28976,
@@ -3035,6 +3157,8 @@
     },
     {
       "date": "27-08-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 702,
       "commands": {
         "total": 29006,
@@ -3056,6 +3180,8 @@
     },
     {
       "date": "28-08-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 703,
       "commands": {
         "total": 29051,
@@ -3077,6 +3203,8 @@
     },
     {
       "date": "29-08-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 703,
       "commands": {
         "total": 29071,
@@ -3098,6 +3226,8 @@
     },
     {
       "date": "30-08-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 703,
       "commands": {
         "total": 29088,
@@ -3119,6 +3249,8 @@
     },
     {
       "date": "31-08-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 704,
       "commands": {
         "total": 29115,
@@ -3140,6 +3272,8 @@
     },
     {
       "date": "01-09-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 708,
       "commands": {
         "total": 29153,
@@ -3161,6 +3295,8 @@
     },
     {
       "date": "02-09-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 709,
       "commands": {
         "total": 29190,
@@ -3182,6 +3318,8 @@
     },
     {
       "date": "03-09-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 709,
       "commands": {
         "total": 29239,
@@ -3203,6 +3341,8 @@
     },
     {
       "date": "04-09-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 711,
       "commands": {
         "total": 29262,
@@ -3224,6 +3364,8 @@
     },
     {
       "date": "05-09-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 714,
       "commands": {
         "total": 29292,
@@ -3245,6 +3387,8 @@
     },
     {
       "date": "06-09-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 714,
       "commands": {
         "total": 29302,
@@ -3266,6 +3410,8 @@
     },
     {
       "date": "07-09-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 715,
       "commands": {
         "total": 29355,
@@ -3287,6 +3433,8 @@
     },
     {
       "date": "08-09-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 717,
       "commands": {
         "total": 29376,
@@ -3308,6 +3456,8 @@
     },
     {
       "date": "09-09-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 717,
       "commands": {
         "total": 29391,
@@ -3329,6 +3479,8 @@
     },
     {
       "date": "10-09-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 722,
       "commands": {
         "total": 29468,
@@ -3350,6 +3502,8 @@
     },
     {
       "date": "11-09-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 724,
       "commands": {
         "total": 29550,
@@ -3371,6 +3525,8 @@
     },
     {
       "date": "12-09-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 726,
       "commands": {
         "total": 29617,
@@ -3392,6 +3548,8 @@
     },
     {
       "date": "13-09-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 726,
       "commands": {
         "total": 29657,
@@ -3413,6 +3571,8 @@
     },
     {
       "date": "14-09-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 727,
       "commands": {
         "total": 29689,
@@ -3434,6 +3594,8 @@
     },
     {
       "date": "15-09-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 727,
       "commands": {
         "total": 29704,
@@ -3455,6 +3617,8 @@
     },
     {
       "date": "16-09-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 732,
       "commands": {
         "total": 29777,
@@ -3476,6 +3640,8 @@
     },
     {
       "date": "17-09-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 749,
       "commands": {
         "total": 30040,
@@ -3497,6 +3663,8 @@
     },
     {
       "date": "18-09-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 751,
       "commands": {
         "total": 30087,
@@ -3518,6 +3686,8 @@
     },
     {
       "date": "19-09-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 759,
       "commands": {
         "total": 30161,
@@ -3539,6 +3709,8 @@
     },
     {
       "date": "21-09-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 763,
       "commands": {
         "total": 30245,
@@ -3560,6 +3732,8 @@
     },
     {
       "date": "22-09-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 763,
       "commands": {
         "total": 30270,
@@ -3581,6 +3755,8 @@
     },
     {
       "date": "23-09-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 764,
       "commands": {
         "total": 30302,
@@ -3602,6 +3778,8 @@
     },
     {
       "date": "24-09-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 764,
       "commands": {
         "total": 30325,
@@ -3623,6 +3801,8 @@
     },
     {
       "date": "25-09-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 765,
       "commands": {
         "total": 30352,
@@ -3644,6 +3824,8 @@
     },
     {
       "date": "26-09-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 768,
       "commands": {
         "total": 30427,
@@ -3665,6 +3847,8 @@
     },
     {
       "date": "27-09-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 771,
       "commands": {
         "total": 30463,
@@ -3686,6 +3870,8 @@
     },
     {
       "date": "28-09-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 774,
       "commands": {
         "total": 30513,
@@ -3707,6 +3893,8 @@
     },
     {
       "date": "29-09-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 775,
       "commands": {
         "total": 30547,
@@ -3728,6 +3916,8 @@
     },
     {
       "date": "30-09-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 776,
       "commands": {
         "total": 30569,
@@ -3749,6 +3939,8 @@
     },
     {
       "date": "01-10-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 777,
       "commands": {
         "total": 30595,
@@ -3770,6 +3962,8 @@
     },
     {
       "date": "02-10-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 777,
       "commands": {
         "total": 30623,
@@ -3791,6 +3985,8 @@
     },
     {
       "date": "03-10-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 777,
       "commands": {
         "total": 30648,
@@ -3812,6 +4008,8 @@
     },
     {
       "date": "04-10-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 780,
       "commands": {
         "total": 30702,
@@ -3833,6 +4031,8 @@
     },
     {
       "date": "05-10-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 780,
       "commands": {
         "total": 30764,
@@ -3854,6 +4054,8 @@
     },
     {
       "date": "06-10-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 780,
       "commands": {
         "total": 30785,
@@ -3875,6 +4077,8 @@
     },
     {
       "date": "07-10-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 782,
       "commands": {
         "total": 30796,
@@ -3896,6 +4100,8 @@
     },
     {
       "date": "08-10-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 784,
       "commands": {
         "total": 30817,
@@ -3917,6 +4123,8 @@
     },
     {
       "date": "09-10-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 785,
       "commands": {
         "total": 30826,
@@ -3938,6 +4146,8 @@
     },
     {
       "date": "10-10-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 786,
       "commands": {
         "total": 30858,
@@ -3959,6 +4169,8 @@
     },
     {
       "date": "11-10-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 790,
       "commands": {
         "total": 30922,
@@ -3980,6 +4192,8 @@
     },
     {
       "date": "12-10-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 791,
       "commands": {
         "total": 30960,
@@ -4001,6 +4215,8 @@
     },
     {
       "date": "13-10-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 791,
       "commands": {
         "total": 30990,
@@ -4022,6 +4238,8 @@
     },
     {
       "date": "14-10-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 792,
       "commands": {
         "total": 31029,
@@ -4043,6 +4261,8 @@
     },
     {
       "date": "15-10-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 794,
       "commands": {
         "total": 31058,
@@ -4064,6 +4284,8 @@
     },
     {
       "date": "16-10-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 796,
       "commands": {
         "total": 31102,
@@ -4085,6 +4307,8 @@
     },
     {
       "date": "17-10-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 799,
       "commands": {
         "total": 31122,
@@ -4106,6 +4330,8 @@
     },
     {
       "date": "18-10-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 800,
       "commands": {
         "total": 31143,
@@ -4127,6 +4353,8 @@
     },
     {
       "date": "19-10-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 802,
       "commands": {
         "total": 31217,
@@ -4148,6 +4376,8 @@
     },
     {
       "date": "20-10-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 804,
       "commands": {
         "total": 31241,
@@ -4169,6 +4399,8 @@
     },
     {
       "date": "21-10-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 804,
       "commands": {
         "total": 31280,
@@ -4190,6 +4422,8 @@
     },
     {
       "date": "22-10-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 804,
       "commands": {
         "total": 31358,
@@ -4211,6 +4445,8 @@
     },
     {
       "date": "23-10-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 808,
       "commands": {
         "total": 31450,
@@ -4232,6 +4468,8 @@
     },
     {
       "date": "24-10-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 810,
       "commands": {
         "total": 31473,
@@ -4253,6 +4491,8 @@
     },
     {
       "date": "25-10-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 811,
       "commands": {
         "total": 31517,
@@ -4274,6 +4514,8 @@
     },
     {
       "date": "26-10-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 814,
       "commands": {
         "total": 31568,
@@ -4295,6 +4537,8 @@
     },
     {
       "date": "27-10-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 815,
       "commands": {
         "total": 31622,
@@ -4316,6 +4560,8 @@
     },
     {
       "date": "28-10-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 817,
       "commands": {
         "total": 31663,
@@ -4337,6 +4583,8 @@
     },
     {
       "date": "29-10-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 821,
       "commands": {
         "total": 31762,
@@ -4358,6 +4606,8 @@
     },
     {
       "date": "30-10-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 825,
       "commands": {
         "total": 31794,
@@ -4379,6 +4629,8 @@
     },
     {
       "date": "31-10-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 827,
       "commands": {
         "total": 31819,
@@ -4400,6 +4652,8 @@
     },
     {
       "date": "01-11-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 828,
       "commands": {
         "total": 31861,
@@ -4421,6 +4675,8 @@
     },
     {
       "date": "02-11-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 830,
       "commands": {
         "total": 31922,
@@ -4442,6 +4698,8 @@
     },
     {
       "date": "03-11-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 836,
       "commands": {
         "total": 31958,
@@ -4463,6 +4721,8 @@
     },
     {
       "date": "04-11-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 837,
       "commands": {
         "total": 31996,
@@ -4484,6 +4744,8 @@
     },
     {
       "date": "05-11-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 840,
       "commands": {
         "total": 32024,
@@ -4505,6 +4767,8 @@
     },
     {
       "date": "06-11-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 845,
       "commands": {
         "total": 32060,
@@ -4526,6 +4790,8 @@
     },
     {
       "date": "07-11-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 846,
       "commands": {
         "total": 32117,
@@ -4547,6 +4813,8 @@
     },
     {
       "date": "08-11-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 849,
       "commands": {
         "total": 32183,
@@ -4568,6 +4836,8 @@
     },
     {
       "date": "09-11-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 851,
       "commands": {
         "total": 32251,
@@ -4589,6 +4859,8 @@
     },
     {
       "date": "10-11-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 855,
       "commands": {
         "total": 32300,
@@ -4610,6 +4882,8 @@
     },
     {
       "date": "11-11-2020",
+      "guilds": 178,
+      "users": 8512,
       "activeUsers": 858,
       "commands": {
         "total": 32340,
@@ -4631,28 +4905,18 @@
     },
     {
       "date": "12-11-2020",
-      "guilds": 3,
-      "users": 99,
-      "activeUsers": 2,
+      "guilds": 178,
+      "users": 8512,
+      "activeUsers": 861,
       "commands": {
-        "total": 246,
-        "details": {
-          "stockage": 152,
-          "profile": 9,
-          "help": 1,
-          "monitor": 12,
-          "updatechannel": 16,
-          "asklist": 34,
-          "nsfw": 6,
-          "ask": 8,
-          "stats": 8
-        }
+        "total": 32385,
+        "details": {}
       },
       "pages": {
-        "visits": null,
-        "total": 969,
-        "categories": {
-          "anime": 300,
+        "visits": 14392,
+        "total": 960,
+        "details": {
+          "anime": 291,
           "manga": 84,
           "série": 132,
           "film": 308,
@@ -4664,37 +4928,44 @@
     },
     {
       "date": "13-11-2020",
-      "guilds": 3,
-      "users": 99,
-      "activeUsers": 2,
+      "guilds": 178,
+      "users": 8512,
+      "activeUsers": 874,
       "commands": {
-        "total": 275,
-        "details": {
-          "stockage": 154,
-          "profile": 9,
-          "help": 1,
-          "monitor": 12,
-          "updatechannel": 16,
-          "asklist": 34,
-          "nsfw": 6,
-          "ask": 9,
-          "stats": 19,
-          "suggest": 2,
-          "report": 2,
-          "gametuto": 1,
-          "invite": 1,
-          "logs": 2,
-          "ping": 7
-        }
+        "total": 32462,
+        "details": {}
       },
       "pages": {
-        "visits": null,
-        "total": 969,
-        "categories": {
-          "anime": 300,
+        "visits": 14433,
+        "total": 960,
+        "details": {
+          "anime": 291,
           "manga": 84,
           "série": 132,
           "film": 308,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "14-11-2020",
+      "guilds": 178,
+      "users": 8512,
+      "activeUsers": 875,
+      "commands": {
+        "total": 32515,
+        "details": {}
+      },
+      "pages": {
+        "visits": 14462,
+        "total": 966,
+        "details": {
+          "anime": 291,
+          "manga": 84,
+          "série": 135,
+          "film": 311,
           "musique": 18,
           "jeux": 107,
           "NSFW": 20
@@ -4703,38 +4974,113 @@
     },
     {
       "date": "15-11-2020",
-      "guilds": 3,
-      "users": 98,
-      "activeUsers": 2,
+      "guilds": 178,
+      "users": 8512,
+      "activeUsers": 876,
       "commands": {
-        "total": 281,
-        "details": {
-          "stockage": 159,
-          "profile": 9,
-          "help": 1,
-          "monitor": 12,
-          "updatechannel": 16,
-          "asklist": 34,
-          "nsfw": 6,
-          "ask": 9,
-          "stats": 19,
-          "suggest": 2,
-          "report": 2,
-          "gametuto": 1,
-          "invite": 1,
-          "logs": 2,
-          "ping": 7,
-          "maintenance": 1
-        }
+        "total": 32569,
+        "details": {}
       },
       "pages": {
-        "visits": null,
-        "total": 969,
-        "categories": {
-          "anime": 300,
+        "visits": 14488,
+        "total": 966,
+        "details": {
+          "anime": 291,
           "manga": 84,
-          "série": 132,
-          "film": 308,
+          "série": 135,
+          "film": 311,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "16-11-2020",
+      "guilds": 178,
+      "users": 8512,
+      "activeUsers": 882,
+      "commands": {
+        "total": 32679,
+        "details": {}
+      },
+      "pages": {
+        "visits": 14560,
+        "total": 966,
+        "details": {
+          "anime": 291,
+          "manga": 84,
+          "série": 135,
+          "film": 311,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "17-11-2020",
+      "guilds": 178,
+      "users": 8512,
+      "activeUsers": 882,
+      "commands": {
+        "total": 32894,
+        "details": {}
+      },
+      "pages": {
+        "visits": 14728,
+        "total": 966,
+        "details": {
+          "anime": 291,
+          "manga": 84,
+          "série": 135,
+          "film": 311,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "18-11-2020",
+      "guilds": 178,
+      "users": 8512,
+      "activeUsers": 885,
+      "commands": {
+        "total": 32933,
+        "details": {}
+      },
+      "pages": {
+        "visits": 14753,
+        "total": 966,
+        "details": {
+          "anime": 291,
+          "manga": 84,
+          "série": 135,
+          "film": 311,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "19-11-2020",
+      "guilds": 178,
+      "users": 8512,
+      "activeUsers": 886,
+      "commands": {
+        "total": 32979,
+        "details": {}
+      },
+      "pages": {
+        "visits": 14782,
+        "total": 966,
+        "details": {
+          "anime": 291,
+          "manga": 84,
+          "série": 135,
+          "film": 311,
           "musique": 18,
           "jeux": 107,
           "NSFW": 20
@@ -4743,174 +5089,70 @@
     },
     {
       "date": "20-11-2020",
-      "guilds": 3,
-      "users": 98,
-      "activeUsers": 2,
+      "guilds": 178,
+      "users": 8512,
+      "activeUsers": 889,
       "commands": {
-        "total": 288,
-        "details": {
-          "stockage": 159,
-          "profile": 9,
-          "help": 1,
-          "monitor": 12,
-          "updatechannel": 16,
-          "asklist": 34,
-          "nsfw": 6,
-          "ask": 9,
-          "stats": 19,
-          "suggest": 2,
-          "report": 2,
-          "gametuto": 1,
-          "invite": 1,
-          "logs": 2,
-          "ping": 7,
-          "maintenance": 1,
-          "newepisode": 7,
-          "send": 1
-        }
+        "total": 33028,
+        "details": {}
       },
       "pages": {
-        "visits": null,
-        "total": 969,
-        "categories": {
-          "anime": 300,
-          "manga": 84,
-          "série": 132,
-          "film": 308,
-          "musique": 18,
-          "jeux": 107,
-          "NSFW": 20
-        }
-      }
-    },
-    {
-      "date": "21-11-2020",
-      "guilds": 3,
-      "users": 98,
-      "activeUsers": 2,
-      "commands": {
-        "total": 296,
-        "details": {
-          "stockage": 163,
-          "profile": 9,
-          "help": 1,
-          "monitor": 12,
-          "updatechannel": 16,
-          "asklist": 34,
-          "nsfw": 6,
-          "ask": 9,
-          "stats": 19,
-          "suggest": 2,
-          "report": 2,
-          "gametuto": 1,
-          "invite": 1,
-          "logs": 2,
-          "ping": 7,
-          "maintenance": 1,
-          "newepisode": 7,
-          "send": 2,
-          "sendembed": 3
-        }
-      },
-      "pages": {
-        "visits": null,
-        "total": 969,
-        "categories": {
-          "anime": 300,
-          "manga": 84,
-          "série": 132,
-          "film": 308,
-          "musique": 18,
-          "jeux": 107,
-          "NSFW": 20
-        }
-      }
-    },
-    {
-      "date": "21-11-2020",
-      "guilds": 4,
-      "users": 98,
-      "activeUsers": 2,
-      "commands": {
-        "total": 352,
-        "details": {
-          "stockage": 172,
-          "profile": 9,
-          "help": 23,
-          "monitor": 12,
-          "updatechannel": 16,
-          "asklist": 49,
-          "nsfw": 6,
-          "ask": 9,
-          "stats": 19,
-          "suggest": 2,
-          "report": 2,
-          "gametuto": 3,
-          "invite": 1,
-          "logs": 2,
-          "ping": 7,
-          "maintenance": 1,
-          "newepisode": 7,
-          "send": 2,
-          "sendembed": 3,
-          "displaylogs": 7
-        }
-      },
-      "pages": {
-        "visits": null,
-        "total": 100,
-        "categories": {
-          "anime": 100,
-          "manga": 0,
-          "série": 0,
-          "film": 0,
-          "musique": 0,
-          "jeux": 0,
-          "NSFW": 0
-        }
-      }
-    },
-    {
-      "date": "21-11-2020",
-      "guilds": 4,
-      "users": 98,
-      "activeUsers": 2,
-      "commands": {
-        "total": 355,
-        "details": {
-          "stockage": 172,
-          "profile": 9,
-          "help": 24,
-          "monitor": 12,
-          "updatechannel": 16,
-          "asklist": 49,
-          "nsfw": 6,
-          "ask": 9,
-          "stats": 19,
-          "suggest": 2,
-          "report": 2,
-          "gametuto": 3,
-          "invite": 1,
-          "logs": 2,
-          "ping": 7,
-          "maintenance": 1,
-          "newepisode": 7,
-          "send": 2,
-          "sendembed": 3,
-          "displaylogs": 9
-        }
-      },
-      "pages": {
-        "visits": null,
+        "visits": 14811,
         "total": 966,
-        "categories": {
-          "anime": 295,
+        "details": {
+          "anime": 291,
           "manga": 84,
-          "série": 132,
-          "film": 308,
+          "série": 135,
+          "film": 311,
           "musique": 18,
           "jeux": 107,
-          "NSFW": 22
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "21-11-2020",
+      "guilds": 178,
+      "users": 8512,
+      "activeUsers": 893,
+      "commands": {
+        "total": 33092,
+        "details": {}
+      },
+      "pages": {
+        "visits": 14849,
+        "total": 967,
+        "details": {
+          "anime": 291,
+          "manga": 84,
+          "série": 135,
+          "film": 312,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "22-11-2020",
+      "guilds": 178,
+      "users": 8512,
+      "activeUsers": 897,
+      "commands": {
+        "total": 33259,
+        "details": {}
+      },
+      "pages": {
+        "visits": 14951,
+        "total": 967,
+        "details": {
+          "anime": 291,
+          "manga": 84,
+          "série": 135,
+          "film": 312,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
         }
       }
     }

@@ -25,7 +25,7 @@ module.exports = class extends CommandPattern {
     async run (msg, args, cmd, color) {
 
 
-    /*        
+        /*
         let array = require("../../db/temp.json")
         console.log("start")
         for (let i in array) {

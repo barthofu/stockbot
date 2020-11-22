@@ -1,48 +1,16 @@
 {
+  "currentDay": "22",
   "maintenance": true,
   "latest": {
-    "name": "Tamer",
-    "cat": "yes",
-    "date": "01-02-2002"
+    "name": "Jujutsu Kaisen S01E08",
+    "cat": "anime",
+    "date": "21/11/2020 à 02:00"
   },
   "stats": {
     "poids": 8,
     "fichiers": 42680
   },
-  "awaitVerification": [
-    {
-      "_id": "5fb8f4ecee5d0000d9001734",
-      "cat": "anime",
-      "name": "Test",
-      "authorId": "260908777446965248",
-      "messageId": "779664261286330389",
-      "timestamp": 1605956846387
-    },
-    {
-      "_id": "5fb8f523ee5d0000d9001735",
-      "cat": "anime",
-      "name": "Test",
-      "authorId": "260908777446965248",
-      "messageId": "779664490203054080",
-      "timestamp": 1605956901055
-    },
-    {
-      "_id": "5fb8f53aee5d0000d9001736",
-      "cat": "anime",
-      "name": "Test",
-      "authorId": "260908777446965248",
-      "messageId": "779664586131374080",
-      "timestamp": 1605956923786
-    },
-    {
-      "_id": "5fb97b345bfae53d684fd0f2",
-      "cat": "NSFW",
-      "name": "sextape Punky & Bartho",
-      "authorId": "735029795691429901",
-      "messageId": "779808444592291890",
-      "timestamp": 1605991222543
-    }
-  ],
+  "awaitVerification": [],
   "seasonals": [
     {
       "name": "One Piece",
@@ -104,6 +72,5 @@
         "hour": "17h30"
       }
     }
-  ],
-  "currentDay": "22"
+  ]
 }

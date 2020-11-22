@@ -41,7 +41,7 @@ let menu = class {
                     .setImage(this.image)
                     .setThumbnail(this.thumbnail)
                     .setColor(color)
-                    .setFooter("MESSAGE IMPORTANT : Certains liens sont indisponibles car nous déplaçons une énorme partie du contenu que nous stockons sur mega sur d'autres comptes. Si vous voyez ce message, c'est que l'opération n'est pas terminée.")
+                    .setFooter("MESSAGE IMPORTANT : Déplacement des fichiers bientôt terminé ! (encore quelques liens indisponibles)")
 
                 },
                 timeout(m) {

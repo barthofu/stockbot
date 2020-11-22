@@ -244,6 +244,46 @@ module.exports = class Utils {
 
     }
 
+
+    syncUsers () {
+
+        for (let i in db.temp.get("profil").value()) {
+
+            let val = db.temp.get("profil." + i).value()
+            db.user.push({
+                id: i,
+                langTitle: val.params.lang_title,
+                embedColor: val.params.color
+            }).value()
+            
+        }
+          db.user.write()
+
+    }
+
+
+    syncGuilds () {
+
+        for (let i in db.temp.get("server").value()) {
+
+            let val = db.temp.get("server." + i).value()
+            let ignoreArr = []
+            for (let k in val.notif) {
+                if (val.notif[k] == "non") ignoreArr.push(k)
+            }
+            db.guild.set("guilds." + val.id, {
+                id: val.id,
+                prefix: "s!",
+                nsfwEnabled: val.NSFW === "non" ? false : true,
+                updateChannel: val.updatechannel === "off" ? false : val.updatechannel,
+                updateRole: val.notif.role === "Aucun" ? false : val.notif.role,
+                updateIgnoreCategories: val.updatechannel === "off" ? [] : ignoreArr
+            }).value()
+            
+        }
+          db.guild.write()
+    }
+
     
     async getPageEmbed(_id, userID = false, color = config.colors.default, channelID = false) {
 

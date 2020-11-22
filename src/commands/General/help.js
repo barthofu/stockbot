@@ -93,7 +93,7 @@ module.exports = class extends CommandPattern {
                         return command.verification.enabled == true && command.permission.owner == false ? `\`${prefix}${commandName.split(".")[0]}\`${command.info.aliases.filter(val => !val.startsWith("_")).length > 0 ? ` (ou ${command.info.aliases.filter(val => !val.startsWith("_")).map(val => `\`${prefix}${val}\``).join(" | ")})`:""} | ${this.checkCommand(command)} ${command["info"]["desc"]}\n` : ""
                     } 
                 ).join("");
-                if (content.length > 0) embed.addField(category === "Stockage" ? "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n"+ category : category, content + (category === "Stockage" ? "*C'est la commande mère du bot et ce pourquoi il a été créé (elle est détaillée à la page 3)*" : ""));
+                if (content.length > 0) embed.addField(category === "Stockage" ? "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n"+ category : category, content + (category === "Stockage" ? "*C'est la commande mère du bot et ce pourquoi il a été créé (elle est détaillée à la page 3)*\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬" : ""));
             });
 
         } else {

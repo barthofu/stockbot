@@ -72,11 +72,19 @@ module.exports = class extends CommandPattern {
 
         if (reac.first().emoji.name === "✅") {
 
+            //update latest
+            db.data.set("latest", {
+                name: `${seasonalObj.name} ${seasonalObj.season ? `S0${seasonalObj.season}`:""}E${episode < 10 ? "0"+episode : episode}`,
+                cat: seasonalObj.cat,
+                date: dateFormat(new Date, "dd/mm/yyyy à HH:MM")
+            }).write()
+
             //send to update channels
             let checkedGuilds = db.guild.get("guilds").values().filter((value) => utils.sendNewPageValidator(value, "anime")).value();
             for (let i in checkedGuilds) await bot.channels.cache.get(checkedGuilds[i].updateChannel).send(embed);
             
             await m.edit(embed.setFooter("✅ | La notification a bien été envoyé sur tous les salons d'update !"));
+            
         } else await m.edit(embed.setFooter("❌ | Opération annulée"));
 
 

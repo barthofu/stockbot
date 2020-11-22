@@ -3,13 +3,1483 @@
     "559497139257081862": {
       "id": "559497139257081862",
       "prefix": "s!",
-      "nsfwEnabled": true,
-      "updateChannel": "567398326622748692",
-      "updateRole": "559501946894024742",
+      "nsfwEnabled": false,
+      "updateChannel": "559825597728161825",
+      "updateRole": false,
       "updateIgnoreCategories": []
     },
-    "779739794782683156": {
-      "id": "779739794782683156",
+    "543547574548824084": {
+      "id": "543547574548824084",
+      "prefix": "s!",
+      "nsfwEnabled": false,
+      "updateChannel": "561920774504448010",
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "523188602822197261": {
+      "id": "523188602822197261",
+      "prefix": "s!",
+      "nsfwEnabled": false,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "570734495226134538": {
+      "id": "570734495226134538",
+      "prefix": "s!",
+      "nsfwEnabled": false,
+      "updateChannel": "570741188869488650",
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "562733688404574321": {
+      "id": "562733688404574321",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": "570870204368814082",
+      "updateRole": false,
+      "updateIgnoreCategories": [
+        "manga",
+        "série",
+        "film",
+        "musique",
+        "jeux",
+        "NSFW"
+      ]
+    },
+    "560952436077101068": {
+      "id": "560952436077101068",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "435032201361358868": {
+      "id": "435032201361358868",
+      "prefix": "s!",
+      "nsfwEnabled": false,
+      "updateChannel": "510790150251347980",
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "364773242403291138": {
+      "id": "364773242403291138",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": "586915520507543552",
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "588089165531447327": {
+      "id": "588089165531447327",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": "599355147725963353",
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "581881379994730526": {
+      "id": "581881379994730526",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "583714157459800065": {
+      "id": "583714157459800065",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "590910512334766081": {
+      "id": "590910512334766081",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "571442712331550754": {
+      "id": "571442712331550754",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "571820624700244009": {
+      "id": "571820624700244009",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "470174303971966986": {
+      "id": "470174303971966986",
+      "prefix": "s!",
+      "nsfwEnabled": false,
+      "updateChannel": "600715621688279050",
+      "updateRole": false,
+      "updateIgnoreCategories": [
+        "série",
+        "film",
+        "musique",
+        "jeux",
+        "NSFW"
+      ]
+    },
+    "559508841083961344": {
+      "id": "559508841083961344",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": "602763023165161502",
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "330322477970620426": {
+      "id": "330322477970620426",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "546720456405811201": {
+      "id": "546720456405811201",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "609375643934785548": {
+      "id": "609375643934785548",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "548230957984120832": {
+      "id": "548230957984120832",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "573448635740848129": {
+      "id": "573448635740848129",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "637356607088623648": {
+      "id": "637356607088623648",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "640498140293627904": {
+      "id": "640498140293627904",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": "640678671891431455",
+      "updateRole": false,
+      "updateIgnoreCategories": [
+        "série",
+        "film",
+        "musique",
+        "NSFW"
+      ]
+    },
+    "608967573681209354": {
+      "id": "608967573681209354",
+      "prefix": "s!",
+      "nsfwEnabled": false,
+      "updateChannel": "641028688225370113",
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "554445087812222978": {
+      "id": "554445087812222978",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "364817510958104577": {
+      "id": "364817510958104577",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "327386393149964288": {
+      "id": "327386393149964288",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "558700971996348427": {
+      "id": "558700971996348427",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "652566177255653376": {
+      "id": "652566177255653376",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "481924992716767248": {
+      "id": "481924992716767248",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": "658003112472084502",
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "658050460648996884": {
+      "id": "658050460648996884",
+      "prefix": "s!",
+      "nsfwEnabled": false,
+      "updateChannel": "658050460648996889",
+      "updateRole": false,
+      "updateIgnoreCategories": [
+        "manga",
+        "série",
+        "musique",
+        "jeux",
+        "NSFW"
+      ]
+    },
+    "649696481942437908": {
+      "id": "649696481942437908",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "440179495551631361": {
+      "id": "440179495551631361",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "658445298317787156": {
+      "id": "658445298317787156",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "469442567969439744": {
+      "id": "469442567969439744",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "668899269645828096": {
+      "id": "668899269645828096",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "572893665005928459": {
+      "id": "572893665005928459",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": "643464310957539333",
+      "updateRole": false,
+      "updateIgnoreCategories": [
+        "NSFW"
+      ]
+    },
+    "666769753989447740": {
+      "id": "666769753989447740",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": "669970880172130305",
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "507656054109110285": {
+      "id": "507656054109110285",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": "563393730552266772",
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "627247896873402368": {
+      "id": "627247896873402368",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": "627972328013168683",
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "478317388874645514": {
+      "id": "478317388874645514",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "670959886372175872": {
+      "id": "670959886372175872",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "359738899632881664": {
+      "id": "359738899632881664",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "388744857797001236": {
+      "id": "388744857797001236",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "643019939485057024": {
+      "id": "643019939485057024",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "637207387979382784": {
+      "id": "637207387979382784",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "575465039381659658": {
+      "id": "575465039381659658",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "605170510766276667": {
+      "id": "605170510766276667",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "579436762468974602": {
+      "id": "579436762468974602",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "670175584919224321": {
+      "id": "670175584919224321",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "288633900123684867": {
+      "id": "288633900123684867",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": "673854147480518658",
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "673663163350253568": {
+      "id": "673663163350253568",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": "673851360331956254",
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "673890443569922088": {
+      "id": "673890443569922088",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": "673890443569922091",
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "511627755872583690": {
+      "id": "511627755872583690",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "567068108460785667": {
+      "id": "567068108460785667",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": "674727051055333386",
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "570752772492754944": {
+      "id": "570752772492754944",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "543134046692311040": {
+      "id": "543134046692311040",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "661692811128864768": {
+      "id": "661692811128864768",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "676871654562856960": {
+      "id": "676871654562856960",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "373474245612929034": {
+      "id": "373474245612929034",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "677942552254480395": {
+      "id": "677942552254480395",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "671329899503550474": {
+      "id": "671329899503550474",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": "678189294153629719",
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "591543096433442836": {
+      "id": "591543096433442836",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "339469604243898368": {
+      "id": "339469604243898368",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "678944827332624385": {
+      "id": "678944827332624385",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "604415959935090700": {
+      "id": "604415959935090700",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "553989188962222108": {
+      "id": "553989188962222108",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "662787765561196554": {
+      "id": "662787765561196554",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "684868721961074784": {
+      "id": "684868721961074784",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": "685584538898006065",
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "665785497267732481": {
+      "id": "665785497267732481",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "531965498754072586": {
+      "id": "531965498754072586",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "640161923400335420": {
+      "id": "640161923400335420",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "599640948586184751": {
+      "id": "599640948586184751",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": "636917887335923714",
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "556628194841722890": {
+      "id": "556628194841722890",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "570309876773814302": {
+      "id": "570309876773814302",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "627607989913780253": {
+      "id": "627607989913780253",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "569097133937000448": {
+      "id": "569097133937000448",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "477113070762590208": {
+      "id": "477113070762590208",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "494895103740084224": {
+      "id": "494895103740084224",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "567770777747718166": {
+      "id": "567770777747718166",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "641461435565604893": {
+      "id": "641461435565604893",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "581769938549735424": {
+      "id": "581769938549735424",
+      "prefix": "s!",
+      "nsfwEnabled": false,
+      "updateChannel": "591936840467087380",
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "587290909625024562": {
+      "id": "587290909625024562",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "641363754059038753": {
+      "id": "641363754059038753",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "630448922770407456": {
+      "id": "630448922770407456",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "572842616844976149": {
+      "id": "572842616844976149",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": "574873390599372811",
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "598602968614567968": {
+      "id": "598602968614567968",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": "598603692861816839",
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "696651269867044915": {
+      "id": "696651269867044915",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "664888363207098392": {
+      "id": "664888363207098392",
+      "prefix": "s!",
+      "nsfwEnabled": false,
+      "updateChannel": "698761910249717790",
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "695006273204125837": {
+      "id": "695006273204125837",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "653249900003459072": {
+      "id": "653249900003459072",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "563866804305395713": {
+      "id": "563866804305395713",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": "701281358282227722",
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "568205979410235397": {
+      "id": "568205979410235397",
+      "prefix": "s!",
+      "nsfwEnabled": false,
+      "updateChannel": "702847091176767558",
+      "updateRole": "<@&702851972029743144>",
+      "updateIgnoreCategories": [
+        "musique",
+        "jeux",
+        "NSFW"
+      ]
+    },
+    "699298980475043859": {
+      "id": "699298980475043859",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "297683642808008705": {
+      "id": "297683642808008705",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": "433317424801251328",
+      "updateRole": false,
+      "updateIgnoreCategories": [
+        "série",
+        "film",
+        "musique",
+        "jeux",
+        "NSFW"
+      ]
+    },
+    "620601016039243789": {
+      "id": "620601016039243789",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "705546453216395364": {
+      "id": "705546453216395364",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "666351216342597632": {
+      "id": "666351216342597632",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "709070182265389086": {
+      "id": "709070182265389086",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "711305208331763712": {
+      "id": "711305208331763712",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "680458895256191041": {
+      "id": "680458895256191041",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "657691726747664454": {
+      "id": "657691726747664454",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": "712764944990470146",
+      "updateRole": false,
+      "updateIgnoreCategories": [
+        "anime"
+      ]
+    },
+    "714622352167665765": {
+      "id": "714622352167665765",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": "714626562057699339",
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "701108993363542106": {
+      "id": "701108993363542106",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "716992541253173288": {
+      "id": "716992541253173288",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "717119455527829586": {
+      "id": "717119455527829586",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "577245035146248203": {
+      "id": "577245035146248203",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": "577251980070748161",
+      "updateRole": "<@&577251963574419466>",
+      "updateIgnoreCategories": [
+        "manga",
+        "série",
+        "film",
+        "musique",
+        "jeux",
+        "NSFW"
+      ]
+    },
+    "699571276418777098": {
+      "id": "699571276418777098",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "691716390586941472": {
+      "id": "691716390586941472",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "690906345779494962": {
+      "id": "690906345779494962",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": "721654319702605824",
+      "updateRole": false,
+      "updateIgnoreCategories": [
+        "anime",
+        "manga",
+        "jeux",
+        "NSFW"
+      ]
+    },
+    "650446234661945384": {
+      "id": "650446234661945384",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "473331765860237332": {
+      "id": "473331765860237332",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "711862997638971483": {
+      "id": "711862997638971483",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "720669227031199904": {
+      "id": "720669227031199904",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "577062979510599710": {
+      "id": "577062979510599710",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "715330864690626634": {
+      "id": "715330864690626634",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "731854712239816724": {
+      "id": "731854712239816724",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": "731854712713904191",
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "693815653353783326": {
+      "id": "693815653353783326",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "736033189499371611": {
+      "id": "736033189499371611",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "546247776900743179": {
+      "id": "546247776900743179",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": "736687445482930256",
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "532320738619949079": {
+      "id": "532320738619949079",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": "534291956524777473",
+      "updateRole": "<@&532322849784987677>",
+      "updateIgnoreCategories": []
+    },
+    "725726579379929208": {
+      "id": "725726579379929208",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": "739686479952871466",
+      "updateRole": "<@&725736952858673193>",
+      "updateIgnoreCategories": [
+        "série",
+        "film",
+        "musique",
+        "jeux",
+        "NSFW"
+      ]
+    },
+    "740122392117903519": {
+      "id": "740122392117903519",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "650753423364325397": {
+      "id": "650753423364325397",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "743800225222623263": {
+      "id": "743800225222623263",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "697583878080036885": {
+      "id": "697583878080036885",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "751608401221648514": {
+      "id": "751608401221648514",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "689749977336905783": {
+      "id": "689749977336905783",
+      "prefix": "s!",
+      "nsfwEnabled": false,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "753650228032307311": {
+      "id": "753650228032307311",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "754373566971248733": {
+      "id": "754373566971248733",
+      "prefix": "s!",
+      "nsfwEnabled": false,
+      "updateChannel": "754504753697783848",
+      "updateRole": "<@&754374855700512971>  <@&754375456492486696>  <@&754396268712689745>  <@&754378029995786342> <@&754378053639077908>  <@&754378074753204274>",
+      "updateIgnoreCategories": [
+        "série",
+        "film",
+        "musique",
+        "jeux",
+        "NSFW"
+      ]
+    },
+    "755367788553437205": {
+      "id": "755367788553437205",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": "<@&755688444382019584>",
+      "updateIgnoreCategories": []
+    },
+    "717427253281292349": {
+      "id": "717427253281292349",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "690888116713685053": {
+      "id": "690888116713685053",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": "755826836310589571",
+      "updateRole": "<@&760212816640081960>",
+      "updateIgnoreCategories": [
+        "manga",
+        "série",
+        "film",
+        "musique",
+        "NSFW"
+      ]
+    },
+    "755892112909795348": {
+      "id": "755892112909795348",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "408308604509356035": {
+      "id": "408308604509356035",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "710238669553795096": {
+      "id": "710238669553795096",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "750357645600227448": {
+      "id": "750357645600227448",
+      "prefix": "s!",
+      "nsfwEnabled": false,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "756987544083628072": {
+      "id": "756987544083628072",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "550394901091581958": {
+      "id": "550394901091581958",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "743649265045340281": {
+      "id": "743649265045340281",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "759093958047170651": {
+      "id": "759093958047170651",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": "759103142049743008",
+      "updateRole": false,
+      "updateIgnoreCategories": [
+        "série",
+        "film",
+        "musique",
+        "jeux",
+        "NSFW"
+      ]
+    },
+    "760956782230634526": {
+      "id": "760956782230634526",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": "760956782230634529",
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "613007196283731979": {
+      "id": "613007196283731979",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "495611566503231524": {
+      "id": "495611566503231524",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "504390293089419274": {
+      "id": "504390293089419274",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "762745137868439602": {
+      "id": "762745137868439602",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "749449880254021713": {
+      "id": "749449880254021713",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "692129402645119007": {
+      "id": "692129402645119007",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "697833083201650689": {
+      "id": "697833083201650689",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "388459217159454721": {
+      "id": "388459217159454721",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "761863789335150592": {
+      "id": "761863789335150592",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "767034895330574336": {
+      "id": "767034895330574336",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "760535357698736198": {
+      "id": "760535357698736198",
+      "prefix": "s!",
+      "nsfwEnabled": false,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "766749732210999357": {
+      "id": "766749732210999357",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": "766772962694397954",
+      "updateRole": "<@&767151267671441418>",
+      "updateIgnoreCategories": [
+        "anime",
+        "série",
+        "musique",
+        "jeux",
+        "NSFW"
+      ]
+    },
+    "719305098185932930": {
+      "id": "719305098185932930",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "769666598872809563": {
+      "id": "769666598872809563",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "770665550141587496": {
+      "id": "770665550141587496",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": "771045474538356757",
+      "updateRole": false,
+      "updateIgnoreCategories": [
+        "NSFW"
+      ]
+    },
+    "770925198983168020": {
+      "id": "770925198983168020",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "758343022089207840": {
+      "id": "758343022089207840",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "771694250017685504": {
+      "id": "771694250017685504",
+      "prefix": "s!",
+      "nsfwEnabled": false,
+      "updateChannel": "771848991553749003",
+      "updateRole": false,
+      "updateIgnoreCategories": [
+        "série",
+        "film",
+        "musique",
+        "jeux",
+        "NSFW"
+      ]
+    },
+    "755763220488388768": {
+      "id": "755763220488388768",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "428983825821990912": {
+      "id": "428983825821990912",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": "774002690241331221",
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "773963708563980288": {
+      "id": "773963708563980288",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "774915269046566932": {
+      "id": "774915269046566932",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "775085075892928543": {
+      "id": "775085075892928543",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "757511961020989470": {
+      "id": "757511961020989470",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": "775287181022593036",
+      "updateRole": false,
+      "updateIgnoreCategories": [
+        "série",
+        "film",
+        "musique",
+        "jeux",
+        "NSFW"
+      ]
+    },
+    "745022470787956816": {
+      "id": "745022470787956816",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "764924936489795604": {
+      "id": "764924936489795604",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "772429466290356235": {
+      "id": "772429466290356235",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "752269192434155531": {
+      "id": "752269192434155531",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "765614726717112341": {
+      "id": "765614726717112341",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "779117044745502741": {
+      "id": "779117044745502741",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "625434168544722984": {
+      "id": "625434168544722984",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "703939386814758993": {
+      "id": "703939386814758993",
       "prefix": "s!",
       "nsfwEnabled": true,
       "updateChannel": false,
