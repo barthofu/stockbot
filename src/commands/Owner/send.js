@@ -37,8 +37,11 @@ module.exports = class extends CommandPattern {
         if (rep.first().content.toLowerCase() === 'oui') {
 
             //send to update channels
-            let checkedGuilds = db.guild.get("guilds").values().filter((value) => utils.sendNewPageValidator(value)).value();
-            for (let i in checkedGuilds) await bot.channels.cache.get(checkedGuilds[i].updateChannel).send(texte);
+            let rawGuilds = db.guild.get("guilds").values().value()
+            let checkedGuilds = rawGuilds.filter(value => utils.sendNewPageValidator(value));
+            console.log(checkedGuilds.map(e => [e.id, bot.guilds.cache.get(e.id)?.name, e.updateChannel]));
+            for (let i in checkedGuilds) await bot.channels.cache.get(checkedGuilds[i].updateChannel)?.send?.(texte);
+            msg.channel.send(`Annonce bien envoyée sur **${checkedGuilds.length}** serveurs`);
 
         } else msg.reply('commande annulée.')
     

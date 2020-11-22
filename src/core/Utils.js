@@ -197,16 +197,16 @@ module.exports = class Utils {
             .setThumbnail(config.categories.find(val => val.name == cat).image)
             .setTimestamp(new Date())
 
-        let checkedGuilds = db.guild.get("guilds").values().filter((value) => this.sendNewPageValidator(value, cat)).value()
+        let rawGuilds = db.guild.get("guilds").values().value()
+        let checkedGuilds = rawGuilds.filter(value => utils.sendNewPageValidator(value));
+        console.log(checkedGuilds.map(e => [e.id, bot.guilds.cache.get(e.id)?.name, e.updateChannel]));
 
-        for (let i in checkedGuilds) {
-
-            let guild = checkedGuilds[i]
-            await bot.channels.cache.get(guild.updateChannel).send(
+        for (let i in checkedGuilds) await bot.channels.cache.get(checkedGuilds[i].updateChannel)?.send?.(              
                 guild.updateRole ? `<@&${guild.updateRole}>` : null,
                 embed
-            )
-        }
+            );
+            
+        msg.channel.send(`Annonce bien envoyée sur **${checkedGuilds.length}** serveurs`);
 
     }
 

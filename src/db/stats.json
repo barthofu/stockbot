@@ -1,14 +1,14 @@
 {
   "actual": {
     "commands": {
-      "total": 421,
+      "total": 425,
       "details": {
-        "stockage": 205,
-        "profile": 11,
+        "stockage": 206,
+        "profile": 12,
         "help": 28,
         "monitor": 12,
-        "updatechannel": 16,
-        "asklist": 50,
+        "updatechannel": 17,
+        "asklist": 51,
         "nsfw": 8,
         "ask": 9,
         "stats": 21,
