@@ -12,7 +12,7 @@ module.exports = class {
             cmd = args.shift().toLowerCase()
 
         //check if message starts with prefix
-        if (!msg.content.startsWith(prefix)) {
+        if (!msg.content.toLowerCase().startsWith(prefix.toLowerCase())) {
             if (msg.author.id == config.ownerID) {
                 if (msg.content === ".r") client.reload(msg)
                 else if (msg.content.startsWith("```"+config.evalName) && msg.content.endsWith("```")) await bot.commands.get("eval").run(msg, args, cmd)

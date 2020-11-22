@@ -978,14 +978,6 @@
       "updateRole": false,
       "updateIgnoreCategories": []
     },
-    "693815653353783326": {
-      "id": "693815653353783326",
-      "prefix": "s!",
-      "nsfwEnabled": true,
-      "updateChannel": false,
-      "updateRole": false,
-      "updateIgnoreCategories": []
-    },
     "736033189499371611": {
       "id": "736033189499371611",
       "prefix": "s!",
@@ -1493,6 +1485,14 @@
       "prefix": "s!",
       "nsfwEnabled": true,
       "updateChannel": "599355147725963353",
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "693815653353783326": {
+      "id": "693815653353783326",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
       "updateRole": false,
       "updateIgnoreCategories": []
     }
