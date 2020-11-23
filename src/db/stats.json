@@ -1,28 +1,29 @@
 {
   "actual": {
     "commands": {
-      "total": 507,
+      "total": 620,
       "details": {
-        "stockage": 264,
-        "profile": 18,
-        "help": 29,
+        "stockage": 343,
+        "profile": 19,
+        "help": 35,
         "monitor": 12,
-        "updatechannel": 20,
+        "updatechannel": 29,
         "asklist": 56,
         "nsfw": 8,
         "ask": 9,
         "stats": 23,
         "suggest": 2,
-        "report": 2,
+        "report": 3,
         "gametuto": 4,
         "invite": 1,
         "logs": 2,
         "ping": 7,
-        "maintenance": 2,
+        "maintenance": 6,
         "newepisode": 12,
         "send": 2,
-        "sendembed": 23,
-        "displaylogs": 11
+        "sendembed": 26,
+        "displaylogs": 13,
+        "airing": 8
       }
     }
   },

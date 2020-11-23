@@ -123,6 +123,7 @@ module.exports = class {
                 db.guild.get(`deleted`).unset(guildID).write();
             } else {
                 //creation
+                console.log(2)
                 let guild = new GuildPattern(this.bot.guilds.cache.get(guildID));
                 db.guild.set(`guilds.${guildID}`, guild.object).write();
             }

@@ -202,7 +202,7 @@ module.exports = class Utils {
         console.log(checkedGuilds.map(e => [e.id, bot.guilds.cache.get(e.id)?.name, e.updateChannel]));
 
         for (let i in checkedGuilds) await bot.channels.cache.get(checkedGuilds[i].updateChannel)?.send?.(              
-                guild.updateRole ? `<@&${guild.updateRole}>` : null,
+                checkedGuilds[i].updateRole ? `<@&${checkedGuilds[i].updateRole}>` : null,
                 embed
             );
             
@@ -290,12 +290,12 @@ module.exports = class Utils {
     }
 
     
-    async getPageEmbed(_id, userID = false, color = config.colors.default, channelID = false) {
+    async getPageEmbed(_id, userID = false, color = config.colors.default, channelID = false, visitUpdate = true) {
 
         let page = this.getPageByID(_id) || this.getPageByName(_id)[0]
         if (!page) return false
         let embed = new PageEmbed(page, userID, color, channelID)
-        embed = await embed.getEmbed(color)
+        embed = await embed.getEmbed(visitUpdate)
 
         return embed
     }

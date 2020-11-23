@@ -141,7 +141,7 @@ module.exports = class extends CommandPattern {
         return new MessageEmbed()
             .setTitle("Etat actuel du système d'updates et de notifications du serveur " + msg.guild.name)
             .setDescription(`Les "updates" sont en réalité toutes les notifications que le bot peut envoyer sur votre serveur. Cela concerne les **nouvelles pages des différentes catégories**, les **nouveaux épisodes (animes/séries) ou chapitres (mangas)**, les **informations importantes**, les **problèmes sur le bot** ou encore les **nouveautés (nouvelles commandes et mises à jour par exemple)**. Il est donc très important et utile d'activer cette fonctionnalité.\n\n*Il vous faudra donc pour activer ce système séléctionner un salon d'update en cliquant sur la première réaction ci-dessou. Appuyez sur les réactions symbolisant les catégories pour changer leur état et décider de quelles catégories recevoir les updates. Enfin, appuyez sur la derniere réaction pour changer le rôle à mentionner lors d'updates (n'oubliez pas de rendre le rôle mentionnable dans les paramètres de votre serveur).*\n\n\u200b`)
-            .addField('#⃣ Salon recevant les updates', "```" + channel ? msg.guild.channels.cache.get(channel).name : "Aucun" + "```\n\u200b")
+            .addField('#⃣ Salon recevant les updates', "```" + (channel ? msg.guild.channels.cache.get(channel).name : "Aucun") + "```\n\u200b")
             .addField("📢 Rôle mentionné lors d'une update", role ? `<@&${role}>` : "Aucun" + "\n\u200b")
             .addField("📂 Catégories concernées par les updates", categories.join("\r\n"))
             .setColor(color)

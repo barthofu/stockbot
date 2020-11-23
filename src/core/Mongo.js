@@ -94,15 +94,17 @@ module.exports = class Mongo {
 
     async save (_id, newObject = false) {
 
+        let tester = null;
+
         for (let i in config.categories) {
 
-            let tester = db[config.categories[i].name].find(val => val._id === _id);
-            if (tester) {
+            tester = db[config.categories[i].name].find(val => val._id === _id);
 
+            if (tester) {
                 let data = newObject || await mongo[config.categories[i].name].findOne({ _id }).catch(e => this.error(e));
                 db[config.categories[i].name][db[config.categories[i].name].indexOf(tester)] = data;
             }
-        }        
+        }
     }
 
 

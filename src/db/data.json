@@ -2,31 +2,15 @@
   "currentDay": "23",
   "maintenance": false,
   "latest": {
-    "name": "One Piece E951",
-    "date": "22/11/2020 à 23:33",
-    "cat": "anime"
+    "name": "Soinc ze egehog",
+    "cat": "film",
+    "date": "23/11/2020 à 22:33"
   },
   "stats": {
     "poids": 8,
     "fichiers": 42680
   },
   "awaitVerification": [
-    {
-      "_id": "5fbbadb08e245749e729b9c2",
-      "cat": "anime",
-      "name": "bbb",
-      "authorId": "260908777446965248",
-      "messageId": "780412411466743808",
-      "timestamp": 1606135218939
-    },
-    {
-      "_id": "5fbbae12b347f84d481fa542",
-      "cat": "anime",
-      "name": "ccc",
-      "authorId": "260908777446965248",
-      "messageId": "780412817387028511",
-      "timestamp": 1606135315814
-    }
   ],
   "seasonals": [
     {
@@ -60,13 +44,13 @@
       }
     },
     {
-      "name": "Fire Force",
-      "season": "2",
-      "lien": "https://mega.nz/folder/HiQWibZS#CkiNNJXwMzTW3r3qQPlC_Q",
-      "image": "https://toonamifaithful.com/wp-content/uploads/2020/05/Fireforce_S2_Keyart-727x1024-1.jpg",
+      "name": "Jujutsu Kaisen",
+      "season": "1",
+      "lien": "https://mega.nz/folder/PyBUVJ4I#brff8dkr1iCN6F-gXoa3fw",
+      "image": "https://cdn.statically.io/img/animeschedule.sfo2.cdn.digitaloceanspaces.com/production/assets/public/img/shows/default/jujutsu-kaisen-da37f058a6.jpg",
       "airing": {
         "day": "Vendredi",
-        "hour": "19h"
+        "hour": "17h30"
       }
     },
     {
@@ -80,13 +64,13 @@
       }
     },
     {
-      "name": "Jujutsu Kaisen",
-      "season": "1",
-      "lien": "https://mega.nz/folder/PyBUVJ4I#brff8dkr1iCN6F-gXoa3fw",
-      "image": "https://cdn.statically.io/img/animeschedule.sfo2.cdn.digitaloceanspaces.com/production/assets/public/img/shows/default/jujutsu-kaisen-da37f058a6.jpg",
+      "name": "Fire Force",
+      "season": "2",
+      "lien": "https://mega.nz/folder/HiQWibZS#CkiNNJXwMzTW3r3qQPlC_Q",
+      "image": "https://toonamifaithful.com/wp-content/uploads/2020/05/Fireforce_S2_Keyart-727x1024-1.jpg",
       "airing": {
         "day": "Vendredi",
-        "hour": "17h30"
+        "hour": "19h"
       }
     }
   ]

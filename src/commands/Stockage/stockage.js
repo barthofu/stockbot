@@ -23,10 +23,10 @@ module.exports = class extends CommandPattern {
 
     async run (msg, args, cmd, color, fetch) {
 
-        var { menu, displayPage } = require("./_utils.js")
-        if (!fetch) await msg.delete()
+        var { menu, displayPage } = require("./_utils.js"); delete require.cache[require.resolve(`./_utils.js`)];
+        if (!fetch) await msg.delete();
 
-        var Menu = new menu().Menu
+        var Menu = new menu().Menu;
         
         var config = {
             pos: "menuPrincipal",
@@ -58,16 +58,16 @@ module.exports = class extends CommandPattern {
         //recherche rapide
         if (args.length > 0) {
 
-            console.log("           > Recherche Rapide : '" + args.join(" ") + "'")
+            console.log("           > Recherche Rapide : '" + args.join(" ") + "'");
 
-            let result = utils.getPageByName(args.join(" "))
+            let result = utils.getPageByName(args.join(" "));
 
-            if (result.length === 0)  return msg.reply(`la recherche rapide de \`${args.join(" ")}\` n'a donné aucun résultat !`)
+            if (result.length === 0)  return msg.reply(`la recherche rapide de \`${args.join(" ")}\` n'a donné aucun résultat !`);
             
-            let embed = await utils.getPageEmbed(result[0]._id, msg.author.id, color, msg.channel.id)
-            let m = await msg.channel.send(embed)
-            await displayPage(params, m, result[0].cat, result[0]._id)
-            return
+            let embed = await utils.getPageEmbed(result[0]._id, msg.author.id, color, msg.channel.id);
+            let m = await msg.channel.send(embed);
+            await displayPage(params, m, result[0].cat, result[0]._id);
+            return;
 
         }
 
@@ -76,49 +76,40 @@ module.exports = class extends CommandPattern {
 
         async function main(m) {
 
-            let env = params["Menu"][config.pos]
+            let env = params["Menu"][config.pos];
             
-            let embed = await env.getEmbed(params, m)
-            if (config.embed == true) m = embed=="end"?m:config.edit == false? await msg.channel.send(await env.getEmbed(params, m)) : await m.edit(await env.getEmbed(params, m))
-            if (m == "end") return
+            let embed = await env.getEmbed(params, m);
+            if (config.embed == true) m = embed=="end"?m:config.edit == false? await msg.channel.send(await env.getEmbed(params, m)) : await m.edit(await env.getEmbed(params, m));
+            if (m == "end") return;
             
 
-            let arrReactions = env.reactions
+            let arrReactions = env.reactions;
             
-            for (let i in arrReactions) await m.react(arrReactions[i])
+            for (let i in arrReactions) await m.react(arrReactions[i]);
             
             async function sub(m) {
                 let [wait] = await Promise.race([
                     m.awaitReactions(eval(env.filterReac), {max:1, time:env.time}),
                     msg.channel.awaitMessages(eval(env.filterText), {max:1, time:env.time})
                 ])
-                if (!wait) return env.timeout(m)
-                let opt = wait[1].count? await env.actionReaction(params, wait[1], m) : await env.actionText(params, wait[1], m)
-                m = opt.message
+                if (!wait) return env.timeout(m);
+                let opt = wait[1].count? await env.actionReaction(params, wait[1], m) : await env.actionText(params, wait[1], m);
+                m = opt.message;
                 if (opt.pos !== "none") {
-                    config.old_pos = config.pos
-                    config.pos = opt.pos
-                    config.edit = opt.edit
-                    config.embed = opt.embed
-                    m.reactions.removeAll()
-                    main(m)
+                    config.old_pos = config.pos;
+                    config.pos = opt.pos;
+                    config.edit = opt.edit;
+                    config.embed = opt.embed;
+                    m.reactions.removeAll();
+                    main(m);
                 } else {
-                  sub(m)
+                  sub(m);
                 }
             }
-            sub(m)
-            
-            
-            
-            
+            sub(m);
         }
-        
-        
-        
-        main(0)
-        
 
-    
+        main(0);
 
     }
 

@@ -522,19 +522,20 @@ let menu = class {
 async function displayPage(params, m, cat, _id = false) {
 
     //define important vars
-    let time = 600000
-    let { msg, color } = params
-    let embed = m.embeds[0]
-    let pages = utils.listPages(msg.author.id)[cat].content.flatMap(val => val)
-    let page = _id ? pages.findIndex(val => `${val._id}` === `${_id}`)+1 : 1
-    let pageData = utils.getPageByID(pages[page-1]._id)
-    let newObject = {}
+    let time = 600000,
+        { msg, color } = params,
+        embed = m.embeds[0],
+        pages = utils.listPages(msg.author.id)[cat].content.flatMap(val => val),
+        page = _id ? pages.findIndex(val => `${val._id}` === `${_id}`)+1 : 1,
+        pageData = utils.getPageByID(pages[page-1]._id),
+        newObject = {}
 
     //function to modify easily the embed
     async function getModifiedEmbed (footerAdd = " \u200b") {
 
-        let embed = await utils.getPageEmbed(pageData._id, msg.author.id, color, msg.channel.id)
-        return embed.setFooter(page + "/" + pages.length + " " + footerAdd)
+        if (_id) footerAdd = footerAdd.slice(2);
+        let embed = await utils.getPageEmbed(pageData._id, msg.author.id, color, msg.channel.id, false)
+        return embed.setFooter((!_id ? page + "/" + pages.length + " " : "") + footerAdd)
 
     }
 
@@ -605,108 +606,127 @@ async function displayPage(params, m, cat, _id = false) {
                 //modify database
                 if (tester) newObject = await mongo[cat].findOneAndUpdate({ _id: pageData._id }, mongo.pull(`stats.${type}`, msg.author.id), mongo.constOption()).catch(e => mongo.error(e))
                 else {
-                    console.log(cat)
+                    await mongo[cat].findOneAndUpdate({ _id: pageData._id }, mongo.pull(`stats.${otherType}`, msg.author.id), mongo.constOption()).catch(e => mongo.error(e))
                     newObject = await mongo[cat].findOneAndUpdate( {_id: pageData._id }, mongo.push(`stats.${type}`, msg.author.id), mongo.constOption()).catch(e => mongo.error(e))
-                    if (pageData.stats[otherType].indexOf(msg.author.id) > -1) newObject = await mongo[cat].findOneAndUpdate({ _id: pageData._id }, mongo.pull(`stats.${otherType}`, msg.author.id), mongo.constOption()).catch(e => mongo.error(e))
                 }
+
+                await mongo.save(pageData._id)
+                pageData = utils.getPageByID(pages[page-1]._id)
+
                 //edit
                 await m.edit(await getModifiedEmbed(
                     tester ? `- Ton vote '${reaction.emoji.name}' pour cette page a été enlevé` : `- Merci d'avoir voté '${reaction.emoji.name}' !`
                 ))
 
-                await mongo.save(pageData._id, newObject)
-                pageData = utils.getPageByID(pages[page-1]._id)
                 break;
 
 
                 
             case "⚙️":
                 //params
-                let arrKeys = [ { key: "lien", text: "`0`. LIENS" } ]
-                let counter = 0
-                for (let k in pageData) {
-                    if (!["stats", "cat", "id", "lien"].includes(k)) {
-                        counter++
-                        arrKeys.push({key:k, text: `\`${counter}.\` **${k}**`})
+                async function params() {
+                    let arrKeys = [ { key: "lien", text: "`0.` **LIENS**\n━━━━━━" } ]
+                    let counter = 0
+                    for (let k in pageData.schema.tree) {
+                        if (!["stats", "cat", "id", "_id", "lien"].includes(k)) {
+                            counter++
+                            arrKeys.push({key:k, text: `\`${counter}.\` **${k}**`})
+                        }
                     }
-                }
 
-                let m2Bis = await msg.channel.send(new MessageEmbed().setColor(color).setDescription(arrKeys.map(val => val.text).join("\r\n")))
 
-                let repBis = await msg.channel.awaitMessages(me => me.author.id === msg.author.id && me.content > -1 && me.content < me.content <= arrKeys.length, {max:1, time:60000})
-                await m2Bis.delete()
-                if (!repBis.first()) return
-                await repBis.first().delete()
-
-                let key = arrKeys[+repBis.first().content].key
-                if (pageData[key].constructor == Array) {
-                    //is an array
-                    async function arrayEdit() {
-
-                        let valueArr = pageData[key].map((val, i) => `\`${+i+1}.\` ${val}`)
-                        valueArr.push(`\`${valueArr.length+1}.\` ...`)
-                        let m3 = await msg.channel.send(new MessageEmbed()
-                        .setTitle("Modification de listes")
+                    let m2Bis = await msg.channel.send(new MessageEmbed()
                         .setColor(color)
-                        .setDescription(`${valueArr.join('\r\n')}\n\n• Entre le numéro d'un élément ou du dernier élément si tu souhaites en rajouter un\n• Entre \`cancel\` pour annuler l'opération`)    
+                        .setTitle("Modification de page")
+                        .setDescription(arrKeys.map(val => val.text).join("\r\n"))
+                        .setFooter("Date de création : " + dateFormat(pageData.createdAt, "dd/mm/yyyy à HH:MM") + "\nDernière modification : " + dateFormat(pageData.updatedAt, "dd/mm/yyyy à HH:MM") )
+                        
+                    )
+
+                    let repBis = await msg.channel.awaitMessages(me => me.author.id === msg.author.id && me.content > -1 && me.content < me.content <= arrKeys.length, {max:1, time:60000})
+                    await m2Bis.delete()
+                    if (!repBis.first()) return
+                    await repBis.first().delete()
+
+                    let key = arrKeys[+repBis.first().content].key
+                    if (Array.isArray(pageData[key])) {
+                        //is an array
+                        async function arrayEdit() {
+
+                            let valueArr = pageData[key].map((val, i) => `\`${+i+1}.\` ${val}`)
+                            valueArr.push(`\`${valueArr.length+1}.\` ...`)
+                            let m3 = await msg.channel.send(new MessageEmbed()
+                            .setTitle("Modification de listes")
+                            .setColor(color)
+                            .setDescription(`${valueArr.join('\r\n')}\n\n• Entre le numéro d'un élément ou du dernier élément si tu souhaites en rajouter un\n• Entre \`cancel\` pour annuler l'opération`)    
+                            )
+                            let rep = await msg.channel.awaitMessages(me => me.author.id === msg.author.id && ((me.content > 0 && me.content <= valueArr.length) || me.content.toLowerCase() === "cancel"), {max:1, time:120000})
+                            await rep.first().delete()
+                            if (!rep.first()) return
+                            if (rep.first().content.toLowerCase() == "cancel") {
+                                await m3.delete() ; await m.delete()
+                                m = await msg.channel.send(await utils.getPageEmbed(pageData._id, msg.author.id, color, msg.channel.id))
+                                await displayPage(params, m, pageData.cat, pageData._id)
+                            } 
+                            let indice = +rep.first().content
+                            let tester = indice == valueArr.length
+
+                            await m3.edit(new MessageEmbed().setColor(color).setDescription(
+                                    tester? `**Entre une nouvelle valeur :**` : `**Élément séléctionné :** \`${pageData[key][indice-1]}\`\n\n• Entre n'importe quelle valeur pour que cet élément de la liste soit modifié\n• Entre \`delete\` pour le supprimer\n• Entre \`cancel\` pour annuler`
+                                )
+                            )
+                            
+                            let filter = me2 => me2.author.id===msg.author.id
+                            rep = await msg.channel.awaitMessages(filter, {max: 1, time:120000})
+                            await rep.first().delete?.()
+                            await m3.delete()
+                            if (!rep.first()) return
+
+                            let value = rep.first().content
+                            if (value === "delete") {
+                                await mongo[cat].updateOne({_id:pageData._id}, mongo.unset(`${key}.${indice-1}`, 1)).catch(e => mongo.error(e))
+                                newObject = await mongo[cat].findOneAndUpdate({_id:pageData._id}, mongo.pull(key, null), mongo.constOption()).catch(e => mongo.error(e))
+                            }
+                            else if (value !== "cancel") { 
+                                if (tester) newObject = await mongo[cat].findOneAndUpdate({_id:pageData._id}, mongo.push(key, value), mongo.constOption()).catch(e => mongo.error(e))
+                                else newObject = await mongo[cat].findOneAndUpdate({_id:pageData._id}, mongo.set(`${key}.${indice-1}`, value), mongo.constOption()).catch(e => mongo.error(e))
+                            }
+                            //await mongo.save(pageData._id, newObject)
+                            await mongo.saveAll();
+                            pageData = utils.getPageByID(pageData._id)
+                            await m.edit(await getModifiedEmbed())
+                            await arrayEdit();      
+                        }
+                        await arrayEdit()
+                        
+                    } else {
+                        //is not an array
+                        let m3 = await msg.channel.send(new MessageEmbed()
+                            .setColor(color)
+                            .setDescription(`**Élément séléctionné :** \`${pageData[key]}\`\n\n• Entre n'importe quelle valeur pour que cet élément soit modifié\n• Entre \`cancel\` pour annuler`)
                         )
-                        let rep = await msg.channel.awaitMessages(me => me.author.id === msg.author.id && ((me.content > 0 && me.content <= valueArr.length) || me.content.toLowerCase() === "cancel"), {max:1, time:120000})
+                        let rep = await msg.channel.awaitMessages(me => me.author.id === msg.author.id, {max:1, time:60000})
+                        await m3.delete()     
+                        if (!rep.first()) return            
                         await rep.first().delete()
-                        if (!rep.first()) return
-                        if (rep.first().content.toLowerCase() == "cancel") {
-                            await m3.delete() ; await m.delete()
+                        if (rep.first().content.toLowerCase() !== 'cancel') {
+                            let value = rep.first().content
+                            newObject = await mongo[cat].findOneAndUpdate({_id:pageData._id}, mongo.set(key, value), mongo.constOption()).catch(e => mongo.error(e))
+                            await mongo.saveAll()
+                            pageData = utils.getPageByID(pageData._id)
+
+                            await m.delete()
                             m = await msg.channel.send(await utils.getPageEmbed(pageData._id, msg.author.id, color, msg.channel.id))
                             await displayPage(params, m, pageData.cat, pageData._id)
-                        } 
-                        let indice = +rep.first().content
-                        let tester = indice == valueArr.length
-
-                        await m3.edit(new MessageEmbed().setColor(color).setDescription(
-                                tester? `**Entre une nouvelle valeur :**` : `**Élément séléctionné :** \`${pageData[key][indice-1]}\`\n\n• Entre n'importe quelle valeur pour que cet élément de la liste soit modifié\n• Entre \`delete\` pour le supprimer\n• Entre \`cancel\` pour annuler`
-                            )
-                        )
+                        }
+                        params()
                         
-                        let filter = me2 => me2.author.id===msg.author.id
-                        rep = await msg.channel.awaitMessages(filter, {max: 1, time:120000})
-                        await rep.first().delete?.()
-                        await m3.delete()
-                        if (!rep.first()) return
+                    }
+                    
 
-                        let value = rep.first().content
-                        if (value === "delete") {
-                            await mongo[cat].updateOne({_id:pageData._id}, mongo.unset(`${key}.${indice-1}`, 1)).catch(e => mongo.error(e))
-                            newObject = await mongo[cat].findOneAndUpdate({_id:pageData._id}, mongo.pull(key, null), mongo.constOption()).catch(e => mongo.error(e))
-                        }
-                        else if (value !== "cancel") { 
-                            if (tester) newObject = await mongo[cat].findOneAndUpdate({_id:pageData._id}, mongo.push(key, value), mongo.constOption()).catch(e => mongo.error(e))
-                            else newObject = await mongo[cat].findOneAndUpdate({_id:pageData._id}, mongo.set(`${key}.${indice-1}`, value), mongo.constOption()).catch(e => mongo.error(e))
-                        }
-                        await mongo.save(pageData._id, newObject)
-                        pageData = utils.getPageByID(pageData._id)
-                        await arrayEdit()                
-                    }
-                    await arrayEdit()
-                    
-                } else {
-                    //is not an array
-                    let m3 = await msg.channel.send(new MessageEmbed()
-                        .setColor(color)
-                        .setDescription("Nouvelle valeur (ou \`cancel\` pour annuler):")
-                    )
-                    let rep = await msg.channel.awaitMessages(me => me.author.id === msg.author.id, {max:1, time:60000})
-                    await m3.delete()     
-                    if (!rep.first()) return            
-                    await rep.first().delete()
-                    if (rep.first().content.toLowerCase() !== 'cancel') {
-                        let value = rep.first().content
-                        newObject = await mongo[cat].findOneAndUpdate({_id:pageData._id}, mongo.set(key, value), mongo.constOption()).catch(e => mongo.error(e))
-                        await mongo.save(pageData._id, newObject)
-                    }
-                    await m.delete()
-                    m = await msg.channel.send(await utils.getPageEmbed(pageData._id, msg.author.id, color, msg.channel.id))
-                    await displayPage(params, m, pageData.cat, pageData._id)
-                    
                 }
+                params()
+                
                 break
 
 
@@ -714,7 +734,7 @@ async function displayPage(params, m, cat, _id = false) {
 
                 let mBis = await msg.channel.send(new MessageEmbed()
                     .setColor(color)
-                    .setTitle("🗑 | Ecris le nom de la page pour confirmer sa suppression :")
+                    .setTitle("🗑 | Écris le nom de la page pour confirmer sa suppression :")
                     .setDescription("*`cancel` si tu souhaites annuler...*")
                 )
 
@@ -744,8 +764,8 @@ async function displayPage(params, m, cat, _id = false) {
                 //modify database
                 if (testerBis) newObject = await mongo[cat].findOneAndUpdate({_id:pageData._id}, mongo.pull(`stats.${typeBis}`, msg.author.id), mongo.constOption()).catch(e => mongo.error(e))
                 else {
+                    await mongo[cat].findOneAndUpdate({ _id: pageData._id }, mongo.pull(`stats.${otherTypeBis}`, msg.author.id), mongo.constOption()).catch(e => mongo.error(e))
                     newObject = await mongo[cat].findOneAndUpdate( {_id: pageData._id }, mongo.push(`stats.${typeBis}`, msg.author.id), mongo.constOption()).catch(e => mongo.error(e))
-                    if (pageData.stats[otherTypeBis].indexOf(msg.author.id) > -1) newObject = await mongo[cat].findOneAndUpdate({ _id: pageData._id }, mongo.pull(`stats.${otherTypeBis}`, msg.author.id), mongo.constOption()).catch(e => mongo.error(e))
                 }
                 //edit
                 await m.edit(await getModifiedEmbed(

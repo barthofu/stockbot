@@ -9,7 +9,7 @@ module.exports = class EmbedPage {
     
     }
 
-    async getEmbed() {
+    async getEmbed(visitUpdate = true) {
 
         //description
         let categoryObject = this.categoryPattern()
@@ -58,8 +58,11 @@ module.exports = class EmbedPage {
         }
 
         //visites update
-        let newObject = await mongo[this.page.cat].findOneAndUpdate({_id:this.page._id}, mongo.inc("stats.visites", 1), mongo.constOption()).catch(e => mongo.error(e))
-        await mongo.save(this.page._id, newObject)
+        if (visitUpdate) {
+            let newObject = await mongo[this.page.cat].findOneAndUpdate({_id:this.page._id}, mongo.inc("stats.visites", 1), mongo.constOption()).catch(e => mongo.error(e));
+            await mongo.save(this.page._id, newObject);
+        }
+
 
         if (this.userID) {
 
