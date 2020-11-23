@@ -1,11 +1,11 @@
 {
   "actual": {
     "commands": {
-      "total": 642,
+      "total": 647,
       "details": {
-        "stockage": 357,
+        "stockage": 358,
         "profile": 19,
-        "help": 37,
+        "help": 38,
         "monitor": 12,
         "updatechannel": 29,
         "asklist": 56,
@@ -23,7 +23,8 @@
         "send": 2,
         "sendembed": 26,
         "displaylogs": 13,
-        "airing": 8
+        "airing": 8,
+        "prefix": 3
       }
     }
   },

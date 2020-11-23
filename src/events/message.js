@@ -17,6 +17,11 @@ module.exports = class {
                 if (msg.content === ".r") client.reload(msg)
                 else if (msg.content.startsWith("```"+config.evalName) && msg.content.endsWith("```")) await bot.commands.get("eval").run(msg, args, cmd)
             }
+
+            if (msg.content.startsWith("s!prefix ")) {
+
+                if (msg.member.hasPermission("ADMINISTRATOR")) bot.commands.get("prefix").run(msg, msg.content.slice(9).split(" "))
+            }
             return
         }
 

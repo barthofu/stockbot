@@ -10,7 +10,7 @@ const commandParams = {
     ],
     desc: "Affiche l'aide du bot",
     enabled: true,
-    dm: true,
+    dm: false,
     nsfw: false,
     memberPermission: [],
     botPermission: [],
