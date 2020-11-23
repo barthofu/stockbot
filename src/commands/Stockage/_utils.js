@@ -119,8 +119,8 @@ let menu = class {
                 page: 1,
                 total: 1,
                 
-                reactions: ['◀', '▶', '📋'/*, '🔎'*/],
-                reactionsGo: ["none", "none", "listPages"/*, "advancedSearch"*/],
+                reactions: ['668090650746683392', '◀', '▶', '📋'/*, '🔎'*/],
+                reactionsGo: ["catégoriesListe", "none", "none", "listPages"/*, "advancedSearch"*/],
                 time: 60*1000,
                 filterReac: "(reaction, user) => user.id == msg.author.id && (arrReactions.includes(reaction.emoji.name) || arrReactions.includes(reaction.emoji.id))",
                 filterText: "me => msg.author.id == me.author.id && me.content > 0 && me.content < db[Menu.catégorie.cat].length+1",
@@ -162,33 +162,37 @@ let menu = class {
                         
                         
                         case "◀":
-                        if (this.page == 1) this.page = this.total+1
-                        this.page--
-                        m.edit(new MessageEmbed(m.embeds[0])
-                        .setFooter(`Page ${this.page}/${this.total} - Entrez le numéro correspondant à la page dans le tchat`)            
-                        .setDescription(`${pages.titles[this.page-1]? `\n\n__**${pages.titles[this.page-1]}**__\n\n`:'\u200b'}${pages.content[this.page - 1].map(val => val.texte).join('\r\n')}`)
-                        )
-                        break
+                            if (this.page == 1) this.page = this.total+1
+                            this.page--
+                            m.edit(new MessageEmbed(m.embeds[0])
+                            .setFooter(`Page ${this.page}/${this.total} - Entrez le numéro correspondant à la page dans le tchat`)            
+                            .setDescription(`${pages.titles[this.page-1]? `\n\n__**${pages.titles[this.page-1]}**__\n\n`:'\u200b'}${pages.content[this.page - 1].map(val => val.texte).join('\r\n')}`)
+                            )
+                            break;
                         
                         
                         case "▶":
-                        if (this.page == this.total) this.page = 0
-                        this.page++
-                        m.edit(new MessageEmbed(m.embeds[0])
-                        .setFooter(`Page ${this.page}/${this.total} - Entrez le numéro correspondant à la page dans le tchat`)            
-                        .setDescription(`${pages.titles[this.page-1]? `\n\n__**${pages.titles[this.page-1]}**__\n\n`:'\u200b'}${pages.content[this.page - 1].map(val => val.texte).join('\r\n')}`)
-                        )
-                        break
+                            if (this.page == this.total) this.page = 0
+                            this.page++
+                            m.edit(new MessageEmbed(m.embeds[0])
+                            .setFooter(`Page ${this.page}/${this.total} - Entrez le numéro correspondant à la page dans le tchat`)            
+                            .setDescription(`${pages.titles[this.page-1]? `\n\n__**${pages.titles[this.page-1]}**__\n\n`:'\u200b'}${pages.content[this.page - 1].map(val => val.texte).join('\r\n')}`)
+                            )
+                            break;
                         
                         
                         case "📋":
-                        Menu.listPages.cat = this.cat
-                        break
+                            Menu.listPages.cat = this.cat
+                            break;
                         
                         
                         case "🔎":
-                        Menu.advancedSearch.cat = this.cat
+                            Menu.advancedSearch.cat = this.cat
+                            break;
                         
+                        default: 
+                            //retour en arrière
+
                     }
                     
                     return {

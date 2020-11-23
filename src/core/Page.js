@@ -69,7 +69,6 @@ module.exports = class EmbedPage {
 
         }
 
-        console.log(embed);
         return embed
 
 
