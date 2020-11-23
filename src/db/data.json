@@ -1,6 +1,6 @@
 {
   "currentDay": "23",
-  "maintenance": true,
+  "maintenance": false,
   "latest": {
     "name": "Soinc ze egehog",
     "cat": "film",

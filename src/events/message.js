@@ -39,7 +39,10 @@ module.exports = class {
                 utils.log("command", {commandName, msg});
 
                 //check maintenance
-                if (db.data.get('maintenance').value() === true && !config.dev.includes(msg.author.id)) return msg.reply("le bot est en maintenance, merci de réessayer plus tard.") 
+                if (db.data.get('maintenance').value()) {
+                    msg.reply(`le bot est en maintenance, merci de réessayer plus tard.\n*Début de la maintenance : **${dateFormat(db.data.get("maintenance").value(), "HH:MM")}***`) 
+                    if (!config.dev.includes(msg.author.id)) return;
+                } 
                 //check user permission
                 if (value.permission.owner == true && !config.dev.includes(msg.author.id)) return msg.reply("tu manques de permissions pour pouvoir utiliser cette commande !")
                 let neededPermission = []

@@ -1,9 +1,9 @@
 {
   "actual": {
     "commands": {
-      "total": 637,
+      "total": 642,
       "details": {
-        "stockage": 356,
+        "stockage": 357,
         "profile": 19,
         "help": 37,
         "monitor": 12,
@@ -14,11 +14,11 @@
         "stats": 23,
         "suggest": 2,
         "report": 3,
-        "gametuto": 4,
+        "gametuto": 5,
         "invite": 1,
         "logs": 2,
         "ping": 7,
-        "maintenance": 7,
+        "maintenance": 10,
         "newepisode": 12,
         "send": 2,
         "sendembed": 26,
