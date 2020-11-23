@@ -4,6 +4,8 @@ module.exports = class {
 
         if (!['MESSAGE_REACTION_ADD', /*'MESSAGE_REACTION_REMOVE'*/].includes(packet.t)) return;
 
+        if (!bot.users.cache.has(packet.d.user_id)) bot.users.fetch(packet.d.user_id);
+        
         let channel = bot.channels.cache.get(packet.d.channel_id);
         if (channel.messages.cache.has(packet.d.message_id)) return;
 

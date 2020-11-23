@@ -1186,14 +1186,6 @@
         "NSFW"
       ]
     },
-    "760956782230634526": {
-      "id": "760956782230634526",
-      "prefix": "s!",
-      "nsfwEnabled": true,
-      "updateChannel": "760956782230634529",
-      "updateRole": false,
-      "updateIgnoreCategories": []
-    },
     "613007196283731979": {
       "id": "613007196283731979",
       "prefix": "s!",
@@ -1509,6 +1501,14 @@
       "prefix": "s!",
       "nsfwEnabled": true,
       "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "760956782230634526": {
+      "id": "760956782230634526",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": "760956782230634529",
       "updateRole": false,
       "updateIgnoreCategories": []
     }

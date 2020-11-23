@@ -41,7 +41,7 @@ module.exports = class Mongo {
                 this[cat] = new Category(cat).getModel();
             }
 
-            //await this.startWatch()
+            await this.startWatch()
 
             return;
         }).catch(e => console.log(e))
@@ -58,6 +58,8 @@ module.exports = class Mongo {
     }
 
     async watch (data) {
+
+        if (!bot.users.cache.has(data.fullDocument.addedBy)) bot.users.fetch(data.fullDocument.addedBy);
 
         await this.saveAll();
         //send the verification embed on discord

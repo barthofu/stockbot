@@ -1,5 +1,5 @@
 {
-  "currentDay": "22",
+  "currentDay": "23",
   "maintenance": false,
   "latest": {
     "name": "One Piece E951",
@@ -9,7 +9,24 @@
     "poids": 8,
     "fichiers": 42680
   },
-  "awaitVerification": [],
+  "awaitVerification": [
+    {
+      "_id": "5fbbadb08e245749e729b9c2",
+      "cat": "anime",
+      "name": "bbb",
+      "authorId": "260908777446965248",
+      "messageId": "780412411466743808",
+      "timestamp": 1606135218939
+    },
+    {
+      "_id": "5fbbae12b347f84d481fa542",
+      "cat": "anime",
+      "name": "ccc",
+      "authorId": "260908777446965248",
+      "messageId": "780412817387028511",
+      "timestamp": 1606135315814
+    }
+  ],
   "seasonals": [
     {
       "name": "One Piece",
