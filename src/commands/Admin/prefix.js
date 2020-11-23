@@ -4,7 +4,7 @@ const commandParams = {
     
     name: "prefix",
     aliases: [],
-    desc: "",
+    desc: "Change le préfix sur ton serveur",
     enabled: true,
     dm: false,
     nsfw: false,
@@ -29,7 +29,7 @@ module.exports = class extends CommandPattern {
 
             db.guild.get("guilds").find(val => val.id === msg.guild.id).set("prefix", args[0].toLowerCase()).write()
             msg.reply(`préfix mis à jour ! (**${args[0].toLowerCase()}**)\nSi jamais vous l'oubliez vous pouvez toujours faire la commande \`s!prefix\` (avec le prefix originel)`)
-            
+
         }
 
     }

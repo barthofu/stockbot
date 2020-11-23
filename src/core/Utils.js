@@ -191,11 +191,16 @@ module.exports = class Utils {
     async sendNewPage (_id, cat, mongo) {
 
         //get embed
-        let embed = await this.getPageEmbed(_id)
-        embed
+        let page = this.getPageByID(_id),
+            embed = new MessageEmbed()
+            .setColor(config.colors.default)
             .setFooter(`Nouvelle page dans catégorie ${cat}`, 'https://exampassed.net/wp-content/uploads/2018/07/new.gif')
+            .setDescription(page.lien.join("\r\n"))
+            .setTitle(page.name)
             .setThumbnail(config.categories.find(val => val.name == cat).image)
             .setTimestamp(new Date())
+        
+        if (cat !== "NSFW") embed.setImage(page.imageURL);
 
         let rawGuilds = db.guild.get("guilds").values().value()
         let checkedGuilds = rawGuilds.filter(value => utils.sendNewPageValidator(value));

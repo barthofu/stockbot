@@ -5201,6 +5201,52 @@
           "NSFW": 20
         }
       }
+    },
+    {
+      "date": "23-11-2020",
+      "guilds": 177,
+      "users": 78,
+      "activeUsers": 900,
+      "commands": {
+        "total": 647,
+        "details": {
+          "stockage": 358,
+          "profile": 19,
+          "help": 38,
+          "monitor": 12,
+          "updatechannel": 29,
+          "asklist": 56,
+          "nsfw": 9,
+          "ask": 9,
+          "stats": 23,
+          "suggest": 2,
+          "report": 3,
+          "gametuto": 5,
+          "invite": 1,
+          "logs": 2,
+          "ping": 7,
+          "maintenance": 10,
+          "newepisode": 12,
+          "send": 2,
+          "sendembed": 26,
+          "displaylogs": 13,
+          "airing": 8,
+          "prefix": 3
+        }
+      },
+      "pages": {
+        "visits": 15093,
+        "total": 969,
+        "categories": {
+          "anime": 291,
+          "manga": 84,
+          "série": 135,
+          "film": 314,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
     }
   ]
 }

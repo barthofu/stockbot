@@ -4,7 +4,7 @@ const commandParams = {
     
     name: "airing",
     aliases: [],
-    desc: "",
+    desc: "Affiche le calendrier de sortie des anime de saison",
     enabled: true,
     dm: true,
     nsfw: false,
