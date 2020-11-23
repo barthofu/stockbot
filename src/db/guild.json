@@ -11,7 +11,7 @@
     "543547574548824084": {
       "id": "543547574548824084",
       "prefix": "s!",
-      "nsfwEnabled": false,
+      "nsfwEnabled": true,
       "updateChannel": "561920774504448010",
       "updateRole": false,
       "updateIgnoreCategories": []

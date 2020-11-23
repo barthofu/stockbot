@@ -1,6 +1,6 @@
 {
   "currentDay": "23",
-  "maintenance": false,
+  "maintenance": true,
   "latest": {
     "name": "Soinc ze egehog",
     "cat": "film",
@@ -10,8 +10,7 @@
     "poids": 8,
     "fichiers": 42680
   },
-  "awaitVerification": [
-  ],
+  "awaitVerification": [],
   "seasonals": [
     {
       "name": "One Piece",

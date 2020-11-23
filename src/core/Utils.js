@@ -354,10 +354,10 @@ module.exports = class Utils {
                     let sortedSubArray = _.sortBy(subArray, "name")
 
                     //FLIP FLAPPINGGGG (transformation)
-                    let finalArray = sortedSubArray.map(page => {
+                    let finalArray = sortedSubArray.map((page,i) => {
                         return {
                             _id: page._id,
-                            texte: `\`${counter}.\` **${page.name}** ${page.stats.like.indexOf(userID) > -1? "\\👍":""} ${page.stats.dislike.indexOf(userID) > -1? "\\👎":""} ${page.stats.completed?.indexOf?.(userID) > -1? "\\👁":""} ${page.stats.planning?.indexOf?.(userID) > -1? "\\⌚":""}`
+                            texte: `\`${parseInt(i) + 1 + [0].concat(pages[cat].content).reduce((acc, current) => acc + current.length)}.\` **${page.name}** ${page.stats.like.indexOf(userID) > -1? "\\👍":""} ${page.stats.dislike.indexOf(userID) > -1? "\\👎":""} ${page.stats.completed?.indexOf?.(userID) > -1? "\\👁":""} ${page.stats.planning?.indexOf?.(userID) > -1? "\\⌚":""}`
                         }
                     })
 

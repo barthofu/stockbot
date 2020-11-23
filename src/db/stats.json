@@ -1,15 +1,15 @@
 {
   "actual": {
     "commands": {
-      "total": 620,
+      "total": 637,
       "details": {
-        "stockage": 343,
+        "stockage": 356,
         "profile": 19,
-        "help": 35,
+        "help": 37,
         "monitor": 12,
         "updatechannel": 29,
         "asklist": 56,
-        "nsfw": 8,
+        "nsfw": 9,
         "ask": 9,
         "stats": 23,
         "suggest": 2,
@@ -18,7 +18,7 @@
         "invite": 1,
         "logs": 2,
         "ping": 7,
-        "maintenance": 6,
+        "maintenance": 7,
         "newepisode": 12,
         "send": 2,
         "sendembed": 26,
