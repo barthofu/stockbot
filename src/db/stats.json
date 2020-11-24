@@ -1,13 +1,13 @@
 {
   "actual": {
     "commands": {
-      "total": 647,
+      "total": 688,
       "details": {
-        "stockage": 358,
+        "stockage": 382,
         "profile": 19,
-        "help": 38,
+        "help": 39,
         "monitor": 12,
-        "updatechannel": 29,
+        "updatechannel": 35,
         "asklist": 56,
         "nsfw": 9,
         "ask": 9,
@@ -19,11 +19,11 @@
         "logs": 2,
         "ping": 7,
         "maintenance": 10,
-        "newepisode": 12,
+        "newepisode": 13,
         "send": 2,
-        "sendembed": 26,
+        "sendembed": 27,
         "displaylogs": 13,
-        "airing": 8,
+        "airing": 16,
         "prefix": 3
       }
     }
@@ -5210,11 +5210,11 @@
       "commands": {
         "total": 647,
         "details": {
-          "stockage": 358,
+          "stockage": 364,
           "profile": 19,
           "help": 38,
           "monitor": 12,
-          "updatechannel": 29,
+          "updatechannel": 31,
           "asklist": 56,
           "nsfw": 9,
           "ask": 9,
@@ -5226,11 +5226,11 @@
           "logs": 2,
           "ping": 7,
           "maintenance": 10,
-          "newepisode": 12,
+          "newepisode": 13,
           "send": 2,
-          "sendembed": 26,
+          "sendembed": 27,
           "displaylogs": 13,
-          "airing": 8,
+          "airing": 16,
           "prefix": 3
         }
       },

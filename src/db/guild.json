@@ -6,7 +6,9 @@
       "nsfwEnabled": true,
       "updateChannel": "559825597728161825",
       "updateRole": false,
-      "updateIgnoreCategories": []
+      "updateIgnoreCategories": [
+        "anime"
+      ]
     },
     "543547574548824084": {
       "id": "543547574548824084",
@@ -1107,13 +1109,13 @@
       "prefix": "s!",
       "nsfwEnabled": true,
       "updateChannel": "755826836310589571",
-      "updateRole": "<@&760212816640081960>",
+      "updateRole": false,
       "updateIgnoreCategories": [
         "manga",
-        "série",
-        "film",
         "musique",
-        "NSFW"
+        "NSFW",
+        "film",
+        "série"
       ]
     },
     "755892112909795348": {

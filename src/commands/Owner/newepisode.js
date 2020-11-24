@@ -81,7 +81,7 @@ module.exports = class extends CommandPattern {
 
             //send to update channels
             let rawGuilds = db.guild.get("guilds").values().value()
-            let checkedGuilds = rawGuilds.filter(value => utils.sendNewPageValidator(value));
+            let checkedGuilds = rawGuilds.filter(value => utils.sendNewPageValidator(value, "anime"));
             console.log(checkedGuilds.map(e => [e.id, bot.guilds.cache.get(e.id)?.name, e.updateChannel]));
             for (let i in checkedGuilds) await bot.channels.cache.get(checkedGuilds[i].updateChannel)?.send?.(embed);
             msg.channel.send(`Annonce bien envoyée sur **${checkedGuilds.length}** serveurs`);

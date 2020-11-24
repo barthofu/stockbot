@@ -24,7 +24,7 @@ module.exports = class {
                 //update local db
                 await mongo.saveAll();
                 //send the new page embed in all the update channels
-                await utils.sendNewPage(obj._id, obj.cat, mongo);
+                await utils.sendNewPage(obj._id, obj.cat);
                 //log
                 utils.log("pageAdd", {obj, userTag});
                 

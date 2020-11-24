@@ -747,6 +747,8 @@ async function displayPage(params, m, cat, _id = false) {
 
                     //delete the entry from mongodb
                     await mongo[pageData.cat].deleteOne({_id: pageData._id});
+                    //update local db
+                    await mongo.saveAll()
                     //remove message
                     await m.delete()
                     //log

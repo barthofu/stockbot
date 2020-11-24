@@ -2,15 +2,24 @@
   "currentDay": "24",
   "maintenance": false,
   "latest": {
-    "name": "Soinc ze egehog",
+    "name": "Captain America - Collection",
     "cat": "film",
-    "date": "23/11/2020 à 22:33"
+    "date": "24/11/2020 à 11:03"
   },
   "stats": {
     "poids": 8,
     "fichiers": 42680
   },
-  "awaitVerification": [],
+  "awaitVerification": [
+    {
+      "_id": "5fbcda4d3f36c57961672872",
+      "cat": "film",
+      "name": "Captain America - Collection",
+      "authorId": "192761080114708480",
+      "messageId": "780735191232544809",
+      "timestamp": 1606212175717
+    }
+  ],
   "seasonals": [
     {
       "name": "One Piece",

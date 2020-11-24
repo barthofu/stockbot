@@ -188,7 +188,7 @@ module.exports = class Utils {
     }
 
 
-    async sendNewPage (_id, cat, mongo) {
+    async sendNewPage (_id, cat) {
 
         //get embed
         let page = this.getPageByID(_id),
@@ -203,7 +203,7 @@ module.exports = class Utils {
         if (cat !== "NSFW") embed.setImage(page.imageURL);
 
         let rawGuilds = db.guild.get("guilds").values().value()
-        let checkedGuilds = rawGuilds.filter(value => utils.sendNewPageValidator(value));
+        let checkedGuilds = rawGuilds.filter(value => utils.sendNewPageValidator(value, cat));
         console.log(checkedGuilds.map(e => [e.id, bot.guilds.cache.get(e.id)?.name, e.updateChannel]));
 
         for (let i in checkedGuilds) await bot.channels.cache.get(checkedGuilds[i].updateChannel)?.send?.(              
@@ -225,7 +225,7 @@ module.exports = class Utils {
         if (channelId === false) return false;
         
         //check if channel exists
-        if (!bot.channels.cache.get(channelId)) {
+        else if (!bot.channels.cache.get(channelId)) {
 
             if (!bot.guilds.cache.get(guildObj.id)) {
 
@@ -239,12 +239,16 @@ module.exports = class Utils {
         //check if bot can send message in the channel
         else if (!bot.channels.cache.get(channelId).permissionsFor(bot.guilds.cache.get(guildObj.id).me).has("SEND_MESSAGES")) {
 
-            //bot.guilds.cache.get(guildObj.id).owner.send(new MessageEmbed().setColor("ff0000").setFooter("Message automatique envoyé à chaque nouvelle update. Veuillez désactiver l'update channel pour ne plus le recevoir (s!updatechannel)").setDescription(`Vous avez activé le système d'update channel pour recevoir tous les nouveaux ajouts et autres notifications importantes dans le salon suivant : <#${channelId}>\nCependant, je n'ai en tant que bot pas les permissions nécessaires pour y envoyer des messages.`))
+            if (!bot.users.cache.get(bot.guilds.cache.get(guildObj.id).owner)) bot.users.fetch(bot.guilds.cache.get(guildObj.id).owner);
+            let user = bot.users.cache.get(bot.guilds.cache.get(guildObj.id).owner);
+            user.send(new MessageEmbed().setColor("ff0000").setFooter("Message automatique envoyé à chaque nouvelle update. Veuillez désactiver l'update channel pour ne plus le recevoir (s!updatechannel)").setDescription(`Vous avez activé le système d'update channel pour recevoir tous les nouveaux ajouts et autres notifications importantes dans le salon suivant : <#${channelId}>\nCependant, je n'ai en tant que bot pas les permissions nécessaires pour y envoyer des messages.`))
             return false;
         }
         
         //check if category is enabled
-        else if (cat && guildObj.updateIgnoreCategories.includes(cat)) return false;
+        else if (cat) {
+            if (guildObj.updateIgnoreCategories.includes(cat)) return false
+        }
 
         //check if nsfw is disabled
         else if (!guildObj.nsfwEnabled && cat === "NSFW") return false;
