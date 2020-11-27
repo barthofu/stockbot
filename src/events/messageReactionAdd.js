@@ -13,6 +13,9 @@ module.exports = class {
         
             if (reaction.emoji.name === "✅") {
 
+                
+                db.data.get("awaitVerification").pull(obj).write();
+
                 //delete the message
                 await reaction.message.delete();
                 //update latest
@@ -29,7 +32,9 @@ module.exports = class {
                 utils.log("pageAdd", {obj, userTag});
                 
             } else if (reaction.emoji.name === "❌") {
-
+                
+                db.data.get("awaitVerification").pull(obj).write();
+                
                 //delete the message
                 await reaction.message.delete();
                 //delete the entry from mongodb
@@ -38,7 +43,6 @@ module.exports = class {
                 utils.log("pageRefused", {obj, userTag});
             }
 
-            db.data.get("awaitVerification").pull(obj).write();
 
         }
 

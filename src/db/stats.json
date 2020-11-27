@@ -1,28 +1,28 @@
 {
   "actual": {
     "commands": {
-      "total": 688,
+      "total": 863,
       "details": {
-        "stockage": 382,
-        "profile": 19,
-        "help": 39,
+        "stockage": 493,
+        "profile": 42,
+        "help": 48,
         "monitor": 12,
-        "updatechannel": 35,
-        "asklist": 56,
+        "updatechannel": 41,
+        "asklist": 60,
         "nsfw": 9,
-        "ask": 9,
+        "ask": 13,
         "stats": 23,
         "suggest": 2,
         "report": 3,
-        "gametuto": 5,
-        "invite": 1,
+        "gametuto": 6,
+        "invite": 4,
         "logs": 2,
-        "ping": 7,
+        "ping": 8,
         "maintenance": 10,
-        "newepisode": 13,
+        "newepisode": 15,
         "send": 2,
-        "sendembed": 27,
-        "displaylogs": 13,
+        "sendembed": 35,
+        "displaylogs": 16,
         "airing": 16,
         "prefix": 3
       }
@@ -5242,6 +5242,144 @@
           "manga": 84,
           "série": 135,
           "film": 314,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "24-11-2020",
+      "guilds": 177,
+      "users": 397,
+      "activeUsers": 900,
+      "commands": {
+        "total": 756,
+        "details": {
+          "stockage": 493,
+          "profile": 42,
+          "help": 48,
+          "monitor": 12,
+          "updatechannel": 41,
+          "asklist": 60,
+          "nsfw": 9,
+          "ask": 13,
+          "stats": 23,
+          "suggest": 2,
+          "report": 3,
+          "gametuto": 6,
+          "invite": 4,
+          "logs": 2,
+          "ping": 8,
+          "maintenance": 10,
+          "newepisode": 15,
+          "send": 2,
+          "sendembed": 35,
+          "displaylogs": 16,
+          "airing": 16,
+          "prefix": 3
+        }
+      },
+      "pages": {
+        "visits": 15150,
+        "total": 973,
+        "categories": {
+          "anime": 293,
+          "manga": 84,
+          "série": 135,
+          "film": 316,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "25-11-2020",
+      "guilds": 179,
+      "users": 854,
+      "activeUsers": 904,
+      "commands": {
+        "total": 833,
+        "details": {
+          "stockage": 493,
+          "profile": 42,
+          "help": 48,
+          "monitor": 12,
+          "updatechannel": 41,
+          "asklist": 60,
+          "nsfw": 9,
+          "ask": 13,
+          "stats": 23,
+          "suggest": 2,
+          "report": 3,
+          "gametuto": 6,
+          "invite": 4,
+          "logs": 2,
+          "ping": 8,
+          "maintenance": 10,
+          "newepisode": 15,
+          "send": 2,
+          "sendembed": 35,
+          "displaylogs": 16,
+          "airing": 16,
+          "prefix": 3
+        }
+      },
+      "pages": {
+        "visits": 15216,
+        "total": 979,
+        "categories": {
+          "anime": 293,
+          "manga": 84,
+          "série": 135,
+          "film": 322,
+          "musique": 18,
+          "jeux": 107,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "26-11-2020",
+      "guilds": 180,
+      "users": 1050,
+      "activeUsers": 905,
+      "commands": {
+        "total": 853,
+        "details": {
+          "stockage": 493,
+          "profile": 42,
+          "help": 48,
+          "monitor": 12,
+          "updatechannel": 41,
+          "asklist": 60,
+          "nsfw": 9,
+          "ask": 13,
+          "stats": 23,
+          "suggest": 2,
+          "report": 3,
+          "gametuto": 6,
+          "invite": 4,
+          "logs": 2,
+          "ping": 8,
+          "maintenance": 10,
+          "newepisode": 15,
+          "send": 2,
+          "sendembed": 35,
+          "displaylogs": 16,
+          "airing": 16,
+          "prefix": 3
+        }
+      },
+      "pages": {
+        "visits": 15218,
+        "total": 979,
+        "categories": {
+          "anime": 293,
+          "manga": 84,
+          "série": 135,
+          "film": 322,
           "musique": 18,
           "jeux": 107,
           "NSFW": 20

@@ -237,13 +237,8 @@ module.exports = class Utils {
         }
 
         //check if bot can send message in the channel
-        else if (!bot.channels.cache.get(channelId).permissionsFor(bot.guilds.cache.get(guildObj.id).me).has("SEND_MESSAGES")) {
-
-            if (!bot.users.cache.get(bot.guilds.cache.get(guildObj.id).owner)) bot.users.fetch(bot.guilds.cache.get(guildObj.id).owner);
-            let user = bot.users.cache.get(bot.guilds.cache.get(guildObj.id).owner);
-            user.send(new MessageEmbed().setColor("ff0000").setFooter("Message automatique envoyé à chaque nouvelle update. Veuillez désactiver l'update channel pour ne plus le recevoir (s!updatechannel)").setDescription(`Vous avez activé le système d'update channel pour recevoir tous les nouveaux ajouts et autres notifications importantes dans le salon suivant : <#${channelId}>\nCependant, je n'ai en tant que bot pas les permissions nécessaires pour y envoyer des messages.`))
-            return false;
-        }
+        else if (!bot.channels.cache.get(channelId).permissionsFor(bot.guilds.cache.get(guildObj.id).me).has("SEND_MESSAGES")) return false;
+        
         
         //check if category is enabled
         else if (cat) {

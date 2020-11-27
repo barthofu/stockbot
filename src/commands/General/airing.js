@@ -36,7 +36,7 @@ module.exports = class extends CommandPattern {
 
             if (seasonals.find(val => val.airing.day == day)) embed.addField(
                 `__**${day}**__`,
-                seasonals.filter(val => val.airing.day == day).map(val => `[(${val.airing.hour}) ${val.name}${val.season? `Saison ${val.season}`:""}](${val.lien})`)
+                seasonals.filter(val => val.airing.day == day).map(val => `[(${val.airing.hour}) ${val.name}${val.season? ` Saison ${val.season}`:""}](${val.lien})`)
             )
         })
 

@@ -25,48 +25,82 @@ module.exports = class extends CommandPattern {
 
     async run (msg, args, cmd, color) {
 
-        let filter = me => me.author.id === msg.author.id;
+        let filter = me => me.author.id === msg.author.id,
+            m = null;
 
-        await msg.channel.send("Veuillez écrire l'embed à envoyer dans les channels update de tout les serveurs (écrire `cancel` si annulation) tel que : `titre || description`")
-        let rep = await msg.channel.awaitMessages(filter, {max:1,time:180000})
-        if (!rep.first().content) return msg.reply('commande annulée.')
-        if (rep.first().content.toLowerCase() === 'cancel') return msg.reply('commande annulée.')
+        m = await msg.channel.send(new MessageEmbed()
+        .setDescription("Veuillez écrire l'embed à envoyer dans les channels update de tout les serveurs (écrire `cancel` si annulation) tel que : `titre || description`")
+        .setColor(color)
+        );
+        let rep = await msg.channel.awaitMessages(filter, {max:1,time:180000});
+        if (!rep.first().content) return msg.reply('commande annulée.');
+        if (rep.first().content.toLowerCase() === 'cancel') return msg.reply('commande annulée.');
+        await rep.first().delete();
+        await m.delete();
 
-         = ab.first().content.trim().split('||')
-        let titre = rep.first().content.trim().split("||")[0]
-        let description = rep.first().content.trim().split("||")[1]
+        let titre = rep.first().content.trim().split("||")[0];
+        let description = rep.first().content.trim().split("||")[1];
 
         let embed = new MessageEmbed()
             .setTitle(titre)
             .setDescription(description)
-            .setColor(config.colors.default)
+            .setColor(config.colors.default);
 
-        await msg.channel.send("Veuillez indiquer le lien de l'image **(`off` si pas d'image dans l'embed)** :")
-        rep = await msg.channel.awaitMessages(filter, {max:1,time:60000})
-        if (!rep.first().content) return msg.reply('commande annulée.')
-        if (rep.first().content.toLowerCase() !== 'off') embed.setImage(rep.first().content)
+        m = await msg.channel.send(new MessageEmbed()
+            .setDescription("Veuillez indiquer le lien de l'image **(`off` si pas d'image dans l'embed)** :")
+            .setColor(color)
+        );
+        rep = await msg.channel.awaitMessages(filter, {max:1,time:60000});
+        if (!rep.first().content) return msg.reply('commande annulée.');
+        if (rep.first().content.toLowerCase() !== 'off') embed.setImage(rep.first().content);
+        await rep.first().delete();
+        await m.delete();
 
-        await msg.channel.send("Veuillez indiquer le lien de la thumbnail **(`off` si pas de thumbnail dans l'embed)** :")
-        rep = await msg.channel.awaitMessages(filter, {max:1,time:60000})
-        if (!rep.first().content) return msg.reply('commande annulée.')
-        if (rep.first().content.toLowerCase() !== 'off') embed.setImage(rep.first().content)
+        m = await msg.channel.send(new MessageEmbed()
+            .setDescription("Veuillez indiquer le lien de la thumbnail **(`off` si pas de thumbnail dans l'embed)** :")
+            .setColor(color)
+        );
+        rep = await msg.channel.awaitMessages(filter, {max:1,time:60000});
+        if (!rep.first().content) return msg.reply('commande annulée.');
+        if (rep.first().content.toLowerCase() !== 'off') embed.setImage(rep.first().content);
+        await rep.first().delete();
+        await m.delete();
 
-        await msg.channel.send(embed)
-        await msg.channel.send("Confirmez-vous l'envoi de cet embed ? (`oui` ou `non`)")
-        filter = m => (m.author.id === msg.author.id && (m.content.toLowerCase() === 'oui' || m.content.toLowerCase() === 'non'))
-        rep = await msg.channel.awaitMessages(me => me.author.id === msg.author.id && ["oui", "non"].includes(me.content.toLowerCase()), {max:1,time:30000})
-        if (!rep.first()) return msg.reply("commande annulée.")
+        embed = new MessageEmbed()
+        .setColor(color)
+        .setTitle("Catégorie de la demande")
+        .setImage(config.ressources.images.multicolorBar)
+        .setFooter("Entre le numéro correspondant à la catégorie dans le tchat ci-dessous")
+        .setDescription("\u200b");
+
+        embed.addField("0. PAS DE CATEGORIE", "━━━━━━━━━━━━━━━━");
+        config.categories.map(val => val.fancyName).forEach((val, i) => {
+            embed.addField(`${parseInt(i)+1}. ${val}`, "\u200b", true);
+        })
+
+        m = await msg.channel.send(embed);
+        rep = await msg.channel.awaitMessages(filter, {max:1,time:60000});
+        if (!rep.first().content) return msg.reply('commande annulée.');
+        await m.delete();
+        rep = parseInt(rep.first().content);
+        let cat = rep == 0 ? false : config.categories[rep-1].name;
+
+        m = await msg.channel.send(embed);
+        await msg.channel.send("Confirmez-vous l'envoi de cet embed ? (`oui` ou `non`)");
+        filter = m => (m.author.id === msg.author.id && (m.content.toLowerCase() === 'oui' || m.content.toLowerCase() === 'non'));
+        rep = await msg.channel.awaitMessages(me => me.author.id === msg.author.id && ["oui", "non"].includes(me.content.toLowerCase()), {max:1,time:30000});
+        if (!rep.first()) return msg.reply("commande annulée.");
 
         if (rep.first().content.toLowerCase() === 'oui') {
 
                 //send to update channels
-                let rawGuilds = db.guild.get("guilds").values().value()
-                let checkedGuilds = rawGuilds.filter(value => utils.sendNewPageValidator(value));
+                let rawGuilds = db.guild.get("guilds").values().value();
+                let checkedGuilds = rawGuilds.filter(value => utils.sendNewPageValidator(value, cat));
                 console.log(checkedGuilds.map(e => [e.id, bot.guilds.cache.get(e.id)?.name, e.updateChannel]));
-                for (let i in checkedGuilds) await bot.channels.cache.get(checkedGuilds[i].updateChannel)?.send?.(embed);
+                //for (let i in checkedGuilds) await bot.channels.cache.get(checkedGuilds[i].updateChannel)?.send?.(embed);
                 msg.channel.send(`Annonce bien envoyée sur **${checkedGuilds.length}** serveurs`);
     
-        } else return msg.reply('commande annulée.')
+        } else return msg.reply('commande annulée.');
     
     }
 

@@ -59,6 +59,8 @@ module.exports = class Mongo {
 
     async watch (data) {
 
+        console.log(data)
+
         if (!bot.users.cache.has(data.fullDocument.addedBy)) bot.users.fetch(data.fullDocument.addedBy);
 
         await this.saveAll();

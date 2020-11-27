@@ -1,25 +1,16 @@
 {
-  "currentDay": "24",
+  "currentDay": "27",
   "maintenance": false,
   "latest": {
-    "name": "Captain America - Collection",
-    "cat": "film",
-    "date": "24/11/2020 à 11:03"
+    "name": "Blade",
+    "cat": "anime",
+    "date": "27/11/2020 à 08:50"
   },
   "stats": {
     "poids": 8,
     "fichiers": 42680
   },
-  "awaitVerification": [
-    {
-      "_id": "5fbcda4d3f36c57961672872",
-      "cat": "film",
-      "name": "Captain America - Collection",
-      "authorId": "192761080114708480",
-      "messageId": "780735191232544809",
-      "timestamp": 1606212175717
-    }
-  ],
+  "awaitVerification": [],
   "seasonals": [
     {
       "name": "One Piece",

@@ -40,7 +40,7 @@ module.exports = class extends CommandPattern {
             .setAuthor(msg.author.username, msg.author.displayAvatarURL({dynamic: true}))
             .setColor(color)
             .setThumbnail("https://cdn.icon-icons.com/icons2/1128/PNG/512/1486164728-118_79708.png")
-            .setImage(config.ressources.images.multicolorLoading)
+            .setImage(config.ressources.images.multicolorBar)
             
         , user = msg.author;
 
