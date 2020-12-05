@@ -1,10 +1,9 @@
 {
-  "currentDay": "27",
+  "currentDay": "05",
   "maintenance": false,
   "latest": {
-    "name": "Blade",
-    "cat": "anime",
-    "date": "27/11/2020 à 08:50"
+    "name": "Fire Force S02E23",
+    "date": "05/12/2020 à 09:48"
   },
   "stats": {
     "poids": 8,
@@ -46,7 +45,7 @@
       "name": "Jujutsu Kaisen",
       "season": "1",
       "lien": "https://mega.nz/folder/PyBUVJ4I#brff8dkr1iCN6F-gXoa3fw",
-      "image": "https://cdn.statically.io/img/animeschedule.sfo2.cdn.digitaloceanspaces.com/production/assets/public/img/shows/default/jujutsu-kaisen-da37f058a6.jpg",
+      "image": "https://img.reelgood.com/content/show/a9aa6c98-ce63-48ee-9064-8b8f69183989/poster-780.jpg",
       "airing": {
         "day": "Vendredi",
         "hour": "17h30"

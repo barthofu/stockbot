@@ -66,19 +66,19 @@ module.exports = class extends CommandPattern {
         await rep.first().delete();
         await m.delete();
 
-        embed = new MessageEmbed()
+        let embedBis = new MessageEmbed()
         .setColor(color)
         .setTitle("Catégorie de la demande")
         .setImage(config.ressources.images.multicolorBar)
         .setFooter("Entre le numéro correspondant à la catégorie dans le tchat ci-dessous")
         .setDescription("\u200b");
 
-        embed.addField("0. PAS DE CATEGORIE", "━━━━━━━━━━━━━━━━");
+        embedBis.addField("0. PAS DE CATEGORIE", "━━━━━━━━━━━━━━━━");
         config.categories.map(val => val.fancyName).forEach((val, i) => {
-            embed.addField(`${parseInt(i)+1}. ${val}`, "\u200b", true);
+            embedBis.addField(`${parseInt(i)+1}. ${val}`, "\u200b", true);
         })
 
-        m = await msg.channel.send(embed);
+        m = await msg.channel.send(embedBis);
         rep = await msg.channel.awaitMessages(filter, {max:1,time:60000});
         if (!rep.first().content) return msg.reply('commande annulée.');
         await m.delete();
@@ -97,7 +97,7 @@ module.exports = class extends CommandPattern {
                 let rawGuilds = db.guild.get("guilds").values().value();
                 let checkedGuilds = rawGuilds.filter(value => utils.sendNewPageValidator(value, cat));
                 console.log(checkedGuilds.map(e => [e.id, bot.guilds.cache.get(e.id)?.name, e.updateChannel]));
-                //for (let i in checkedGuilds) await bot.channels.cache.get(checkedGuilds[i].updateChannel)?.send?.(embed);
+                for (let i in checkedGuilds) await bot.channels.cache.get(checkedGuilds[i].updateChannel)?.send?.(embed);
                 msg.channel.send(`Annonce bien envoyée sur **${checkedGuilds.length}** serveurs`);
     
         } else return msg.reply('commande annulée.');

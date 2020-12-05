@@ -6,9 +6,7 @@
       "nsfwEnabled": true,
       "updateChannel": "559825597728161825",
       "updateRole": false,
-      "updateIgnoreCategories": [
-        "anime"
-      ]
+      "updateIgnoreCategories": []
     },
     "543547574548824084": {
       "id": "543547574548824084",
@@ -1056,7 +1054,7 @@
     },
     "753650228032307311": {
       "id": "753650228032307311",
-      "prefix": "s!",
+      "prefix": "0",
       "nsfwEnabled": true,
       "updateChannel": false,
       "updateRole": false,
@@ -1289,7 +1287,7 @@
     "769666598872809563": {
       "id": "769666598872809563",
       "prefix": "s!",
-      "nsfwEnabled": true,
+      "nsfwEnabled": false,
       "updateChannel": false,
       "updateRole": false,
       "updateIgnoreCategories": []
@@ -1529,6 +1527,56 @@
       "updateChannel": "781792703834488832",
       "updateRole": false,
       "updateIgnoreCategories": []
+    },
+    "779685601628258304": {
+      "id": "779685601628258304",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": "782044076701909002",
+      "updateRole": "782041838256521287",
+      "updateIgnoreCategories": []
+    },
+    "758573707999576094": {
+      "id": "758573707999576094",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": "782687727698182144",
+      "updateRole": "782745906872975400",
+      "updateIgnoreCategories": [
+        "anime",
+        "NSFW",
+        "jeux",
+        "musique",
+        "série",
+        "film"
+      ]
+    },
+    "471608086847553536": {
+      "id": "471608086847553536",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "605430487779115028": {
+      "id": "605430487779115028",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": "605441893811093505",
+      "updateIgnoreCategories": [
+        "film",
+        "musique"
+      ]
+    },
+    "780776962418540564": {
+      "id": "780776962418540564",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
     }
   },
   "deleted": {
@@ -1568,6 +1616,14 @@
         "jeux",
         "NSFW"
       ]
+    },
+    "755776925397549096": {
+      "id": "755776925397549096",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
     }
   }
 }
