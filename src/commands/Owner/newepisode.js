@@ -75,7 +75,7 @@ module.exports = class extends CommandPattern {
             //update latest
             db.data.set("latest", {
                 name: `${seasonalObj.name} ${seasonalObj.season ? `S0${seasonalObj.season}`:""}E${episode < 10 ? "0"+episode : episode}`,
-                cat: seasonalObj.cat,
+                cat: "anime",
                 date: dateFormat(new Date, "dd/mm/yyyy à HH:MM")
             }).write()
 

@@ -1,9 +1,10 @@
 {
-  "currentDay": "05",
+  "currentDay": "07",
   "maintenance": false,
   "latest": {
-    "name": "Fire Force S02E23",
-    "date": "05/12/2020 à 09:48"
+    "name": "Attack on Titan S04E01",
+    "cat": "anime",
+    "date": "06/12/2020 à 19:56"
   },
   "stats": {
     "poids": 8,
@@ -69,6 +70,16 @@
       "airing": {
         "day": "Vendredi",
         "hour": "19h"
+      }
+    },
+    {
+      "name": "Attack on Titan",
+      "season": "4",
+      "lien": "https://mega.nz/folder/avAgVLAA#e-AlqiWc5eipxltGZTxvTw",
+      "image": "https://static.wikia.nocookie.net/1dcd538c-ed9a-4bb2-bbb5-93465ed7a094",
+      "airing": {
+        "day": "Dimanche",
+        "hour": "18h30"
       }
     }
   ]
