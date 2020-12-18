@@ -23,10 +23,11 @@ module.exports = class extends CommandPattern {
 
     async run (msg, args, cmd, color) {
 
-        var embed = msg.channel.send(new MessageEmbed()
+        msg.channel.send(new MessageEmbed()
             .setColor(color)
             .setAuthor(msg.author.username, msg.author.displayAvatarURL({dynamic: true}))
             .addField('Invite StockBot sur ton serveur', '[Clique ici !](https://discordapp.com/oauth2/authorize?client_id=554230891816288256&scope=bot&permissions=68627521)')
+            .addField("Rejoins dès maintenant le serveur de support du bot", "[Clique ici](https://discord.gg/8P7jFpbKkb)")
         );
 
     }

@@ -1120,14 +1120,6 @@
       "updateRole": false,
       "updateIgnoreCategories": []
     },
-    "710238669553795096": {
-      "id": "710238669553795096",
-      "prefix": "s!",
-      "nsfwEnabled": true,
-      "updateChannel": false,
-      "updateRole": false,
-      "updateIgnoreCategories": []
-    },
     "750357645600227448": {
       "id": "750357645600227448",
       "prefix": "s!",
@@ -1601,6 +1593,71 @@
       "updateChannel": false,
       "updateRole": false,
       "updateIgnoreCategories": []
+    },
+    "785935944389492736": {
+      "id": "785935944389492736",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "773468386495168542": {
+      "id": "773468386495168542",
+      "prefix": "s!",
+      "nsfwEnabled": false,
+      "updateChannel": "785959410681118750",
+      "updateRole": false,
+      "updateIgnoreCategories": [
+        "anime",
+        "NSFW"
+      ]
+    },
+    "532317716590362639": {
+      "id": "532317716590362639",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "782406973349167145": {
+      "id": "782406973349167145",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "773151429455904798": {
+      "id": "773151429455904798",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": "783004322073542656",
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "751879152235446332": {
+      "id": "751879152235446332",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": "787787481479118910",
+      "updateRole": false,
+      "updateIgnoreCategories": [
+        "NSFW",
+        "jeux",
+        "musique",
+        "film",
+        "série"
+      ]
+    },
+    "780854533084545086": {
+      "id": "780854533084545086",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
     }
   },
   "deleted": {
@@ -1643,6 +1700,14 @@
     },
     "755776925397549096": {
       "id": "755776925397549096",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "710238669553795096": {
+      "id": "710238669553795096",
       "prefix": "s!",
       "nsfwEnabled": true,
       "updateChannel": false,
