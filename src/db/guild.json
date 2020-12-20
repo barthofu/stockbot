@@ -411,14 +411,6 @@
       "updateRole": false,
       "updateIgnoreCategories": []
     },
-    "670175584919224321": {
-      "id": "670175584919224321",
-      "prefix": "s!",
-      "nsfwEnabled": true,
-      "updateChannel": false,
-      "updateRole": false,
-      "updateIgnoreCategories": []
-    },
     "288633900123684867": {
       "id": "288633900123684867",
       "prefix": "s!",
@@ -1658,6 +1650,54 @@
       "updateChannel": false,
       "updateRole": false,
       "updateIgnoreCategories": []
+    },
+    "776809498996244541": {
+      "id": "776809498996244541",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "787359875713597440": {
+      "id": "787359875713597440",
+      "prefix": "s!",
+      "nsfwEnabled": false,
+      "updateChannel": "789855076096278528",
+      "updateRole": false,
+      "updateIgnoreCategories": [
+        "anime",
+        "NSFW"
+      ]
+    },
+    "713567260446425149": {
+      "id": "713567260446425149",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": "785996260683022386",
+      "updateRole": false,
+      "updateIgnoreCategories": [
+        "NSFW",
+        "jeux",
+        "musique",
+        "film",
+        "série"
+      ]
+    },
+    "736879566274166834": {
+      "id": "736879566274166834",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": "789900615559282688",
+      "updateRole": "790189304646991872",
+      "updateIgnoreCategories": [
+        "manga",
+        "série",
+        "film",
+        "musique",
+        "jeux",
+        "NSFW"
+      ]
     }
   },
   "deleted": {
@@ -1708,6 +1748,14 @@
     },
     "710238669553795096": {
       "id": "710238669553795096",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "670175584919224321": {
+      "id": "670175584919224321",
       "prefix": "s!",
       "nsfwEnabled": true,
       "updateChannel": false,
