@@ -68,7 +68,7 @@ module.exports = class EmbedPage {
 
             embed.setAuthor(bot.users.cache.get(this.userID).username, bot.users.cache.get(this.userID).displayAvatarURL({dynamic: true}))
             //footer important message
-            embed.setFooter("MESSAGE IMPORTANT : Déplacement des fichiers bientôt terminé ! (encore quelques liens indisponibles)")
+            if (this.page.cat === "manga") embed.setFooter("MESSAGE IMPORTANT : Beacoup de liens dans la catégorie MANGA sont indisponibles, cela sera vite fixé. Merci de votre compréhension ;)")
 
         }
 
@@ -86,7 +86,7 @@ module.exports = class EmbedPage {
 
         else if (element == 0) return false
 
-        else if (element == "off" || element == "N/A") return false
+        else if (element == "off" || element == "N/A" || element == "*Pas de description...*") return false
 
         return true
 

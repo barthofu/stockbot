@@ -1,31 +1,33 @@
 {
   "actual": {
     "commands": {
-      "total": 2521,
+      "total": 36972,
       "details": {
-        "stockage": 1753,
-        "profile": 101,
-        "help": 143,
+        "stockage": 2498,
+        "profile": 112,
+        "help": 174,
         "monitor": 12,
-        "updatechannel": 93,
-        "asklist": 69,
-        "nsfw": 16,
-        "ask": 33,
-        "stats": 25,
-        "suggest": 15,
+        "updatechannel": 112,
+        "asklist": 92,
+        "nsfw": 18,
+        "ask": 63,
+        "stats": 31,
+        "suggest": 18,
         "report": 6,
-        "gametuto": 24,
-        "invite": 23,
-        "logs": 2,
+        "gametuto": 26,
+        "invite": 31,
+        "logs": 3,
         "ping": 9,
         "maintenance": 10,
-        "newepisode": 43,
-        "send": 2,
-        "sendembed": 44,
-        "displaylogs": 61,
-        "airing": 24,
+        "newepisode": 45,
+        "send": 3,
+        "sendembed": 58,
+        "displaylogs": 64,
+        "airing": 28,
         "prefix": 11,
-        "compte": 2
+        "compte": 256,
+        "info": 24,
+        "top": 9
       }
     }
   },
@@ -5142,7 +5144,7 @@
       "users": 8512,
       "activeUsers": 897,
       "commands": {
-        "total": 33259,
+        "total": 66518,
         "details": {}
       },
       "pages": {
@@ -5160,56 +5162,12 @@
       }
     },
     {
-      "date": "22-11-2020",
-      "guilds": 177,
-      "users": 619,
-      "activeUsers": 897,
-      "commands": {
-        "total": 479,
-        "details": {
-          "stockage": 251,
-          "profile": 18,
-          "help": 29,
-          "monitor": 12,
-          "updatechannel": 20,
-          "asklist": 56,
-          "nsfw": 8,
-          "ask": 9,
-          "stats": 23,
-          "suggest": 2,
-          "report": 2,
-          "gametuto": 4,
-          "invite": 1,
-          "logs": 2,
-          "ping": 7,
-          "maintenance": 2,
-          "newepisode": 12,
-          "send": 2,
-          "sendembed": 23,
-          "displaylogs": 11
-        }
-      },
-      "pages": {
-        "visits": 14997,
-        "total": 967,
-        "categories": {
-          "anime": 291,
-          "manga": 84,
-          "série": 135,
-          "film": 312,
-          "musique": 18,
-          "jeux": 107,
-          "NSFW": 20
-        }
-      }
-    },
-    {
       "date": "23-11-2020",
       "guilds": 177,
       "users": 78,
       "activeUsers": 900,
       "commands": {
-        "total": 647,
+        "total": 33906,
         "details": {
           "stockage": 364,
           "profile": 19,
@@ -5255,7 +5213,7 @@
       "users": 397,
       "activeUsers": 900,
       "commands": {
-        "total": 756,
+        "total": 34015,
         "details": {
           "stockage": 493,
           "profile": 42,
@@ -5301,7 +5259,7 @@
       "users": 854,
       "activeUsers": 904,
       "commands": {
-        "total": 833,
+        "total": 34092,
         "details": {
           "stockage": 493,
           "profile": 42,
@@ -5347,7 +5305,7 @@
       "users": 1050,
       "activeUsers": 905,
       "commands": {
-        "total": 853,
+        "total": 34112,
         "details": {
           "stockage": 493,
           "profile": 42,
@@ -5393,7 +5351,7 @@
       "users": 746,
       "activeUsers": 908,
       "commands": {
-        "total": 887,
+        "total": 34146,
         "details": {
           "stockage": 540,
           "profile": 42,
@@ -5439,7 +5397,7 @@
       "users": 1033,
       "activeUsers": 912,
       "commands": {
-        "total": 948,
+        "total": 34207,
         "details": {
           "stockage": 849,
           "profile": 66,
@@ -5485,7 +5443,7 @@
       "users": 1230,
       "activeUsers": 917,
       "commands": {
-        "total": 1006,
+        "total": 34265,
         "details": {
           "stockage": 849,
           "profile": 66,
@@ -5531,7 +5489,7 @@
       "users": 1394,
       "activeUsers": 928,
       "commands": {
-        "total": 1083,
+        "total": 34342,
         "details": {
           "stockage": 849,
           "profile": 66,
@@ -5577,7 +5535,7 @@
       "users": 1511,
       "activeUsers": 931,
       "commands": {
-        "total": 1131,
+        "total": 34390,
         "details": {
           "stockage": 849,
           "profile": 66,
@@ -5623,7 +5581,7 @@
       "users": 1744,
       "activeUsers": 940,
       "commands": {
-        "total": 1192,
+        "total": 34451,
         "details": {
           "stockage": 849,
           "profile": 66,
@@ -5669,7 +5627,7 @@
       "users": 1847,
       "activeUsers": 940,
       "commands": {
-        "total": 1244,
+        "total": 34503,
         "details": {
           "stockage": 849,
           "profile": 66,
@@ -5715,7 +5673,7 @@
       "users": 1957,
       "activeUsers": 941,
       "commands": {
-        "total": 1318,
+        "total": 34577,
         "details": {
           "stockage": 849,
           "profile": 66,
@@ -5761,7 +5719,7 @@
       "users": 2076,
       "activeUsers": 948,
       "commands": {
-        "total": 1394,
+        "total": 34653,
         "details": {
           "stockage": 964,
           "profile": 69,
@@ -5807,7 +5765,7 @@
       "users": 579,
       "activeUsers": 954,
       "commands": {
-        "total": 1542,
+        "total": 34801,
         "details": {
           "stockage": 1655,
           "profile": 98,
@@ -5853,7 +5811,7 @@
       "users": 1005,
       "activeUsers": 957,
       "commands": {
-        "total": 1597,
+        "total": 34856,
         "details": {
           "stockage": 1655,
           "profile": 98,
@@ -5899,7 +5857,7 @@
       "users": 1211,
       "activeUsers": 964,
       "commands": {
-        "total": 1687,
+        "total": 34946,
         "details": {
           "stockage": 1655,
           "profile": 98,
@@ -5945,7 +5903,7 @@
       "users": 1401,
       "activeUsers": 969,
       "commands": {
-        "total": 1762,
+        "total": 35021,
         "details": {
           "stockage": 1655,
           "profile": 98,
@@ -5991,7 +5949,7 @@
       "users": 1553,
       "activeUsers": 970,
       "commands": {
-        "total": 1835,
+        "total": 35094,
         "details": {
           "stockage": 1655,
           "profile": 98,
@@ -6037,7 +5995,7 @@
       "users": 1722,
       "activeUsers": 973,
       "commands": {
-        "total": 1878,
+        "total": 35137,
         "details": {
           "stockage": 1655,
           "profile": 98,
@@ -6083,7 +6041,7 @@
       "users": 1867,
       "activeUsers": 974,
       "commands": {
-        "total": 1937,
+        "total": 35196,
         "details": {
           "stockage": 1655,
           "profile": 98,
@@ -6129,7 +6087,7 @@
       "users": 2010,
       "activeUsers": 978,
       "commands": {
-        "total": 2010,
+        "total": 35269,
         "details": {
           "stockage": 1655,
           "profile": 98,
@@ -6175,7 +6133,7 @@
       "users": 2092,
       "activeUsers": 979,
       "commands": {
-        "total": 2064,
+        "total": 35323,
         "details": {
           "stockage": 1655,
           "profile": 98,
@@ -6221,7 +6179,7 @@
       "users": 2208,
       "activeUsers": 983,
       "commands": {
-        "total": 2157,
+        "total": 35416,
         "details": {
           "stockage": 1655,
           "profile": 98,
@@ -6267,7 +6225,7 @@
       "users": 2392,
       "activeUsers": 985,
       "commands": {
-        "total": 2218,
+        "total": 35477,
         "details": {
           "stockage": 1655,
           "profile": 98,
@@ -6313,7 +6271,7 @@
       "users": 2556,
       "activeUsers": 987,
       "commands": {
-        "total": 2292,
+        "total": 35551,
         "details": {
           "stockage": 1655,
           "profile": 98,
@@ -6359,7 +6317,7 @@
       "users": 2672,
       "activeUsers": 989,
       "commands": {
-        "total": 2357,
+        "total": 35616,
         "details": {
           "stockage": 1753,
           "profile": 101,
@@ -6406,7 +6364,7 @@
       "users": 3402,
       "activeUsers": 997,
       "commands": {
-        "total": 2431,
+        "total": 35690,
         "details": {
           "stockage": 1753,
           "profile": 101,
@@ -6444,6 +6402,197 @@
           "musique": 18,
           "jeux": 108,
           "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "20-12-2020",
+      "guilds": 199,
+      "users": 4007,
+      "activeUsers": 1000,
+      "commands": {
+        "total": 35811,
+        "details": {
+          "stockage": 1926,
+          "profile": 109,
+          "help": 150,
+          "monitor": 12,
+          "updatechannel": 99,
+          "asklist": 69,
+          "nsfw": 17,
+          "ask": 36,
+          "stats": 25,
+          "suggest": 16,
+          "report": 6,
+          "gametuto": 24,
+          "invite": 26,
+          "logs": 2,
+          "ping": 9,
+          "maintenance": 10,
+          "newepisode": 44,
+          "send": 2,
+          "sendembed": 44,
+          "displaylogs": 64,
+          "airing": 26,
+          "prefix": 11,
+          "compte": 100
+        }
+      },
+      "pages": {
+        "visits": 16239,
+        "total": 984,
+        "categories": {
+          "anime": 294,
+          "manga": 84,
+          "série": 138,
+          "film": 322,
+          "musique": 18,
+          "jeux": 108,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "21-12-2020",
+      "guilds": 200,
+      "users": 4437,
+      "activeUsers": 1006,
+      "commands": {
+        "total": 36165,
+        "details": {
+          "stockage": 2012,
+          "profile": 110,
+          "help": 151,
+          "monitor": 12,
+          "updatechannel": 99,
+          "asklist": 77,
+          "nsfw": 17,
+          "ask": 45,
+          "stats": 25,
+          "suggest": 16,
+          "report": 6,
+          "gametuto": 24,
+          "invite": 27,
+          "logs": 2,
+          "ping": 9,
+          "maintenance": 10,
+          "newepisode": 44,
+          "send": 2,
+          "sendembed": 47,
+          "displaylogs": 64,
+          "airing": 26,
+          "prefix": 11,
+          "compte": 148
+        }
+      },
+      "pages": {
+        "visits": 16546,
+        "total": 1021,
+        "categories": {
+          "anime": 315,
+          "manga": 84,
+          "série": 138,
+          "film": 336,
+          "musique": 20,
+          "jeux": 108,
+          "NSFW": 20
+        }
+      }
+    },
+    {
+      "date": "22-12-2020",
+      "guilds": 203,
+      "users": 422,
+      "activeUsers": 1021,
+      "commands": {
+        "total": 36633,
+        "details": {
+          "stockage": 2366,
+          "profile": 112,
+          "help": 171,
+          "monitor": 12,
+          "updatechannel": 111,
+          "asklist": 91,
+          "nsfw": 18,
+          "ask": 63,
+          "stats": 30,
+          "suggest": 18,
+          "report": 6,
+          "gametuto": 26,
+          "invite": 31,
+          "logs": 3,
+          "ping": 9,
+          "maintenance": 10,
+          "newepisode": 45,
+          "send": 2,
+          "sendembed": 54,
+          "displaylogs": 64,
+          "airing": 28,
+          "prefix": 11,
+          "compte": 250,
+          "info": 23
+        }
+      },
+      "pages": {
+        "visits": 16840,
+        "total": 1044,
+        "categories": {
+          "anime": 318,
+          "manga": 84,
+          "série": 138,
+          "film": 337,
+          "musique": 19,
+          "jeux": 108,
+          "NSFW": 40
+        }
+      }
+    },
+    {
+      "date": "23-12-2020",
+      "guilds": 203,
+      "users": 2101,
+      "activeUsers": 1027,
+      "commands": {
+        "total": 36941,
+        "details": {
+          "stockage": 2498,
+          "profile": 112,
+          "help": 174,
+          "monitor": 12,
+          "updatechannel": 112,
+          "asklist": 92,
+          "nsfw": 18,
+          "ask": 63,
+          "stats": 31,
+          "suggest": 18,
+          "report": 6,
+          "gametuto": 26,
+          "invite": 31,
+          "logs": 3,
+          "ping": 9,
+          "maintenance": 10,
+          "newepisode": 45,
+          "send": 3,
+          "sendembed": 58,
+          "displaylogs": 64,
+          "airing": 28,
+          "prefix": 11,
+          "compte": 256,
+          "info": 24,
+          "top": 9
+        }
+      },
+      "pages": {
+        "visits": 17083,
+        "total": 1051,
+        "categories": {
+          "anime": 319,
+          "manga": 84,
+          "série": 138,
+          "film": 342,
+          "musique": 20,
+          "jeux": 108,
+          "NSFW": 40
         }
       }
     }

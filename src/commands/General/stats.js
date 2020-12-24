@@ -19,7 +19,7 @@ const commandParams = {
 const stats = [
     { fancyName: "Commandes", path: "commands.total" },
     { fancyName: "Serveurs", path: "guilds" },
-    { fancyName: "Utilisateurs",  path: "users" },
+    //{ fancyName: "Utilisateurs",  path: "users" },
     { fancyName: "Utilisateurs Actifs", path: "activeUsers" },
     { fancyName: "Visites", path: "pages.visits" },
     { fancyName: "Pages",  path: "pages.total" },
@@ -32,48 +32,7 @@ module.exports = class extends CommandPattern {
     }
 
     async run (msg, args, cmd, color) {
-
-        
-        let stats = require("../../db/temp.json").daily_stats
-        let keys = Object.keys(stats)
-
-        for (let i in keys) {
-            let obj = stats[keys[i]]
-
-            console.log(obj)
-            db.stats.get("daily").push({
-                date: keys[i],
-                guilds: obj.serveurs || 178,
-                users: obj.utilisateurs || 8512,
-                activeUsers: obj.réels_utilisateurs,
-                commands: {
-                    total: obj.total_commandes,
-                    details: {}
-                },
-                pages: {
-                    visits: obj.visites_totales,
-                    total: obj.pages_indexées.total,
-                    details: {
-                        anime: obj.pages_indexées.anime,
-                        manga: obj.pages_indexées.manga,
-                        série: obj.pages_indexées.série,
-                        film: obj.pages_indexées.film,
-                        musique: obj.pages_indexées.musique,
-                        jeux: obj.pages_indexées.jeux,
-                        NSFW: obj.pages_indexées.NSFW,
-                    }
-                }
-
-
-            }).value()
-        }
-        
-        db.stats.write()
-
-        return
-        
-
-
+  
         let rawStats = db.stats.get("daily").value(),
             //statsNow = utils.getStats(),
             page = 1,

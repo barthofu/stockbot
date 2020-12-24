@@ -7,6 +7,9 @@ module.exports = class {
         client.startingConsole();
         utils.log("connected");
         bot.user.setStatus('idle');
+
+        //fetch users
+        //utils.fetchUsers();
         
         setInterval(async () => {
             

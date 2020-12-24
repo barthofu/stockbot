@@ -1462,7 +1462,13 @@
       "nsfwEnabled": true,
       "updateChannel": "764031036052471809",
       "updateRole": "764074738061672459",
-      "updateIgnoreCategories": []
+      "updateIgnoreCategories": [
+        "anime",
+        "manga",
+        "musique",
+        "jeux",
+        "NSFW"
+      ]
     },
     "621410331129806868": {
       "id": "621410331129806868",
@@ -1508,9 +1514,17 @@
       "id": "781792056926142464",
       "prefix": "s!",
       "nsfwEnabled": true,
-      "updateChannel": "781792703834488832",
+      "updateChannel": false,
       "updateRole": false,
-      "updateIgnoreCategories": []
+      "updateIgnoreCategories": [
+        "anime",
+        "manga",
+        "musique",
+        "jeux",
+        "NSFW",
+        "série",
+        "film"
+      ]
     },
     "779685601628258304": {
       "id": "779685601628258304",
@@ -1684,20 +1698,72 @@
         "série"
       ]
     },
-    "736879566274166834": {
-      "id": "736879566274166834",
+    "786365780458602527": {
+      "id": "786365780458602527",
       "prefix": "s!",
       "nsfwEnabled": true,
-      "updateChannel": "789900615559282688",
-      "updateRole": "790189304646991872",
+      "updateChannel": "790327291971633212",
+      "updateRole": false,
       "updateIgnoreCategories": [
-        "manga",
+        "série",
+        "musique",
+        "jeux",
+        "NSFW"
+      ]
+    },
+    "770322588101640212": {
+      "id": "770322588101640212",
+      "prefix": "s!",
+      "nsfwEnabled": false,
+      "updateChannel": "790515056189767690",
+      "updateRole": false,
+      "updateIgnoreCategories": [
+        "NSFW"
+      ]
+    },
+    "790243326116626483": {
+      "id": "790243326116626483",
+      "prefix": "s!",
+      "nsfwEnabled": false,
+      "updateChannel": "791002381827440660",
+      "updateRole": "791236961049378847",
+      "updateIgnoreCategories": [
         "série",
         "film",
         "musique",
         "jeux",
         "NSFW"
       ]
+    },
+    "657701011955122188": {
+      "id": "657701011955122188",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "726362830495809546": {
+      "id": "726362830495809546",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": "790508485557223434",
+      "updateRole": false,
+      "updateIgnoreCategories": [
+        "NSFW",
+        "jeux",
+        "musique",
+        "film",
+        "série"
+      ]
+    },
+    "746328821787131954": {
+      "id": "746328821787131954",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
     }
   },
   "deleted": {
@@ -1761,6 +1827,21 @@
       "updateChannel": false,
       "updateRole": false,
       "updateIgnoreCategories": []
+    },
+    "736879566274166834": {
+      "id": "736879566274166834",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": "789900615559282688",
+      "updateRole": "790189304646991872",
+      "updateIgnoreCategories": [
+        "manga",
+        "série",
+        "film",
+        "musique",
+        "jeux",
+        "NSFW"
+      ]
     }
   }
 }

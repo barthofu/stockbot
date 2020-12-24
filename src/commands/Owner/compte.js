@@ -30,6 +30,12 @@ const adresses = [
     "stockbotm.ega",
     "stockbotmega.",
     "stockbotmega",
+
+    "s.t.ockbotmega",
+    "s.to.ckbotmega",
+    "s.toc.kbotmega",
+    
+
 ]
 
 module.exports = class extends CommandPattern {
@@ -50,7 +56,7 @@ module.exports = class extends CommandPattern {
             .setTitle(`Compte ${args[0]}`)
             .addField(
                 "Adresse", 
-                adresses[Math.floor(nbCompte/40)] + (nbCompte%40 == 0 ? 40 : nbCompte%40) + "@gmail.com"
+                adresses[Math.floor(nbCompte/40) - (nbCompte%40 == 0 ? 1 : 0)] + (nbCompte%40 == 0 ? 40 : nbCompte%40) + "@gmail.com"
             )
             .addField(
                 "Mot de Passe", 

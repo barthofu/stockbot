@@ -17,6 +17,7 @@ const searchOptions = {
 
 module.exports = class Utils {
     
+
     convertArrayOfObjectToKeyObject (arr, key, value) {
 
         let initialValue = {};
@@ -29,161 +30,12 @@ module.exports = class Utils {
 
     }
 
+
     splitArray (array, chunk = 2) { //split an array into chunks
 
         let newArray = [];
         for (let i = 0; i < array.length; i+=chunk) newArray.push(array.slice(i, i+chunk));
         return newArray;
-
-    }
-    
-
-
-    async syncOldJSON () {
-
-        console.log("START")
-
-        function getAdditionalProps (data) {
-            
-            let obj = {
-                "description": data.desc,
-                "imageURL": data.image,
-                "lien": data.lien,
-                "fournisseur": data.fournisseur == "off" ? "" : data.fournisseur,
-                "stats": {
-                    visites: data.visites,
-                    like: data.voteup,
-                    dislike: data.votedown
-                },
-                "cat": data.cat,
-                "addedBy": "260908777446965248"
-            }
-
-            if (["anime", "manga", "série", "film"].includes(data.cat)) Object.assign(obj, {
-                completed: data.completed,
-                planning: data.planning
-            })
-            //if (data.fournisseur !== "off") obj.fournisseur = data.fournisseur
-            if (data.poids) obj.stats.poids = data.poids === "off" ? 0 : typeof(data.poids) === "string" ? parseFloat(data.poids.replace(",", ".")) : data.poids
-
-            return obj
-
-        }
-
-        const json = require("../db/stock.json"),
-              oldGenres = ["Animation", "Action", "SF", "Marvel", "Fantasy", "Dessin", "Drame", "Autre"],
-              newGenres = ["Animation Japonaise", "Action/Aventure", "Science-Fiction", "Marvel", "Fantasy", "Dessins Animés", "Dramatique", "Autres"]
-        let newPage;
-    
-
-        for (let i in config.categories) {
-
-            let cat = config.categories[i].name
-            let arrObj = _.values(json[cat])
-
-            for (let k in arrObj) {
-
-                let data = arrObj[k] 
-
-                switch (cat) {
-
-
-                    case "anime":
-
-                        newPage = new mongo[cat](Object.assign({
-                            "name": data.name,
-                            "japName": data.jap_name,
-                            "releaseDate": data.année,
-                            "studio": data.studio,
-                            "episodesCount": parseInt(data.nb),
-                            "trailer": data.trailer,
-                            "tags": data.tags,
-                            "scoreMAL": parseFloat(data.score) || "",
-                            "urlMAL": data.mal,
-                            "aliases": data.aliases.split(",").map(val => val.trim()).filter(val => val),
-                        }, getAdditionalProps(data)))
-                        await newPage.save().catch(e => console.log(e))
-
-                        break;
-                    case "manga":
-
-                        newPage = new mongo[cat](Object.assign({
-                            "name": data.name,
-                            "japName": data.name,
-                            "releaseDate": data.année,
-                            "author": data.auteur,
-                            "volumesCount": parseInt(data.nb) || 0,
-                            "tags": [],
-                            "scoreMAL": "",
-                            "urlMAL": "",
-                            "aliases": [],
-                        }, getAdditionalProps(data)))
-                        await newPage.save().catch(e => console.log(data.name, e))
-
-
-                        break;
-                    case "série":
-
-                        newPage = new mongo[cat](Object.assign({
-                            "name": data.name,
-                            "releaseDate": data.année,
-                        }, getAdditionalProps(data)))
-                        await newPage.save().catch(e => console.log(data.name, e))
-
-
-                        break;
-                    case "film":
-
-                        newPage = new mongo[cat](Object.assign({
-                            "name": data.name,
-                            "releaseDate": data.année,
-                            "genre": newGenres[oldGenres.indexOf(data.type)]
-                        }, getAdditionalProps(data)))
-                        await newPage.save().catch(e => console.log(data.name, e))
-
-
-                        break;
-                    case "musique":
-
-                        newPage = new mongo[cat](Object.assign({
-                            "name": data.name,
-                            "genre": data.genre
-                        }, getAdditionalProps(data)))
-                        await newPage.save().catch(e => console.log(data.name, e))
-
-
-                        break;
-                    case "jeux":
-
-                        newPage = new mongo[cat](Object.assign({
-                            "name": data.name,
-                            "releaseDate": data.année.substr(data.année.length - 4),
-                            "studio": data.studio,
-                            "genre": data.plateforme
-                        }, getAdditionalProps(data)))
-                        await newPage.save().catch(e => console.log(data.name, e))
-
-
-                        break;
-                    case "NSFW":
-
-                        newPage = new mongo[cat](Object.assign({
-                            "name": data.name,
-                            "genre": data.type
-                        }, getAdditionalProps(data)))
-                        await newPage.save().catch(e => console.log(data.name, e))
-
-
-                        break;
-
-                }
-
-            }
-
-
-        }
-        console.log("END")
-
 
     }
 
@@ -214,6 +66,7 @@ module.exports = class Utils {
         msg.channel.send(`Annonce bien envoyée sur **${checkedGuilds.length}** serveurs`);
 
     }
+
 
     sendNewPageValidator (guildObj, cat) {
 
@@ -252,48 +105,8 @@ module.exports = class Utils {
         return true;
 
     }
-
-
-    syncUsers () {
-
-        for (let i in db.temp.get("profil").value()) {
-
-            let val = db.temp.get("profil." + i).value()
-            db.user.push({
-                id: i,
-                langTitle: val.params.lang_title,
-                embedColor: val.params.color
-            }).value()
-            
-        }
-          db.user.write()
-
-    }
-
-
-    syncGuilds () {
-
-        for (let i in db.temp.get("server").value()) {
-
-            let val = db.temp.get("server." + i).value()
-            let ignoreArr = []
-            for (let k in val.notif) {
-                if (val.notif[k] == "non") ignoreArr.push(k)
-            }
-            db.guild.set("guilds." + val.id, {
-                id: val.id,
-                prefix: "s!",
-                nsfwEnabled: val.NSFW === "non" ? false : true,
-                updateChannel: val.updatechannel === "off" ? false : val.updatechannel,
-                updateRole: val.notif.role === "Aucun" ? false : val.notif.role,
-                updateIgnoreCategories: val.updatechannel === "off" ? [] : ignoreArr
-            }).value()
-            
-        }
-          db.guild.write()
-    }
-
     
+
     async getPageEmbed(_id, userID = false, color = config.colors.default, channelID = false, visitUpdate = true) {
 
         let page = this.getPageByID(_id) || this.getPageByName(_id)[0]
@@ -303,6 +116,7 @@ module.exports = class Utils {
 
         return embed
     }
+
 
     getPageByName(search, number = 1) {
 
@@ -315,12 +129,14 @@ module.exports = class Utils {
 
     }
 
+
     getPageByID(_id) {
 
         let pagesArray = this.mergePages()
         return pagesArray.find(val => `${val._id}` == `${_id}`)
         
     }
+
 
     mergePages () {
 
@@ -330,7 +146,6 @@ module.exports = class Utils {
         return pagesArray
         
     }
-
 
 
     listPages(userID = false, numberPerPages = 20) {
@@ -425,6 +240,13 @@ module.exports = class Utils {
     }
 
 
+    fetchUsers() {
+
+        bot.guilds.cache.map(async e => await e.members.fetch());
+
+    }
+
+
     mostVisited() {
 
         let pages = this.mergePages()
@@ -492,4 +314,5 @@ module.exports = class Utils {
         client.logger.write(`\n[${date}] ⫸ ` + str)
     }
 
+    
 }

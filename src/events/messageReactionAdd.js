@@ -11,7 +11,7 @@ module.exports = class {
 
             let userTag = user.tag
         
-            if (reaction.emoji.name === "✅") {
+            if (["💤", "✅"].includes(reaction.emoji.name)) {
 
                 
                 db.data.get("awaitVerification").pull(obj).write();
@@ -27,7 +27,7 @@ module.exports = class {
                 //update local db
                 await mongo.saveAll();
                 //send the new page embed in all the update channels
-                await utils.sendNewPage(obj._id, obj.cat);
+                if (reaction.emoji.name === "✅") await utils.sendNewPage(obj._id, obj.cat);
                 //log
                 utils.log("pageAdd", {obj, userTag});
                 
@@ -41,7 +41,7 @@ module.exports = class {
                 await mongo[obj.cat].deleteOne({_id: obj._id});
                 //log
                 utils.log("pageRefused", {obj, userTag});
-            }
+            } 
 
 
         }

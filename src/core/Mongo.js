@@ -74,6 +74,7 @@ module.exports = class Mongo {
         );
         await m.react("✅");
         await m.react("❌");
+        await m.react("💤");
 
         //object
         let obj = {

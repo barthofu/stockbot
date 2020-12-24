@@ -41,7 +41,7 @@ let menu = class {
                     .setImage(this.image)
                     .setThumbnail(this.thumbnail)
                     .setColor(color)
-                    .setFooter("MESSAGE IMPORTANT : Déplacement des fichiers bientôt terminé ! (encore quelques liens indisponibles)")
+                    
 
                 },
                 timeout(m) {
@@ -711,6 +711,7 @@ async function displayPage(params, m, cat, _id = false) {
                         await rep.first().delete()
                         if (rep.first().content.toLowerCase() !== 'cancel') {
                             let value = rep.first().content
+                            if (value == "null") value = ""
                             newObject = await mongo[cat].findOneAndUpdate({_id:pageData._id}, mongo.set(key, value), mongo.constOption()).catch(e => mongo.error(e))
                             await mongo.saveAll()
                             pageData = utils.getPageByID(pageData._id)
