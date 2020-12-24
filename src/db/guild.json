@@ -825,9 +825,11 @@
       "id": "680458895256191041",
       "prefix": "s!",
       "nsfwEnabled": true,
-      "updateChannel": false,
+      "updateChannel": "791676088094294036",
       "updateRole": false,
-      "updateIgnoreCategories": []
+      "updateIgnoreCategories": [
+        "NSFW"
+      ]
     },
     "657691726747664454": {
       "id": "657691726747664454",
@@ -1224,14 +1226,6 @@
     },
     "761863789335150592": {
       "id": "761863789335150592",
-      "prefix": "s!",
-      "nsfwEnabled": true,
-      "updateChannel": false,
-      "updateRole": false,
-      "updateIgnoreCategories": []
-    },
-    "767034895330574336": {
-      "id": "767034895330574336",
       "prefix": "s!",
       "nsfwEnabled": true,
       "updateChannel": false,
@@ -1708,7 +1702,8 @@
         "série",
         "musique",
         "jeux",
-        "NSFW"
+        "NSFW",
+        "film"
       ]
     },
     "770322588101640212": {
@@ -1764,6 +1759,14 @@
       "updateChannel": false,
       "updateRole": false,
       "updateIgnoreCategories": []
+    },
+    "755776925397549096": {
+      "id": "755776925397549096",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
     }
   },
   "deleted": {
@@ -1804,14 +1807,6 @@
         "NSFW"
       ]
     },
-    "755776925397549096": {
-      "id": "755776925397549096",
-      "prefix": "s!",
-      "nsfwEnabled": true,
-      "updateChannel": false,
-      "updateRole": false,
-      "updateIgnoreCategories": []
-    },
     "710238669553795096": {
       "id": "710238669553795096",
       "prefix": "s!",
@@ -1842,6 +1837,14 @@
         "jeux",
         "NSFW"
       ]
+    },
+    "767034895330574336": {
+      "id": "767034895330574336",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
     }
   }
 }
