@@ -1,9 +1,9 @@
 {
   "actual": {
     "commands": {
-      "total": 37426,
+      "total": 37429,
       "details": {
-        "stockage": 2861,
+        "stockage": 2864,
         "profile": 131,
         "help": 184,
         "monitor": 12,
@@ -6786,6 +6786,55 @@
           "manga": 84,
           "série": 138,
           "film": 354,
+          "musique": 20,
+          "jeux": 108,
+          "NSFW": 40
+        }
+      }
+    },
+    {
+      "date": "28-12-2020",
+      "guilds": 205,
+      "users": 235,
+      "activeUsers": 1041,
+      "commands": {
+        "total": 37428,
+        "details": {
+          "stockage": 2864,
+          "profile": 131,
+          "help": 184,
+          "monitor": 12,
+          "updatechannel": 114,
+          "asklist": 100,
+          "nsfw": 18,
+          "ask": 78,
+          "stats": 31,
+          "suggest": 18,
+          "report": 6,
+          "gametuto": 28,
+          "invite": 34,
+          "logs": 3,
+          "ping": 10,
+          "maintenance": 10,
+          "newepisode": 51,
+          "send": 3,
+          "sendembed": 61,
+          "displaylogs": 68,
+          "airing": 29,
+          "prefix": 11,
+          "compte": 269,
+          "info": 26,
+          "top": 11
+        }
+      },
+      "pages": {
+        "visits": 17382,
+        "total": 1072,
+        "categories": {
+          "anime": 320,
+          "manga": 84,
+          "série": 140,
+          "film": 360,
           "musique": 20,
           "jeux": 108,
           "NSFW": 40
