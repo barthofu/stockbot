@@ -1046,14 +1046,6 @@
       "updateRole": false,
       "updateIgnoreCategories": []
     },
-    "753650228032307311": {
-      "id": "753650228032307311",
-      "prefix": "0",
-      "nsfwEnabled": true,
-      "updateChannel": false,
-      "updateRole": false,
-      "updateIgnoreCategories": []
-    },
     "754373566971248733": {
       "id": "754373566971248733",
       "prefix": "s!",
@@ -1418,14 +1410,6 @@
       "updateRole": false,
       "updateIgnoreCategories": []
     },
-    "703939386814758993": {
-      "id": "703939386814758993",
-      "prefix": "s!",
-      "nsfwEnabled": true,
-      "updateChannel": false,
-      "updateRole": false,
-      "updateIgnoreCategories": []
-    },
     "419214818965454879": {
       "id": "419214818965454879",
       "prefix": "s!",
@@ -1767,6 +1751,46 @@
       "updateChannel": false,
       "updateRole": false,
       "updateIgnoreCategories": []
+    },
+    "630628693282258966": {
+      "id": "630628693282258966",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "783355738197983253": {
+      "id": "783355738197983253",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "779442055410876446": {
+      "id": "779442055410876446",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "793185418199171110": {
+      "id": "793185418199171110",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "791246105350111262": {
+      "id": "791246105350111262",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
     }
   },
   "deleted": {
@@ -1841,6 +1865,22 @@
     "767034895330574336": {
       "id": "767034895330574336",
       "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "703939386814758993": {
+      "id": "703939386814758993",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "753650228032307311": {
+      "id": "753650228032307311",
+      "prefix": "0",
       "nsfwEnabled": true,
       "updateChannel": false,
       "updateRole": false,

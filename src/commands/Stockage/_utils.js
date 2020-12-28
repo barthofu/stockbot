@@ -490,8 +490,8 @@ let menu = class {
                         let rep = await msg.channel.awaitMessages(filter, {max:1,time:300000})
                         if (rep.first()) {
                             db.user.find(val => val.id === msg.author.id).set(`embedColor`, rep.first().content.startsWith('#')?rep.first().content.substr(1):rep.first().content).write()
-                            color = db.user.find(val => val.id === msg.author.id).get("embedColor").value()
-                            await rep.first().delete()
+/*                             color = db.user.find(val => val.id === msg.author.id).get("embedColor").value()
+ */                            await rep.first().delete()
                         }
                         await m.delete() 
                         
@@ -524,7 +524,6 @@ async function displayPage(params, m, cat, _id = false) {
     //define important vars
     let time = 600000,
         { msg, color } = params,
-        embed = m.embeds[0],
         pages = utils.listPages(msg.author.id)[cat].content.flatMap(val => val),
         page = _id ? pages.findIndex(val => `${val._id}` === `${_id}`)+1 : 1,
         pageData = utils.getPageByID(pages[page-1]._id),
@@ -643,7 +642,7 @@ async function displayPage(params, m, cat, _id = false) {
                         
                     )
 
-                    let repBis = await msg.channel.awaitMessages(me => me.author.id === msg.author.id && me.content > -1 && me.content < me.content <= arrKeys.length, {max:1, time:60000})
+                    let repBis = await msg.channel.awaitMessages(me => me.author.id === msg.author.id && me.content > -1 && me.content <= arrKeys.length, {max:1, time:60000})
                     await m2Bis.delete()
                     if (!repBis.first()) return
                     await repBis.first().delete()

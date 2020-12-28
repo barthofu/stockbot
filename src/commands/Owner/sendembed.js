@@ -75,7 +75,7 @@ module.exports = class extends CommandPattern {
 
         embedBis.addField("0. PAS DE CATEGORIE", "━━━━━━━━━━━━━━━━");
         config.categories.map(val => val.fancyName).forEach((val, i) => {
-            embedBis.addField(`${parseInt(i)+1}. ${val}`, "\u200b", true);
+            embedBis.addField(`${parseInt(i)+1}. ${val}`, "\u200b", true)
         })
 
         m = await msg.channel.send(embedBis);
@@ -85,9 +85,8 @@ module.exports = class extends CommandPattern {
         rep = parseInt(rep.first().content);
         let cat = rep == 0 ? false : config.categories[rep-1].name;
 
-        m = await msg.channel.send(embed);
+        await msg.channel.send(embed);
         await msg.channel.send("Confirmez-vous l'envoi de cet embed ? (`oui` ou `non`)");
-        filter = m => (m.author.id === msg.author.id && (m.content.toLowerCase() === 'oui' || m.content.toLowerCase() === 'non'));
         rep = await msg.channel.awaitMessages(me => me.author.id === msg.author.id && ["oui", "non"].includes(me.content.toLowerCase()), {max:1,time:30000});
         if (!rep.first()) return msg.reply("commande annulée.");
 

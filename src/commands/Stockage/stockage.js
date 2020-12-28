@@ -91,7 +91,7 @@ module.exports = class extends CommandPattern {
                 let [wait] = await Promise.race([
                     m.awaitReactions(eval(env.filterReac), {max:1, time:env.time}),
                     msg.channel.awaitMessages(eval(env.filterText), {max:1, time:env.time})
-                ])
+                ]);
                 if (!wait) return env.timeout(m);
                 let opt = wait[1].count? await env.actionReaction(params, wait[1], m) : await env.actionText(params, wait[1], m);
                 m = opt.message;

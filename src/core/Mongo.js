@@ -1,6 +1,5 @@
 const mongoose = require("mongoose"),
       mongoUri = require("mongodb-uri"),
-      { spawn } = require('child_process'),
       credentials = require("../../.credentials.json").db.mongoDB,
       Category = require("../models/mongo/Category");
       

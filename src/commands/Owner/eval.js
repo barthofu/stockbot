@@ -34,7 +34,7 @@ module.exports = class extends CommandPattern {
             const code = msg.content.startsWith("```")?msg.content.replace("```"+config.evalName, "").replace("```", ""):args.join(" ")
             let evaled = eval(code);
             if (typeof evaled !== "string")
-            evaled = require("util").inspect(evaled);
+            /*evaled = */require("util").inspect(evaled);
             //msg.channel.send(clean(evaled), {code:"xl"});
         } catch (err) {
             msg.channel.send(`\`ERROR\` \`\`\`xl\n${clean(err)}\n\`\`\``);

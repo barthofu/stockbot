@@ -17,7 +17,7 @@ module.exports = class EmbedPage {
         Object.keys(categoryObject).forEach(key => {
 
             let val = categoryObject[key]
-            if (key === "_saut") description += "\n"
+            if (["_saut", "_sautBis"].includes(key)) description += "\n"
             else if (!val || val === "") description += ""
             else description += `**${key.split("__").join(" ").split("_").join("'")} :** ${val}\n`
 
@@ -116,7 +116,7 @@ module.exports = class EmbedPage {
                     Votes: "`" + this.page.stats.like.length + " 👍 | " + this.page.stats.dislike.length + " 👎`",
                     Fournisseur: this.check(this.page.fournisseur) ? "Fourni par " + this.page.fournisseur : false,
 
-                    _saut: null,
+                    _sautBis: null,
                     Résumé: this.page.description
 
                 }

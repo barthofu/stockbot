@@ -42,7 +42,7 @@ module.exports = class extends CommandPattern {
         if (!rep.first()) return msg.react("❌"); 
         let cat = config.categories[parseInt(rep.first().content)-1].name;
 
-        m = await msg.reply("Formule ta demande :");
+        await msg.reply("Formule ta demande :");
 
         rep = await msg.channel.awaitMessages(me => me.author.id == msg.author.id, {max:1, time:180000});
         if (!rep.first()) return msg.react("❌");

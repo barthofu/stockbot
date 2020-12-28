@@ -34,7 +34,7 @@ module.exports = class {
         //define color
         let color = db.user.find(val => val.id === msg.author.id).get("embedColor").value() || config.colors.default
 
-        for (var [key, value] of bot.commands) {
+        for (let value of bot.commands.array()) {
 
             if (value.info.name == cmd || value.info.aliases.map(val => val.replace("_", "")).includes(cmd)) {
 
