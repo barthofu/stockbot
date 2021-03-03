@@ -3,10 +3,12 @@ package-lock.json
 
 .dist
 .credentials.json
+src/commands/Owner/compte.js
 
 archives/
 __*
 
 logs.txt
 
-src/db/*
+
+

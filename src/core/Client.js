@@ -4,11 +4,19 @@ let GuildPattern  = require("../models/Guild.js"),
     low           = require('lowdb'),
     Discord       = require('discord.js'),
     fs            = require('fs'),
+    process       = require('process')
     credentials   = require("../../.credentials.json");
 
 module.exports = class {
 
     constructor () {
+
+        try {
+            process.chdir(__dirname + "/../../" )
+        } catch (e) {
+            console.log("Erreur lors du changement de dossier !")
+        }
+            
 
         this.bot = new Discord.Client({"restTimeOffset": 50});
         this.bot.commands = new Discord.Collection();
@@ -65,6 +73,7 @@ module.exports = class {
 
     loadCommands () {
 
+        console.log(fs.readdirSync(`.`))
         let categories = fs.readdirSync(`./src/commands`).filter(file => !file.includes("."));
         for (let i in categories) {
             fs.readdirSync(`./src/commands/${categories[i]}`).filter(file => file.endsWith('.js') && !file.startsWith("_")).forEach(file => {
@@ -149,14 +158,14 @@ module.exports = class {
     startingConsole () {
         
         let params = {
-            categories: fs.readdirSync(`./src/commands`).length,
+            categories: fs.readdirSync(`./src/commands`).filter(file => !file.includes(".")).length,
             commands: this.bot.commands.size,
             databases: Object.keys(db).length - config.categories.length,
             events: fs.readdirSync("./src/events").filter(file => file.endsWith('.js')).length
         }
 
         console.log(`\u200b\n\u200b\n\u200b\n\u200b\n\u200b\t\t╔═════════════════════════════════════╗\n\u200b\t\t║ ${this.bot.user.username} is connected!${new Array(Math.abs(22-this.bot.user.username.length)).fill(" ").join("")}║\n\u200b\t\t╚═════════════════════════════════════╝\n\u200b\t\t\t\t• • •\n\u200b`);
-        console.log(`› ${params.commands} commands loaded${config.startingConsoleDetailed==true?"\n"+fs.readdirSync("./src/commands").map(
+        console.log(`› ${params.commands} commands loaded${config.startingConsoleDetailed==true?"\n"+fs.readdirSync("./src/commands").filter(file => !file.includes(".")).map(
             val => `\u200B\t› ${val}\n${fs.readdirSync("./src/commands/"+val).map(
                 val2 => `\u200B\t    \u200b› ${val2.split(".")[0]}`
                 ).join("\r\n")}`

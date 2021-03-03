@@ -16,4 +16,4 @@ module.exports = async () => {
 
     await mongo.init();
     await client.init();
-};;
+};

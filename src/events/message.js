@@ -103,5 +103,3 @@ function postCommand (cmd, msg) {
     db.stats.update(`actual.commands.details.${cmd}`, val => val + 1).write()
 
 }
-
-/**/
