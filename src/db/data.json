@@ -1,10 +1,10 @@
 {
-  "currentDay": "03",
+  "currentDay": "16",
   "maintenance": false,
   "latest": {
-    "name": "Black Clover E166",
+    "name": "Tokyo Revengers",
     "cat": "anime",
-    "date": "02/03/2021 à 13:20"
+    "date": "15/04/2021 à 20:00"
   },
   "stats": {
     "poids": 8,
@@ -43,63 +43,13 @@
       }
     },
     {
-      "name": "Jujutsu Kaisen",
-      "season": "1",
-      "lien": "https://mega.nz/folder/PyBUVJ4I#brff8dkr1iCN6F-gXoa3fw",
-      "image": "https://img.reelgood.com/content/show/a9aa6c98-ce63-48ee-9064-8b8f69183989/poster-780.jpg",
+      "name": "My Hero Academia",
+      "season": "5",
+      "lien": "https://mega.nz/folder/Tr5Q0AxK#86wdP1_iOfls2RF-T0JTgQ",
+      "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx117193-yZUKig9K220H.jpg",
       "airing": {
-        "day": "Vendredi",
-        "hour": "17h30"
-      }
-    },
-    {
-      "name": "Attack on Titan",
-      "season": "4",
-      "lien": "https://mega.nz/folder/avAgVLAA#e-AlqiWc5eipxltGZTxvTw",
-      "image": "https://static.wikia.nocookie.net/1dcd538c-ed9a-4bb2-bbb5-93465ed7a094",
-      "airing": {
-        "day": "Dimanche",
-        "hour": "18h30"
-      }
-    },
-    {
-      "name": "Re:Zero",
-      "season": "2 part 2",
-      "lien": "https://mega.nz/folder/XuYnnCDZ#Lq7ptdzPqLnBP0zND-VyVg",
-      "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx119661-2p4OcVJo7j0F.jpg",
-      "airing": {
-        "day": "Mercredi",
-        "hour": "16h30"
-      }
-    },
-    {
-      "name": "The Promised Neverland",
-      "season": "2",
-      "lien": "https://mega.nz/folder/yKY2CRbR#Z6rRK86lfl6yBpCPNRvYLA",
-      "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108725-KM8SqUyaUd1o.jpg",
-      "airing": {
-        "day": "Vendredi",
-        "hour": "17h30"
-      }
-    },
-    {
-      "name": "The Quintessential Quintuplets",
-      "season": "2",
-      "lien": "https://mega.nz/folder/G2YSwTjL#ABaPzedxwB7jt4gY-YOW7w",
-      "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx103572-2MXV30htoCSh.png",
-      "airing": {
-        "day": "Jeudi",
-        "hour": "17h30"
-      }
-    },
-    {
-      "name": "Dr.Stone",
-      "season": "2",
-      "lien": "https://mega.nz/folder/uChQWTAL#Ll4mYb1Undnnu0qBJGyM5Q",
-      "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx113936-O4YJv5y5QClh.jpg",
-      "airing": {
-        "day": "Jeudi",
-        "hour": "14h30"
+        "day": "Samedi",
+        "hour": "10h00"
       }
     }
   ]

@@ -73,7 +73,6 @@ module.exports = class {
 
     loadCommands () {
 
-        console.log(fs.readdirSync(`.`))
         let categories = fs.readdirSync(`./src/commands`).filter(file => !file.includes("."));
         for (let i in categories) {
             fs.readdirSync(`./src/commands/${categories[i]}`).filter(file => file.endsWith('.js') && !file.startsWith("_")).forEach(file => {

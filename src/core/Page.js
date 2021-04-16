@@ -1,3 +1,5 @@
+const megaLinkChecker = require('mega-link-checker')
+
 module.exports = class EmbedPage {
 
     constructor(page, userID, color, channelID) {
@@ -40,7 +42,24 @@ module.exports = class EmbedPage {
 
 
         //liens
-        let arrLiens = this.page.lien.map(val => `${val.replace("[x265]", "")}${val.indexOf("[x265]") > -1?" <:hevc_emote:725145359076294726>":""}`)
+
+        //x265 support + validity test
+        let liens = this.page.lien
+            .map(val => `${val.replace("[x265]", "")}${val.indexOf("[x265]") > -1?" <:hevc_emote:725145359076294726>":""}`)
+
+        let arrLiens = []
+        let checker
+
+        for (let lien of liens) {
+
+            checker = false
+            for (let formatedLien of this.formatURL(lien)) {
+                if (!(await megaLinkChecker(formatedLien))) checker = true
+            }
+            
+            arrLiens.push(checker ? `~~${lien}~~` : lien)
+        }
+
         let titleText = "**━━━━━━   Liens   ━━━━━**"
         if (arrLiens.join('\r\n').length >= 2048) {
             //3 FIELDS
@@ -76,6 +95,13 @@ module.exports = class EmbedPage {
 
 
     }
+
+
+
+    formatURL(liens) {
+        return Array.prototype.concat.apply([], liens.match(/(\((.*?)\))/gm).map(el => el.slice(1,-1)));
+    }
+
 
 
     check (element) {
