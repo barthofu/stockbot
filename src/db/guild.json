@@ -627,14 +627,6 @@
       "updateRole": false,
       "updateIgnoreCategories": []
     },
-    "641363754059038753": {
-      "id": "641363754059038753",
-      "prefix": "s!",
-      "nsfwEnabled": true,
-      "updateChannel": false,
-      "updateRole": false,
-      "updateIgnoreCategories": []
-    },
     "630448922770407456": {
       "id": "630448922770407456",
       "prefix": "s!",
@@ -790,14 +782,6 @@
       "prefix": "s!",
       "nsfwEnabled": true,
       "updateChannel": "714626562057699339",
-      "updateRole": false,
-      "updateIgnoreCategories": []
-    },
-    "701108993363542106": {
-      "id": "701108993363542106",
-      "prefix": "s!",
-      "nsfwEnabled": true,
-      "updateChannel": false,
       "updateRole": false,
       "updateIgnoreCategories": []
     },
@@ -1282,14 +1266,6 @@
     },
     "621410331129806868": {
       "id": "621410331129806868",
-      "prefix": "s!",
-      "nsfwEnabled": true,
-      "updateChannel": false,
-      "updateRole": false,
-      "updateIgnoreCategories": []
-    },
-    "772499066634240042": {
-      "id": "772499066634240042",
       "prefix": "s!",
       "nsfwEnabled": true,
       "updateChannel": false,
@@ -2155,6 +2131,38 @@
       "updateChannel": false,
       "updateRole": false,
       "updateIgnoreCategories": []
+    },
+    "833166252520243252": {
+      "id": "833166252520243252",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": "833978991244869692",
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "825158136431640597": {
+      "id": "825158136431640597",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "756532456026407013": {
+      "id": "756532456026407013",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "833847991365795841": {
+      "id": "833847991365795841",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
     }
   },
   "deleted": {
@@ -2527,6 +2535,30 @@
     },
     "831576179252133938": {
       "id": "831576179252133938",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "701108993363542106": {
+      "id": "701108993363542106",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "641363754059038753": {
+      "id": "641363754059038753",
+      "prefix": "s!",
+      "nsfwEnabled": true,
+      "updateChannel": false,
+      "updateRole": false,
+      "updateIgnoreCategories": []
+    },
+    "772499066634240042": {
+      "id": "772499066634240042",
       "prefix": "s!",
       "nsfwEnabled": true,
       "updateChannel": false,

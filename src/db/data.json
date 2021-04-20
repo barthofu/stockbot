@@ -1,10 +1,10 @@
 {
-  "currentDay": "16",
+  "currentDay": "21",
   "maintenance": false,
   "latest": {
-    "name": "Tokyo Revengers",
+    "name": "One Piece E01",
     "cat": "anime",
-    "date": "15/04/2021 à 20:00"
+    "date": "20/04/2021 à 10:16"
   },
   "stats": {
     "poids": 8,
@@ -50,6 +50,16 @@
       "airing": {
         "day": "Samedi",
         "hour": "10h00"
+      }
+    },
+    {
+      "name": "Tokyo Revengers",
+      "season": "1",
+      "lien": "https://mega.nz/folder/fvRHRCZZ#rsPyjEwcUCm06qRi0FqdjQ",
+      "image": "https://cdn.discordapp.com/attachments/561943804714811401/832976340650950666/Tokyo_Revengers_Visuel_3.jpg",
+      "airing": {
+        "day": "Samedi",
+        "hour": "19h00"
       }
     }
   ]

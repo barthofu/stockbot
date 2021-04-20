@@ -42,9 +42,10 @@ module.exports = class extends CommandPattern {
         await m.react('◀');
         await m.react('707576951979638784');
         await m.react('707577300673363978');
+        await m.react('🅰')
         await m.react('▶');
         
-        let filter = (reaction, user) => (["◀", "▶"].includes(reaction.emoji.name) || ["707576951979638784", "707577300673363978"].includes(reaction.emoji.id)) && user.id === msg.author.id
+        let filter = (reaction, user) => (["◀", "▶", "🅰"].includes(reaction.emoji.name) || ["707576951979638784", "707577300673363978"].includes(reaction.emoji.id)) && user.id === msg.author.id
         let reac = m.createReactionCollector(filter, { time: 300000 });
 
         reac.on("collect", async(reaction) => {
@@ -54,6 +55,7 @@ module.exports = class extends CommandPattern {
             if (reaction.emoji.name == "◀") page = page == 1 ? 1 : page - 1;
             else if (reaction.emoji.name == "▶") page = page == stats.length ? stats.length : page + 1;
             
+            else if (reaction.emoji.name === "🅰") day = 30 * 3;
             else if (reaction.emoji.id == "707576951979638784") day = 7;
             else day = 30;
 
@@ -65,10 +67,12 @@ module.exports = class extends CommandPattern {
 
     async getEmbed(msg, color, page, day, rawStats) {
 
+        let link = await this.genLink(page, day, rawStats)
+
         return new MessageEmbed()
             .setAuthor(msg.author.username, msg.author.displayAvatarURL({dynamic: true}))
             .setColor(color)
-            .setImage(await this.genLink(page, day, rawStats))
+            .setImage(link)
             .setFooter(`${page}/${stats.length} | ${day} jours`)
     }
 
